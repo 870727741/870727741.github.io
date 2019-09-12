@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/9 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="中心主题用到的技术 SpringBoot Spring MVC IDEA/Shutcut Refactor Source Code Git/GitHub BootStrap Github Authorization Properties Session &amp;amp; Cookies MySQL/H2 MyBatis heroku 国外 部署 Maven Distribution Session 分布">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2019/09/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/09/12/communityProject/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="中心主题用到的技术 SpringBoot Spring MVC IDEA/Shutcut Refactor Source Code Git/GitHub BootStrap Github Authorization Properties Session &amp;amp; Cookies MySQL/H2 MyBatis heroku 国外 部署 Maven Distribution Session 分布">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-30T09:36:49.541Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="中心主题用到的技术 SpringBoot Spring MVC IDEA/Shutcut Refactor Source Code Git/GitHub BootStrap Github Authorization Properties Session &amp;amp; Cookies MySQL/H2 MyBatis heroku 国外 部署 Maven Distribution Session 分布">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,211 +154,295 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-communityProject" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="中心主题"><a href="#中心主题" class="headerlink" title="中心主题"></a>中心主题</h1><h2 id="用到的技术"><a href="#用到的技术" class="headerlink" title="用到的技术"></a>用到的技术</h2><ul>
+<li><strong>SpringBoot</strong></li>
+<li><strong>Spring MVC</strong></li>
+<li>IDEA/Shutcut</li>
+<li>Refactor</li>
+<li>Source Code</li>
+<li><strong>Git/GitHub</strong></li>
+<li>BootStrap</li>
+<li>Github Authorization</li>
+<li>Properties</li>
+<li>Session &amp; Cookies</li>
+<li><strong>MySQL/H2</strong></li>
+<li><strong>MyBatis</strong></li>
+<li><strong>heroku</strong> 国外 部署</li>
+<li><strong>Maven</strong></li>
+<li>Distribution Session 分布式session 何时何地重启服务都不会影响用户登录</li>
+<li><strong>Flyway</strong> 持续的数据库脚本跟新</li>
+<li>lombok</li>
+<li>Dev Tools 热部署</li>
+<li>Pagination 数据库分页</li>
+<li>Interceptor 拦截器</li>
+<li>MBG MyBatis Generator 数据库快速生产</li>
+<li>Exception Handler</li>
+<li><strong>Restful/JSON</strong>  前后端分离地做JSON</li>
+<li>Mark Down</li>
+<li>Image Upload</li>
+<li>Logging</li>
+<li>Profile</li>
+<li>Deploy<h2 id="项目实施"><a href="#项目实施" class="headerlink" title="项目实施"></a>项目实施</h2><h3 id="新建工程-new-project"><a href="#新建工程-new-project" class="headerlink" title="新建工程 new project"></a>新建工程 new project</h3></li>
+</ul>
+<p><strong>Spring Initializar</strong></p>
+<blockquote>
+<p>![1565849992477](C:\Users\Monica J\AppData\Roaming\Typora\typora-user-images\1565849992477.png)Group :域名倒序排列<br>dependencies :web 后面需要什么手动输入<br>pom文件引入依赖 thymeleaf（<a href="https://spring.io/guides）" target="_blank" rel="noopener">https://spring.io/guides）</a> 和 dev-tools（热部署<a href="**热部署**:修改代码后不重启即可生效">^1</a>，）</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="tag">&lt;<span class="name">dependency</span>&gt;</span>         				</span><br><span class="line">&gt;	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">&gt;	<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-thymeleaf<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">&gt;<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>在pom.xml中添加以下配置</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">&gt; 	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">&gt; 	<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-devtools<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">&gt; <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p><strong>注意：IDEA进行SpringBoot热部署失败的原因</strong><br>出现失败，原因可能不是部署配置问题，其原因是因为IntelliJ IDEA 默认情况下不会自动&gt;编译，需要对IEDA进行自动编译的设置，如下：</p>
+<blockquote>
+<p>（1）File–&gt;Setting–&gt;compiler –&gt;build project automatically<br>（2）Shift+Ctrl+Alt+/ –&gt;Registry–&gt;![1565420132437](C:\Users\Monica J\AppData\Roaming\Typora\typora-user-images\1565420132437.png)</p>
+</blockquote>
+</blockquote>
+<h3 id="建立gitHub仓库，上传代码"><a href="#建立gitHub仓库，上传代码" class="headerlink" title="建立gitHub仓库，上传代码"></a>建立gitHub仓库，上传代码</h3><ol>
+<li><a href="https://github.com/870727741/code_community" target="_blank" rel="noopener">https://github.com/870727741/code_community</a> 新建gitHub空白仓库</li>
+<li>–&gt;Setting–&gt;Deploy keys 部署key 公钥/私钥？ </li>
+<li>建立本地代码仓库并提交到github</li>
+</ol>
+<p><strong>打开终端  terminal</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> pa=%<span class="built_in">cd</span>%</span><br><span class="line"><span class="built_in">echo</span> %pa% <span class="comment">#查看当前路径</span></span><br><span class="line">git init</span><br><span class="line">git status   <span class="comment">##查看所有文件状态，红色未提交</span></span><br><span class="line">git add .    <span class="comment">##此操作前先检查忽略文件</span></span><br><span class="line">git commit -m <span class="string">"init repo"</span></span><br><span class="line">git status  </span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line">git remote add origin https://github.com/870727741/code_community.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>创建README.md （自述文件）</li>
+<li>更新本地仓库并推送到远端<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git add.</span><br><span class="line">git status</span><br><span class="line">git commit -m <span class="string">"自述文档"</span> <span class="comment">#-m 意思是添加注释？</span></span><br><span class="line"><span class="comment">##commit 之后又修改了一小部分，用下列命令</span></span><br><span class="line">git add .</span><br><span class="line">git commit --amend --no-edit <span class="comment">#--amend 追加</span></span><br><span class="line"><span class="comment">## 最后再推送</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="前端-交互界面-web端界面设计"><a href="#前端-交互界面-web端界面设计" class="headerlink" title="前端/交互界面/web端界面设计"></a>前端/交互界面/web端界面设计</h3><p><em>参考网站</em>：<a href="https://elasticsearch.cn" target="_blank" rel="noopener">中文社区</a></p>
+<h4 id="引入BootStrap"><a href="#引入BootStrap" class="headerlink" title="引入BootStrap"></a>引入BootStrap</h4><ol>
+<li>下载BootStrap开发文档 <a href="https://v3.bootcss.com/" target="_blank" rel="noopener">https://v3.bootcss.com/</a></li>
+<li>在html 文件中引入 bootstrap css js 文件(IDEA 中可以直接将文件拖入HTML 中)<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"css/bootstrap.min.css"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"css/bootstrap-theme.min.css"</span>/&gt;</span></span><br><span class="line">...</span><br><span class="line"><span class="tag">&lt;<span class="name">scripyt</span> <span class="attr">src</span>=<span class="string">"js/bootstrap.min.js"</span> &gt;</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="页面设计编写"><a href="#页面设计编写" class="headerlink" title="页面设计编写"></a>页面设计编写</h4><ol>
+<li><p>首页导航栏</p>
+<h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3><h4 id="登录功能-之授权登录"><a href="#登录功能-之授权登录" class="headerlink" title="登录功能 之授权登录"></a>登录功能 之授权登录</h4><ol>
+<li><p>github授权登录 <a href="https://developer.github.com/apps/" target="_blank" rel="noopener">https://developer.github.com/apps/</a></p>
+</li>
+<li><p>下载 Visual Paradigm <a href="https://www.visual-paradigm.com" target="_blank" rel="noopener">https://www.visual-paradigm.com</a> 绘制时序图，熟悉流程![1565868239209](C:\Users\Monica J\AppData\Roaming\Typora\typora-user-images\1565868239209.png)</p>
+<p>3.整体结构 ![1566444583201](C:\Users\Monica J\AppData\Roaming\Typora\typora-user-images\1566444583201.png)</p>
+<h4 id="配置的分离"><a href="#配置的分离" class="headerlink" title="配置的分离"></a>配置的分离</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">## gitHub授权用到的相关配置</span><br><span class="line">github.client_id=a273d1897ea2a1e6fc29</span><br><span class="line">github.client_secret=d3f308353a0cf47ffa44c6e605e6ccdc5ef18aac</span><br><span class="line">github.redirect_uri=http://localhost:8080/callback</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Controller</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AuthorizeController</span> </span>&#123;</span><br><span class="line">     <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> GitHubProvider gitHubProvider;</span><br><span class="line">     <span class="meta">@Value</span>(<span class="string">"$&#123;github.client_id&#125;"</span>)</span><br><span class="line">     <span class="keyword">private</span> String client_id;</span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;github.client_secret&#125;"</span>)</span><br><span class="line">     <span class="keyword">private</span> String client_secret;</span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;github.redirect_uri&#125;"</span>)</span><br><span class="line">     <span class="keyword">private</span> String redirect_uri;</span><br><span class="line">     ...</span><br></pre></td></tr></table></figure>
+
+<h4 id="Session-和-Cookies原理和实现"><a href="#Session-和-Cookies原理和实现" class="headerlink" title="Session 和 Cookies原理和实现"></a>Session 和 Cookies原理和实现</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// HttpServletRequest request</span></span><br><span class="line">GitHubUser githubUser=gitHubProvider.getGitHubUser(accessToken);</span><br><span class="line"><span class="keyword">if</span>(githubUser !=<span class="keyword">null</span> )&#123;</span><br><span class="line"><span class="comment">//登陆成功，写cookie 和session</span></span><br><span class="line">request.getSession().setAttribute(<span class="string">"githubUser"</span>,githubUser);</span><br><span class="line"><span class="keyword">return</span> <span class="string">"redirect:index"</span>;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line"><span class="comment">//登录失败，重新登陆</span></span><br><span class="line"><span class="keyword">return</span> <span class="string">"redirect:index"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>ServletContext HttpSession 以及HttpServletRequest之间的关系</strong>:</p>
+<ol>
+<li>[共同点]不管对象的作用域怎样，共享变量和获得变量的 方法都是一致的<br>–setAttribute(“varName”,obj);<br>–getAttribute（“varName”）。</li>
+<li>变量的作用域<br>ServletContext–范围最大。应用程序级别的，整个应用程序都能訪问<br>HttpSession   – 次之，会话级别的，在当前的浏览器中都能訪问[不论是在同一浏览器开多少窗体，都能够訪问]。可是换个浏览器就不行了。就必须又一次创建session<br>HttpServletRequest  –范围最小，请求级别，请求结束，变量的作用域也结束[也就是仅仅是一次訪问，訪问结束，这个也结束]</li>
+</ol>
+</blockquote>
+<h3 id="数据库学习与了解"><a href="#数据库学习与了解" class="headerlink" title="数据库学习与了解"></a>数据库学习与了解</h3><h4 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h4><h4 id="H2-Database-Engine-内嵌式数据库"><a href="#H2-Database-Engine-内嵌式数据库" class="headerlink" title="H2 Database Engine 内嵌式数据库"></a>H2 Database Engine 内嵌式数据库</h4><ol>
+<li><p>依赖配置<br><a href="https://mvnrepository.com" target="_blank" rel="noopener">Maven仓库</a>—&gt;H2</p>
+<blockquote>
+<p>copy dependency –&gt;<strong>pom.xml</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="comment">&lt;!-- https://mvnrepository.com/artifact/com.h2database/h2 --&gt;</span></span><br><span class="line">&gt;<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">&gt;    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.h2database<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">&gt;    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>h2<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">&gt;    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.4.199<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">&gt;    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">&gt;<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+</li>
+<li><p>在IntelliJ IDEA中创建数据库</p>
+<blockquote>
+<p><a href="http://h2database.com/html/quickstart.html" target="_blank" rel="noopener">官方 quickstart </a></p>
+<blockquote>
+<ul>
+<li>Add the h2*.jar to the classpath (H2 does not have any dependencies)</li>
+<li>Use the JDBC driver class: org.h2.Driver</li>
+<li>The database URL jdbc:h2:~/test opens the database test in your user home directory</li>
+<li>A new database is automatically created</li>
+</ul>
+</blockquote>
+</blockquote>
+</li>
+</ol>
+<blockquote>
+<p>将h2*.jar添加到类路径(h2没有任何依赖项)<br>使用JDBC驱动程序类:org.h2.Driver<br>数据库URL jdbc:h2:~/test打开用户主目录中的数据库测试<br>将自动创建一个新数据库</p>
+<ul>
+<li>打开IntelliJ IDEA 右侧 Database–&gt;“+”–&gt;dataSource–&gt;H2</li>
+<li>url–&gt;jdbc:h2:~/code_community</li>
+<li>选择 Embedded ：内嵌式数据库 </li>
+<li>创建数据库表格![1566469417961](C:\Users\Monica J\AppData\Roaming\Typora\typora-user-images\1566469417961.png) </li>
+</ul>
+<p><em>token:存放cookie uuid形式</em><br><em>gmt_creat【modifued】:格林威治时间戳形式</em></p>
+</blockquote>
+<h4 id="集成mybatis-并实现CURD操作"><a href="#集成mybatis-并实现CURD操作" class="headerlink" title="集成mybatis 并实现CURD操作"></a>集成mybatis 并实现CURD操作</h4><p><em><a href="https://www.jianshu.com/p/05e16fa36cf4" target="_blank" rel="noopener">参考文档</a></em></p>
+<ol>
+<li><p>浏览器搜索 <strong>spring boot mybatis</strong>，查看官方mybatis集成文档。 参考<em>spring boot</em>官方文档</p>
+</li>
+<li><p>pom.xml添加相关依赖</p>
+<blockquote>
+<p>pom.xml</p>
+</blockquote>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>8.0.15<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--jdbc依赖--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-jdbc<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--集成mybatis--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.mybatis.spring.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">version</span>&gt;</span>2.0.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置properties相关数据库数据源信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">spring.datasource.url=jdbc:mysql://localhost/test[jdbc:h2:~/code_community][jdbc:mysql:~/code_community]</span><br><span class="line">spring.datasource.username=root[sa]</span><br><span class="line">spring.datasource.password=root[123]</span><br><span class="line">spring.datasource.diver-class-name=com.mysql.jdbc.Diver[org.h2.Diver]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编写 Mapper</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Mapper</span></span><br><span class="line">pubic <span class="class"><span class="keyword">interface</span> <span class="title">UserMapper</span></span>&#123;</span><br><span class="line">    <span class="meta">@Insert</span>(<span class="function">insert into <span class="title">code_community_user</span><span class="params">(name,account_id,token,gmt_create,gmt_modified)</span><span class="title">values</span><span class="params">(#&#123;name&#125;,#&#123;accountId&#125;,#&#123;token&#125;,#&#123;gmtCreate&#125;,#&#123;gmtModified&#125;)</span>)</span></span><br><span class="line"><span class="function">     <span class="keyword">void</span> <span class="title">addUser</span><span class="params">(CodeCommunityUser codeCommunityUser)</span></span>;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line">pubic <span class="class"><span class="keyword">class</span> <span class="title">CodeCommunityUser</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Integer id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> String accountId;</span><br><span class="line">    <span class="keyword">private</span> String token;</span><br><span class="line">    <span class="keyword">private</span> Long gmtCreate;</span><br><span class="line">    <span class="keyword">private</span> Long gmtModified;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>控制层获取到信息后添加到数据库</li>
+</ol>
+<h3 id="Flyway-Migration"><a href="#Flyway-Migration" class="headerlink" title="Flyway Migration"></a>Flyway Migration</h3><p>数据库版本控制工具</p>
+<h3 id="编写问题发布页面（仿照中文网）"><a href="#编写问题发布页面（仿照中文网）" class="headerlink" title="编写问题发布页面（仿照中文网）"></a>编写问题发布页面（仿照中文网）</h3><h3 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h3><h4 id="建表"><a href="#建表" class="headerlink" title="建表"></a>建表</h4><p>![1567157035331](C:\Users\Monica J\AppData\Roaming\Typora\typora-user-images\1567157035331.png)</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/开发工具设置/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:39:09.300Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/12/communityProject/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/Intelij IDEA 学习/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:39:09.300Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/communityProject/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:39:00.180Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+    <a href="/2019/09/12/Intelij IDEA 学习/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/09/12/power_system_manager/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/power_system_manager/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:39:00.180Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/小知识点行业名词术语/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:38:51.621Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+        
+        
+    </div>
+</aside>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/Win命令+快捷键/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:38:51.620Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/LINUX学习快捷键+命令/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:38:51.619Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/SpringBoot Study/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:37:21.023Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/SpringBoot Study2/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:37:21.022Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -377,8 +465,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

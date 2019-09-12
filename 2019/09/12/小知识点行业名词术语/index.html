@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/9 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="E2E 端到端参考来源：前端E2E测试略解  e2e或者端到端（end-to-end）或者UI测试是一种测试方法，它用来测试一个应用从头到尾的流程是否和设计时候所想的一样。简而言之，它从一个用户的角度出发，认为整个系统都是一个黑箱，只有UI会暴露给用户。 E2E（End To End）即端对端测试，属于黑盒测试，通过编写测试用例，自动化模拟用户操作，确保组件间通信正常，程序流数据传递如预期。">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2019/09/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/09/12/小知识点行业名词术语/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="E2E 端到端参考来源：前端E2E测试略解  e2e或者端到端（end-to-end）或者UI测试是一种测试方法，它用来测试一个应用从头到尾的流程是否和设计时候所想的一样。简而言之，它从一个用户的角度出发，认为整个系统都是一个黑箱，只有UI会暴露给用户。 E2E（End To End）即端对端测试，属于黑盒测试，通过编写测试用例，自动化模拟用户操作，确保组件间通信正常，程序流数据传递如预期。">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-16T01:40:47.907Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="E2E 端到端参考来源：前端E2E测试略解  e2e或者端到端（end-to-end）或者UI测试是一种测试方法，它用来测试一个应用从头到尾的流程是否和设计时候所想的一样。简而言之，它从一个用户的角度出发，认为整个系统都是一个黑箱，只有UI会暴露给用户。 E2E（End To End）即端对端测试，属于黑盒测试，通过编写测试用例，自动化模拟用户操作，确保组件间通信正常，程序流数据传递如预期。">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,211 +154,301 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-小知识点行业名词术语" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="E2E-端到端"><a href="#E2E-端到端" class="headerlink" title="E2E 端到端"></a>E2E 端到端</h1><p>参考来源：<a href="https://blog.csdn.net/qq_39300332/article/details/81197503" target="_blank" rel="noopener">前端E2E测试略解</a></p>
+<ul>
+<li>e2e或者端到端（end-to-end）或者UI测试是一种测试方法，它用来测试一个应用从头到尾的流程是否和设计时候所想的一样。简而言之，它从一个用户的角度出发，认为整个系统都是一个黑箱，只有UI会暴露给用户。</li>
+<li>E2E（End To End）即端对端测试，属于黑盒测试，通过编写测试用例，自动化模拟用户操作，确保组件间通信正常，程序流数据传递如预期。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">名称</th>
+<th align="center">断言</th>
+<th align="center">是否跨浏览器支持</th>
+<th align="center">实现</th>
+<th align="center">官网</th>
+<th align="center">是否开源</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">nightwatch</td>
+<td align="center">assert 和 Chai Expect</td>
+<td align="center">是</td>
+<td align="center">selenium</td>
+<td align="center"><a href="http://nightwatchjs.org/" target="_blank" rel="noopener">http://nightwatchjs.org/</a></td>
+<td align="center">是</td>
+</tr>
+<tr>
+<td align="center">cypress</td>
+<td align="center">Chai、Chai-jQuery 等</td>
+<td align="center">否</td>
+<td align="center">Chrome</td>
+<td align="center"><a href="https://www.cypress.io/" target="_blank" rel="noopener">https://www.cypress.io/</a></td>
+<td align="center">是</td>
+</tr>
+<tr>
+<td align="center">testcafe</td>
+<td align="center">自定义的断言</td>
+<td align="center">是</td>
+<td align="center">不是基于 selenium 实现</td>
+<td align="center"><a href="https://devexpress.github.io/testcafe/" target="_blank" rel="noopener">https://devexpress.github.io/testcafe/</a></td>
+<td align="center">是</td>
+</tr>
+<tr>
+<td align="center">katalon</td>
+<td align="center">TDD/BDD</td>
+<td align="center">是</td>
+<td align="center">未知</td>
+<td align="center"><a href="https://www.katalon.com/katalon-studio/" target="_blank" rel="noopener">https://www.katalon.com/katalon-studio/</a></td>
+<td align="center">否</td>
+</tr>
+</tbody></table>
+<ol>
+<li>nightwatch 需要安装配置 selenium，selenium-server需要安装jdk（Java Development Kit）。</li>
+<li>cypress 安装方便，测试写法和单元测试一致，只支持 Chrome 类浏览器，有支持其他浏览器的计划</li>
+<li>testcafe 安装方便，测试写法与之前的单元测试差异比较大，编写测试用例时只能选择到可见的元素</li>
+<li>katalon 不是测试框架，是 IDE ，比较重，并且不开源，测试用例不是用 js 编写但是可以通过 Chrome 插件录测试用例</li>
+</ol>
+<blockquote>
+<p>经过测试使用对比，nightwatch和cypress是vue推荐的框架，社区活跃度较高，功能较为完备，开源，推荐二选一（nightwatch需要装jdk，准备工作多，但API丰富度更高；cypress有自己的可视化窗体，能记录运行信息，重现bug精品）</p>
+</blockquote>
+<h2 id="nightwatch"><a href="#nightwatch" class="headerlink" title="nightwatch"></a>nightwatch</h2><ol>
+<li>安装<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i selenium-server nightwatch chromedriver -D</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p><strong>chromedriver 安装需要翻墙，很坑，如果没梯子去网上搜罗单独的包，然后改配置文件</strong></p>
+<ol start="2">
+<li>配置<br>根目录新建nightwatch.conf.js（也可json，推荐js）：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">   <span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  <span class="comment">// 测试文件入口</span></span><br><span class="line">  src_folders: [<span class="string">'tests'</span>],</span><br><span class="line">  <span class="comment">// 输出报表路径</span></span><br><span class="line">  output_folder: <span class="string">'reports'</span>,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// selenium配置</span></span><br><span class="line">  selenium: &#123;</span><br><span class="line">    start_process: <span class="literal">true</span>,</span><br><span class="line">    server_path: <span class="built_in">require</span>(<span class="string">'selenium-server'</span>).path,</span><br><span class="line">    host: <span class="string">'127.0.0.1'</span>,</span><br><span class="line">    <span class="comment">// selenium log输出</span></span><br><span class="line">    log_path: <span class="string">'reports'</span>,</span><br><span class="line">    port: <span class="number">9090</span>,</span><br><span class="line">    cli_args: &#123;</span><br><span class="line">      <span class="string">'webdriver.chrome.driver'</span>: <span class="built_in">require</span>(<span class="string">'chromedriver'</span>).path,</span><br><span class="line">      <span class="string">'webdriver.gecko.driver'</span>: <span class="built_in">require</span>(<span class="string">'chromedriver'</span>).path</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  test_settings: &#123;</span><br><span class="line">    <span class="keyword">default</span>: &#123;</span><br><span class="line">      launch_url: <span class="string">'http://localhost'</span>,</span><br><span class="line">      selenium_port: <span class="number">9090</span>,</span><br><span class="line">      selenium_host: <span class="string">'localhost'</span>,</span><br><span class="line">      silent: <span class="literal">true</span>,</span><br><span class="line">      screenshots: &#123;</span><br><span class="line">        enabled: <span class="literal">false</span>,</span><br><span class="line">        path: <span class="string">''</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    chrome: &#123;</span><br><span class="line">      desiredCapabilities: &#123;</span><br><span class="line">        browserName: <span class="string">'chrome'</span>,</span><br><span class="line">        javascriptEnabled: <span class="literal">true</span>,</span><br><span class="line">        acceptSslCerts: <span class="literal">true</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>3.测试用例<br>新建tests文件夹，在里面新建test.js，内容如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">   <span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  <span class="string">'Demo test Baidu'</span> : <span class="function"><span class="keyword">function</span> (<span class="params">browser</span>) </span>&#123;</span><br><span class="line">    browser</span><br><span class="line">      .url(<span class="string">'www.baidu.com'</span>)</span><br><span class="line">      .waitForElementVisible(<span class="string">'body'</span>, <span class="number">1000</span>)</span><br><span class="line">      .setValue(<span class="string">'input[name=wd]'</span>, <span class="string">'NightWatch'</span>)</span><br><span class="line">      .click(<span class="string">'#su'</span>)</span><br><span class="line">      .pause(<span class="number">1000</span>)</span><br><span class="line">      .assert.containsText(<span class="string">'#container'</span>, <span class="string">'NightWatch'</span>)</span><br><span class="line">      .end();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>运行<br>①推荐在package.json中配置<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> <span class="string">"scripts"</span>: &#123;</span><br><span class="line">  <span class="string">"test"</span>: <span class="string">"./node_modules/.bin/nightwatch --env"</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>就可以直接 <strong>npm test</strong>，也可以在shell中手动。<br>②根目录新建<strong>entry.js（名字自起）</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">require</span>(<span class="string">'nightwatch/bin/runner.js'</span>);</span><br></pre></td></tr></table></figure>
+
+<p>之后shell中    <strong>node entry.js</strong></p>
+<h2 id="cypress"><a href="#cypress" class="headerlink" title="cypress"></a>cypress</h2><p>1.安装</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install cypress --save-dev</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>启动<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./node_modules/.bin/cypress open</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>可添加npm scripts</p>
+<ol start="3">
+<li>写测试用例<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch &#123;your_project&#125;/cypress/integration/simple_spec.js</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">describe(<span class="string">'My First Test'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  it(<span class="string">"Gets, types and asserts"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    cy.visit(<span class="string">'https://example.cypress.io'</span>)</span><br><span class="line"></span><br><span class="line">    cy.contains(<span class="string">'type'</span>).click()</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Should be on a new URL which includes '/commands/actions'</span></span><br><span class="line">    cy.url().should(<span class="string">'include'</span>, <span class="string">'/commands/actions'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Get an input, type into it and verify that the value has been updated</span></span><br><span class="line">    cy.get(<span class="string">'.action-email'</span>)</span><br><span class="line">      .type(<span class="string">'fake@email.com'</span>)</span><br><span class="line">      .should(<span class="string">'have.value'</span>, <span class="string">'fake@email.com'</span>)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h1 id="Git，Github-gitlib-gitlab分别是什么"><a href="#Git，Github-gitlib-gitlab分别是什么" class="headerlink" title="Git，Github,gitlib,gitlab分别是什么"></a>Git，Github,gitlib,gitlab分别是什么</h1><ul>
+<li>git 是一个版本管理软件，由linux之父花了三天搞出来的东西，他没有界面，只支持命令行。</li>
+<li>github 是一个网站，因为git没有图形界面，github它支持在线的几乎所有git的操作，最重要它也是一个包含了很多程序员的开源社区。</li>
+<li>gitlib 是用于实现git功能的开发库</li>
+<li>githab 提倡开源，如果你不想开源就要花钱，你如果不愿意花钱，就自己搞个服务器，装gitlab这个软件来实现自己的版本控制，有点私服的概念。</li>
+</ul>
+<blockquote>
+<p>作者：笑笑酱丶<br>链接：<a href="https://www.jianshu.com/p/26fa7df41c9a" target="_blank" rel="noopener">https://www.jianshu.com/p/26fa7df41c9a</a><br>来源：简书<br>简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。</p>
+</blockquote>
+<h1 id="前后端分离"><a href="#前后端分离" class="headerlink" title="前后端分离"></a>前后端分离</h1><p><a href="https://blog.csdn.net/fuzhongmin05/article/details/81591072" target="_blank" rel="noopener">https://blog.csdn.net/fuzhongmin05/article/details/81591072</a></p>
+<h1 id="聚合工程"><a href="#聚合工程" class="headerlink" title="聚合工程"></a>聚合工程</h1><h2 id="聚合的概念"><a href="#聚合的概念" class="headerlink" title="聚合的概念"></a>聚合的概念</h2><p>   把项目的各个模块（子工程）聚合在一起构建。一般用于分模块开发,最后整体打包发布<br>   Maven Project独立运行<br>   Maven Module无法独立运行</p>
+<h2 id="聚合工程开发步骤"><a href="#聚合工程开发步骤" class="headerlink" title="聚合工程开发步骤"></a>聚合工程开发步骤</h2><ol>
+<li><p>根项目是一个pom项目。</p>
+</li>
+<li><p>子模块：Maven Module</p>
+</li>
+<li><p>每个模块写完后需要上传到私服（略）</p>
+</li>
+<li><p>打包，需要整体打包找到最后的war项目使用Tomcat加载</p>
+<p>实际中，我们会将一些庞大的项目拆分为若干模块进行开</p>
+<h2 id="三层-MVC-如下："><a href="#三层-MVC-如下：" class="headerlink" title="三层+MVC 如下："></a>三层+MVC 如下：</h2><blockquote>
+<p>父工程maven-core<br>所有的项目所需要的jar包都放在父工程的pom.xml下<br>子工程model——-jar<br>子工程dao———-jar<br>子工程service——jar<br>子工程web———-war<br>注意：聚合打包时（install），选择父工程进行聚合<br>发布到tomcat运行时（tomcat7:run）,选择web工程进行发布运行</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="工程聚合和继承的区别"><a href="#工程聚合和继承的区别" class="headerlink" title="工程聚合和继承的区别"></a>工程聚合和继承的区别</h2><p>聚合是为了方便快速构件项目。对于聚合模块来说，它知道有哪些被聚合的模块，但那些模块不知道这个聚合模块的存在<br>继承是为了消除重复配置。对于继承关系的父POM来说，它不知道有哪些子模块继承于它，但是子模块必须知道自己的父POM是什么;</p>
+<h2 id="聚合模块和微服务的区别"><a href="#聚合模块和微服务的区别" class="headerlink" title="聚合模块和微服务的区别"></a>聚合模块和微服务的区别</h2><p>聚合工程就是把一个工程分为各个部件,这些包括根项目pom可以用来控制依赖的版本号,实体类taobao-bean,持久层接口taobao-dao,业务层service:taobao-service,web层taobao-web.工具类taobao-utils等,可以分为这么多的模块平行开发,这些部件都不可以单独运行,它们之间相互依赖,最后合在一起成为一个完整可运行的web项目;<br>而这个web项目就可以成为是一个微服务,微服务可以是一个聚合工程,也可以不是,只是选择要不要这么开发而已,当其他的微服务需要使用另一个微服务的实体类时,这个时候我们可以直接导入它的实体类坐标即可,不用再次创建,就好像吃饭,朋友已经买了勺子,我喝汤的时候既可以用一下喝一口汤,达到重复使用的目的</p>
+<h1 id="读写分离-编辑"><a href="#读写分离-编辑" class="headerlink" title="读写分离 编辑"></a>读写分离 编辑</h1><p>为了确保数据库产品的稳定性，很多数据库拥有双机热备功能。也就是，第一台数据库服务器，是对外提供增删改业务的生产服务器；第二台数据库服务器，主要进行读的操作。·</p>
+<h1 id="敏捷开发"><a href="#敏捷开发" class="headerlink" title="敏捷开发"></a>敏捷开发</h1><p> <em>目前参与过公司的项目，公司专业从事敏捷开发，也比较成熟，可以分享下其中的细节。</em></p>
+<ol>
+<li>概念，可以参考敏捷宣言，强调适应变化，四句指导</li>
+</ol>
+<p>个体和互动 高于 流程和工具（动员每个人积极交流，相互之间可以 battle，头脑风暴）；<br>工作的软件 高于 详尽的文档（好的代码是不需要注释和文档的，顶多有一些规范指南一类的在线协作文档）；<br>客户合作 高于 合同谈判（真心实意为客户创造价值，而不止于眼前的功能交付，这个很难，由此还专门有一个角色去 control 这件事）；<br>响应变化 高于 遵循计划（计划是赶不上变化的，随时改需求随时变动迭代计划，有迭代的概念）；</p>
+<p>基于于右边，而更注重左边的价值，并不是说完全抛弃传统的瀑布式开发。</p>
+<ol start="2">
+<li>人员架构</li>
+</ol>
+<p>因为公司没有所谓的各种领导，这里就说下交付组里，我所见的一些角色，也是每天在一起工作的小伙伴：</p>
+<p>PM：项目管理者，这里不是项目经理，负责和客户签合同，各种会议的组织者，没有项目经理那种权利<br>BA：业务分析师，专门和客户谈需求，超强的交流和控制客户的能力，几乎每天都和客户泡在一起开会过需求，疯狂开会，驱动客户（我们组的BA是御姐型的，气场极强）<br>QA：测试人员<br>DEV：开发人员，其中有掌握技术话语权的 TL</p>
+<p>PO：比较特殊，是客户某的部门领导人，一般和 PM 单独沟通，几乎没出现过，网友一样的存在</p>
+<p>一个团队一般 1 PM、1 BA、1 QA 、6 DEV (三前三后，至少两个TL)</p>
+<p>这里没有 MS，所以每个人都是 SM，233333  </p>
+<ol start="3">
+<li>会议</li>
+</ol>
+<p>IPM：迭代会议，每个迭代开始之前开一次，主要是排下个迭代的故事卡，并给每张卡估点，我遇到的是两周一个迭代（一般会有卡墙，有物理的，也有线上的）<br>Showcase：开发成果展示，每个迭代结束开一次，一般是BA或QA给客户演示上个迭代做的功能，当然也是优化和新改动提得最多的时候<br>Retro：回顾会议，每个迭代结束开一次，讨论上个迭代团队做得好和做得不好的事（不是针对和人，不含人身攻击），并给出改进方案，在下个迭代中执行<br>Stand Up：每天早上的站会，大家站成一圈，一般由 PM 主持，轮流阐述自己的昨天工作内容和工作进度，和今天要完成的工作，以及遇到的一些问题，及时反馈出来（我们组有个小龙猫的毛绒玩具，大家挨个传递，挨个阐述）</p>
+<p>每天还有  Code  Review，动态安排时间，我们团队一直坚持，刚开始是前后端一起过昨天每个人写的代码，后面时间太长，就前后端分开。大家一起来找茬，你的命名和代码逻辑划分，代码风格，都有个能会被挑刺。在相互找茬的过程中，坚持下去，对个人的成长有很大很大的帮助。</p>
+<ol start="4">
+<li>写代码</li>
+</ol>
+<p>DEV 要做开发，就要先领故事卡，俗称开卡，自己选好一张故事卡，拉上BA和QA去过其中的细节，理清细节，然后才能上手开发，开发完后再拉上BA和QA去结卡，检查卡中的功能是不是都完成了，有问题就被打回去改，直到BA和QA觉得完善了，才能关卡。。。</p>
+<p>代码质量要求很严格，遵循  TDD，前端有 lint，有单元测试（不能偷懒，而且有覆盖率要求），有 </p>
+<p> 测试（必须写，和QA一起看），当你的代码走过这三个流程，提交到公共仓库，CI  自动构建会拉你的代码，再走一遍测试（挂了就要修代码），然后自动发布新版本到 Dev 环境。</p>
+<p>你以为这就完了？还有代码嗅探器，时刻在扫描代码仓库，<strong>有两个重复的函数不行、重复率太高不行、使用了骚代码去做类型转换之类的不行、空间内有命名重叠不行</strong>…这一套下来，再加上 code review，菜鸟开发每天一半的时间都在改昨天的代码。<br>项目还有规定，CI 不能红过夜，当天的问题当天要修好。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>以上这些，小公司就别说什么没时间，项目吃紧，然后就没做，自求多福吧<br>这些都是我所经历的，敏捷实践各不相同，大家看看就好<br><strong>SpringBoot、SpringCloud 全家桶要会，会点微服务，基础的 Java8 知识，熟练使用 stream 编程之类的，目前我们组的 Java 开发一半时间都是在写测试用例，要会写单元测试+集成测试之类的。</strong></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/开发工具设置/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:39:09.300Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/12/小知识点行业名词术语/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/Intelij IDEA 学习/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:39:09.300Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/communityProject/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:39:00.180Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+    <a href="/2019/09/12/power_system_manager/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/09/12/Win命令+快捷键/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/power_system_manager/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:39:00.180Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/小知识点行业名词术语/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:38:51.621Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+        
+        
+    </div>
+</aside>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/Win命令+快捷键/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:38:51.620Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/LINUX学习快捷键+命令/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:38:51.619Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/SpringBoot Study/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:37:21.023Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/SpringBoot Study2/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:37:21.022Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -377,8 +471,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

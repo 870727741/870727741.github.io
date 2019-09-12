@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/9 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="IntellijJ IDEAIDEA创建JAVA Class时自动生成头部文档注释 File-&amp;gt;settings-&amp;gt;Editor-&amp;gt;File and Code Templates-&amp;gt;Files-&amp;gt;Class修改模板为： 1234567891011&amp;gt;#if ($&amp;#123;PACKAGE_NAME&amp;#125; &amp;amp;&amp;amp; $&amp;#123;PACKAGE_N">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2019/09/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/09/12/开发工具设置/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="IntellijJ IDEAIDEA创建JAVA Class时自动生成头部文档注释 File-&amp;gt;settings-&amp;gt;Editor-&amp;gt;File and Code Templates-&amp;gt;Files-&amp;gt;Class修改模板为： 1234567891011&amp;gt;#if ($&amp;#123;PACKAGE_NAME&amp;#125; &amp;amp;&amp;amp; $&amp;#123;PACKAGE_N">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-03T02:21:14.231Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="IntellijJ IDEAIDEA创建JAVA Class时自动生成头部文档注释 File-&amp;gt;settings-&amp;gt;Editor-&amp;gt;File and Code Templates-&amp;gt;Files-&amp;gt;Class修改模板为： 1234567891011&amp;gt;#if ($&amp;#123;PACKAGE_NAME&amp;#125; &amp;amp;&amp;amp; $&amp;#123;PACKAGE_N">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,211 +154,349 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-开发工具设置" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="IntellijJ-IDEA"><a href="#IntellijJ-IDEA" class="headerlink" title="IntellijJ IDEA"></a>IntellijJ IDEA</h1><h2 id="IDEA创建JAVA-Class时自动生成头部文档注释"><a href="#IDEA创建JAVA-Class时自动生成头部文档注释" class="headerlink" title="IDEA创建JAVA Class时自动生成头部文档注释"></a>IDEA创建JAVA Class时自动生成头部文档注释</h2><blockquote>
+<p>File-&gt;settings-&gt;Editor-&gt;File and Code Templates-&gt;Files-&gt;Class<br>修改模板为：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;#if ($&#123;PACKAGE_NAME&#125; &amp;&amp; $&#123;PACKAGE_NAME&#125; != "")package &gt;$&#123;PACKAGE_NAME&#125;;#end</span><br><span class="line">&gt;</span><br><span class="line">&gt;<span class="comment">/**</span></span><br><span class="line"><span class="comment"> &gt;* $&#123;NAME&#125;.java</span></span><br><span class="line"><span class="comment">&gt; * User: Monica Jia</span></span><br><span class="line"><span class="comment">&gt; * Date: $&#123;DATE&#125;  Time: $&#123;TIME&#125;</span></span><br><span class="line"><span class="comment">&gt; * Description: </span></span><br><span class="line"><span class="comment">&gt; */</span></span><br><span class="line">&gt;<span class="keyword">public</span> <span class="class"><span class="keyword">class</span> $</span>&#123;NAME&#125; &#123;</span><br><span class="line">&gt;&#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="文档注释修改-Live-Templates"><a href="#文档注释修改-Live-Templates" class="headerlink" title="文档注释修改 Live Templates"></a>文档注释修改 Live Templates</h2><p>![1565851311102](C:\Users\Monica J\AppData\Roaming\Typora\typora-user-images\1565851311102.png)</p>
+<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><h3 id="代码类"><a href="#代码类" class="headerlink" title="代码类"></a>代码类</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Alt+C</td>
+<td>代码提示（自改原<strong>ctrl+shift+space</strong>）</td>
+</tr>
+<tr>
+<td>Ctrl+Alt+T</td>
+<td>对选中代码增加包围代码，例如try-catch，if之类</td>
+</tr>
+<tr>
+<td>Alt+Insert</td>
+<td>对类增加getter/setter，toString之类的类级基础方法</td>
+</tr>
+<tr>
+<td><strong>Shift+F6</strong></td>
+<td>可以重命名你的类、方法、变量等等，而且这个重命名等</td>
+</tr>
+<tr>
+<td><strong>Ctrl+Alt+L</strong></td>
+<td>代码格式化</td>
+</tr>
+<tr>
+<td>Ctr + Shift + u</td>
+<td>大小写转换</td>
+</tr>
+<tr>
+<td>Ctrl+O</td>
+<td>重写父类方法</td>
+</tr>
+<tr>
+<td>Ctrl+W</td>
+<td>选中代码文本</td>
+</tr>
+<tr>
+<td><strong>Ctrl+P</strong></td>
+<td>方法参数提示。</td>
+</tr>
+<tr>
+<td>Ctrl+Alt+O</td>
+<td>优化导入的类和包</td>
+</tr>
+<tr>
+<td><strong>Ctrl+/或Ctrl+Shift+/</strong></td>
+<td>注释（//或者/**/）</td>
+</tr>
+<tr>
+<td>Ctrl+Alt+鼠标左键 或 Ctrl+Alt+F3</td>
+<td>打开接口的实现类</td>
+</tr>
+<tr>
+<td>alt + enter</td>
+<td>代码提示</td>
+</tr>
+<tr>
+<td>CTRL+[shift] + 小键盘 [-/+ ]</td>
+<td>折叠/展开[全部/当前]代码块</td>
+</tr>
+</tbody></table>
+<h3 id="编辑类"><a href="#编辑类" class="headerlink" title="编辑类"></a>编辑类</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Ctrl+D/Ctrl+Y</strong></td>
+<td>复制当前行/删除当前行</td>
+</tr>
+<tr>
+<td><strong>CTRL+SHIFT+UP/DOWN</strong></td>
+<td>移动行</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+Alt +鼠标左键可以一行一行的选   Alt+鼠标左键向下拉 按住鼠标滚轮向下拉</td>
+<td>列编辑</td>
+</tr>
+<tr>
+<td>Alt+L</td>
+<td>最后一次编辑的地方原（<strong>Ctrl+Shift+Backspace</strong>）</td>
+</tr>
+<tr>
+<td>Ctrl+shift+F12</td>
+<td>编辑区最大屏</td>
+</tr>
+</tbody></table>
+<h3 id="文件查找"><a href="#文件查找" class="headerlink" title="文件查找"></a>文件查找</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ctrl+F12</td>
+<td>查看类结构</td>
+</tr>
+<tr>
+<td>Alt+F7</td>
+<td>查找变量，方法的引用位置</td>
+</tr>
+<tr>
+<td>Ctrl+E</td>
+<td>查找最近编辑的文件，以及项目中的TODO等项目信息</td>
+</tr>
+<tr>
+<td><em>Ctrl+N*</em></td>
+<td>输入关键字查找文件</td>
+</tr>
+<tr>
+<td><strong>Ctrl+Shift+N</strong></td>
+<td>按文件名称 查找文件</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+F7</td>
+<td>高亮所有选中文本</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+F</td>
+<td>查找文本</td>
+</tr>
+<tr>
+<td><strong>Ctrl+Shift+R</strong></td>
+<td>替换文本</td>
+</tr>
+<tr>
+<td><strong>Shift+Shift</strong></td>
+<td>查找所有文件</td>
+</tr>
+<tr>
+<td><strong>Alt+←/→</strong></td>
+<td>切换文件</td>
+</tr>
+<tr>
+<td><strong>Ctrl+E</strong></td>
+<td>最近文件跳转</td>
+</tr>
+<tr>
+<td><strong>ctrl + shift + 空格</strong></td>
+<td>跳转回上次编辑的地方</td>
+</tr>
+<tr>
+<td><strong>Ctrl + F11</strong></td>
+<td>书签跳转BookMarks,这个快捷键对于阅读别人的代码很有用</td>
+</tr>
+<tr>
+<td><strong>ctrl +shift + c</strong></td>
+<td>复制完整文件路径</td>
+</tr>
+<tr>
+<td><strong>ctrl +shift + v</strong></td>
+<td>将你最近复制的内容都放在剪切板上, 因此你可以做批量复制</td>
+</tr>
+</tbody></table>
+<h3 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ctrl+Q</td>
+<td>View | Quick Documentation   视图 查看代码文档</td>
+</tr>
+<tr>
+<td>Ctrl+P</td>
+<td>View | Parameter Info   视图 参数信息</td>
+</tr>
+<tr>
+<td>Ctrl+B</td>
+<td>Navigate | Declaration   导航 查看变量的声明，再次点击可以查看变量的调用</td>
+</tr>
+</tbody></table>
+<h3 id="自动补全"><a href="#自动补全" class="headerlink" title="自动补全"></a>自动补全</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Alt+J</td>
+<td>提示所有智能补全代码</td>
+</tr>
+<tr>
+<td>sout</td>
+<td>system.out</td>
+</tr>
+<tr>
+<td>itar</td>
+<td>for循环</td>
+</tr>
+<tr>
+<td>psvm</td>
+<td>main方法补全</td>
+</tr>
+</tbody></table>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/开发工具设置/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:39:09.300Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/12/开发工具设置/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/Intelij IDEA 学习/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:39:09.300Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/communityProject/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:39:00.180Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/12/Intelij IDEA 学习/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/power_system_manager/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:39:00.180Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/小知识点行业名词术语/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:38:51.621Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+        
+        
+    </div>
+</aside>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/Win命令+快捷键/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:38:51.620Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/LINUX学习快捷键+命令/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:38:51.619Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/SpringBoot Study/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:37:21.023Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/SpringBoot Study2/" class="archive-article-date">
-  	<time datetime="2019-09-12T08:37:21.022Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -377,8 +519,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
