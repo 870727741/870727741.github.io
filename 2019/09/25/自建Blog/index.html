@@ -21,7 +21,7 @@
 <meta property="og:image" content="https://870727741.github.io/2019/09/25/自建Blog/1565084247504.png">
 <meta property="og:image" content="https://870727741.github.io/2019/09/25/自建Blog/1565084789098.png">
 <meta property="og:image" content="https://870727741.github.io/2019/09/25/自建Blog/1565144387885.png">
-<meta property="og:updated_time" content="2019-09-25T07:38:15.765Z">
+<meta property="og:updated_time" content="2019-09-25T08:40:02.016Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="自建Blog">
 <meta name="twitter:description" content="[TOC] hexo 博客框架 自建静态博客   CodeSheep参考视频   官方文档">
@@ -251,6 +251,39 @@
 <h2 id="图片路径生成错误原因"><a href="#图片路径生成错误原因" class="headerlink" title="图片路径生成错误原因"></a>图片路径生成错误原因</h2><p><a href="https://blog.csdn.net/xjm850552586/article/details/84101345" target="_blank" rel="noopener">参考文章：hexo引用本地图片无法显示</a></p>
 <p><a href="https://segmentfault.com/q/1010000019625231" target="_blank" rel="noopener">参考问题</a></p>
 <p>应该是hexo-asset-image这个插件的bug,hexo版本3.0以上获取网站url的方式与3.0以下有些不同，照着文章修改hexo.js的index.js就行，或者直接卸载hexo-asset-image，选择使用hexo  3.0方式的标签插件应该也可以</p>
+<h2 id="githu评论功能"><a href="#githu评论功能" class="headerlink" title="githu评论功能"></a>githu评论功能</h2><ul>
+<li>github授权认证</li>
+</ul>
+<p>![1569399678950](C:\Users\Monica J\AppData\Roaming\Typora\typora-user-images\1569399678950.png)</p>
+<p>![1569399726184](C:\Users\Monica J\AppData\Roaming\Typora\typora-user-images\1569399726184.png)</p>
+<p>![1569399753749](C:\Users\Monica J\AppData\Roaming\Typora\typora-user-images\1569399753749.png)</p>
+<p>![1569399803469](C:\Users\Monica J\AppData\Roaming\Typora\typora-user-images\1569399803469.png)</p>
+<ul>
+<li>填写完毕后点击<strong>Register application</strong>  跳转到另外一个界面，这里可以得到一个<br><strong>Client ID</strong>和<strong>Client Secret</strong></li>
+</ul>
+<p>![1569399880060](C:\Users\Monica J\AppData\Roaming\Typora\typora-user-images\1569399880060.png)</p>
+<ul>
+<li><p>修改_config.yml   themes\yilia_config.yml</p>
+<p>![1569400094600](C:\Users\Monica J\AppData\Roaming\Typora\typora-user-images\1569400094600.png)</p>
+</li>
+</ul>
+<h3 id="解决评论功能遇到的-object-ProgressEvent"><a href="#解决评论功能遇到的-object-ProgressEvent" class="headerlink" title="解决评论功能遇到的 [object ProgressEvent]"></a>解决评论功能遇到的 [object ProgressEvent]</h3><ul>
+<li><p>博客根目录下安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i --save gitment</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改 node_modules\gitment\dist\gitment.js</p>
+<p><em>参考<a href="https://github.com/imsun/gitment/issues/102" target="_blank" rel="noopener">https://github.com/imsun/gitment/issues/102</a></em></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">_utils.http.post(<span class="string">'https://gh-oauth.imsun.net'</span>, &#123;</span><br><span class="line">   code: code,</span><br><span class="line">   client_id: client_id,</span><br><span class="line">   client_secret: client_secret</span><br><span class="line"> &#125;, <span class="string">''</span>).then(<span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">   _this.accessToken = data.access_token;</span><br><span class="line">   _this.update();</span><br><span class="line"> &#125;).catch(<span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">   _this.state.user.isLoggingIn = <span class="literal">false</span>;</span><br><span class="line">   alert(e);</span><br><span class="line"> &#125;);</span><br></pre></td></tr></table></figure>
+
+<p>请求了一个服务接口，由于这个服务接口是作者自己搭建的，已经停止了。<br> 这里可以直接改为请求 github 认证的接口<br> _utils.http.post(‘<a href="https://github.com/login/oauth/access_token&#39;" target="_blank" rel="noopener">https://github.com/login/oauth/access_token&#39;</a>, {…}</p>
+</li>
+<li><p>修改  themes\yilia\layout_partial\post\gitment.ejs</p>
+<p>将以下</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"//imsun.github.io/gitment/style/default.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"//imsun.github.io/gitment/dist/gitment.browser.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>修改为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css"</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
 
       
 
@@ -394,7 +427,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-博客框架-自建静态博客"><span class="toc-number">1.</span> <span class="toc-text">hexo 博客框架 自建静态博客</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#环境准备"><span class="toc-number">1.1.</span> <span class="toc-text">环境准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建启动部署博客"><span class="toc-number">1.2.</span> <span class="toc-text">搭建启动部署博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更换blog主题"><span class="toc-number">1.3.</span> <span class="toc-text">更换blog主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结注意事项"><span class="toc-number">1.4.</span> <span class="toc-text">总结注意事项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客迁移到另一台电脑"><span class="toc-number">1.5.</span> <span class="toc-text">博客迁移到另一台电脑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图片路径生成错误原因"><span class="toc-number">1.6.</span> <span class="toc-text">图片路径生成错误原因</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-博客框架-自建静态博客"><span class="toc-number">1.</span> <span class="toc-text">hexo 博客框架 自建静态博客</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#环境准备"><span class="toc-number">1.1.</span> <span class="toc-text">环境准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建启动部署博客"><span class="toc-number">1.2.</span> <span class="toc-text">搭建启动部署博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更换blog主题"><span class="toc-number">1.3.</span> <span class="toc-text">更换blog主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结注意事项"><span class="toc-number">1.4.</span> <span class="toc-text">总结注意事项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客迁移到另一台电脑"><span class="toc-number">1.5.</span> <span class="toc-text">博客迁移到另一台电脑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图片路径生成错误原因"><span class="toc-number">1.6.</span> <span class="toc-text">图片路径生成错误原因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#githu评论功能"><span class="toc-number">1.7.</span> <span class="toc-text">githu评论功能</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#解决评论功能遇到的-object-ProgressEvent"><span class="toc-number">1.7.1.</span> <span class="toc-text">解决评论功能遇到的 [object ProgressEvent]</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
