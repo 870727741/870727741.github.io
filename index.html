@@ -175,38 +175,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="给项目生成接口文档——API-DOC"><a href="#给项目生成接口文档——API-DOC" class="headerlink" title="给项目生成接口文档——API DOC"></a>给项目生成接口文档——API DOC</h2><h3 id="当前项目API访问"><a href="#当前项目API访问" class="headerlink" title="当前项目API访问"></a>当前项目API访问</h3><p>URL:<a href="http://127.0.0.1:8080/epms/apidoc/index.html" target="_blank" rel="noopener">http://127.0.0.1:8080/epms/apidoc/index.html</a></p>
-<h3 id="安装配置步骤"><a href="#安装配置步骤" class="headerlink" title="安装配置步骤"></a>安装配置步骤</h3><ul>
-<li>首先，我们需要 node.js 的支持。在搭建好 node.js 环境后，通过终端输入 npm 命名进行安装。</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install apidoc -g</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>接着，我们还需要添加 apidoc.json 文件到项目工程的根目录下。</li>
-</ul>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"epms"</span>, </span><br><span class="line">    <span class="attr">"version"</span>: <span class="string">"0.1.0"</span>, </span><br><span class="line">    <span class="attr">"description"</span>: <span class="string">"电子化项目管理系统API文档"</span>, </span><br><span class="line">    <span class="attr">"title"</span>: <span class="string">"epms API DOC"</span>,  </span><br><span class="line">    <span class="attr">"url"</span> : <span class="string">"http://127.0.0.1:8080/epms"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="使用示例"><a href="#使用示例" class="headerlink" title="使用示例"></a>使用示例</h3><ul>
-<li>java Controller</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloController</span></span>&#123;</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@apiVersion</span> 0.0.1</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@api</span> &#123;get&#125; / 欢迎界面</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@apiName</span> hello</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@apiGroup</span> 项目入口的API</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@apiParam</span> &#123;int&#125; id 用户ID</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@apiParam</span> &#123;String&#125; name 用户名关键字</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@apiParam</span> &#123;String&#125; orgName 公司/机构名关键字</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@RequestMapping</span>(value=<span class="string">"/"</span>,method= RequestMethod.GET)</span><br><span class="line">        <span class="function"><span class="keyword">public</span> String <span class="title">index</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">"index"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>生成api文档</li>
-</ul>
-<blockquote>
-<p>–encoding 编码设置 -i输入范围路径 -o api文档输出路径 </p>
-<p>// 典型用法<br>apidoc -i api/ -o doc/api [-c ./] -f “.*.js$”</p>
-<p>-i  表示输入，后面是文件夹路径<br>-o  表示输出，后面是文件夹路径<br>默认会带上 -c，在当前路径下寻找配置文件(apidoc.json)，如果找不到则会在package.json中寻找 “apidoc”: { }<br>-f  为文件过滤，后面是正则表达式，示例为只选着js文件<br>  与-f类似，还有一个 -e 的选项，表示要排除的文件/文件夹，也是使用正则表达式</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">打开终端跳转到项目的文件夹下，执行命令（文件夹路径根据个人项目情况填写）</span><br><span class="line">&gt; apidoc --encoding utf8 -i ../epms/src/  -o ../epms/src/main/resources/static/apidoc/</span><br><span class="line"></span><br><span class="line">apidoc --encoding utf8 -i ../gen-admin/src/main/java/  -o ../gen-admin/src/main/webapp/static/apidoc/</span><br></pre></td></tr></table></figure>
-
-<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><ul>
-<li>@apiGroup 不支持中文，办法是修改它的配置文件（！该文件夹是隐藏文件夹）</li>
-</ul>
-<blockquote>
-<p>C:\Users\Administrator\AppData\Roaming\npm\node_modules\apidoc\node_modules\apidoc-core\lib\workers\api_group.js，注释掉//group = group.replace(/[^\w]/g, ‘_’);<br>注意：这里的“Administrator”是电脑主机名</p>
-</blockquote>
-
+<h3 id="安装配置步骤"><a href="#安装配置步骤" class="headerlink" title="安装配置步骤"></a>安装配置步骤</h3>
+        
+          <a class="article-more-a" href="/2019/09/16/给项目生成接口文档——API DOC/#more">more >></a>
+        
       
 
       
