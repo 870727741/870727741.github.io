@@ -40,7 +40,7 @@
 <meta property="og:image" content="https://870727741.github.io/2020/03/26/Java-FreeMarker模板文档生成/1584880919702.png">
 <meta property="og:image" content="https://870727741.github.io/2020/03/26/Java-FreeMarker模板文档生成/1272401-20190131161413186-1900535373.png">
 <meta property="og:image" content="https://870727741.github.io/2020/03/26/Java-FreeMarker模板文档生成/1272401-20190131153421807-1064751051.png">
-<meta property="og:updated_time" content="2020-03-26T02:26:17.871Z">
+<meta property="og:updated_time" content="2020-03-26T02:47:11.007Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java-FreeMarker模板文档生成">
 <meta name="twitter:description" content="前言前因公司项目电子化项目部的新功能添加了根据施工项目文档模板，用户输入可变变量，生成用户所需文件的功能">
@@ -266,14 +266,12 @@
 <ul>
 <li>替换BASE64编码的图片，添加&lt;#list&gt;&lt;/#list&gt;标签,占位变量==${img_projectManagerCerti}==</li>
 </ul>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">#list</span> <span class="attr">img_projectManagerCertiList</span> <span class="attr">as</span> <span class="attr">img_projectManagerCerti</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">pkg:part</span> <span class="attr">pkg:name</span>=<span class="string">"/word/media/manager$&#123;img_projectManagerCerti_index+1&#125;.png"</span> <span class="attr">pkg:contentType</span>=<span class="string">"image/png"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pkg:binaryData</span>&gt;</span>$&#123;img_projectManagerCerti&#125;<span class="tag">&lt;/<span class="name">pkg:binaryData</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pkg:part</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">#list</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-
 </li>
 </ol>
-<pre><code>图：</code></pre><blockquote>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">#list</span> <span class="attr">img_projectManagerCertiList</span> <span class="attr">as</span> <span class="attr">img_projectManagerCerti</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">pkg:part</span> <span class="attr">pkg:name</span>=<span class="string">"/word/media/manager$&#123;img_projectManagerCerti_index+1&#125;.png"</span> <span class="attr">pkg:contentType</span>=<span class="string">"image/png"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">pkg:binaryData</span>&gt;</span>$&#123;img_projectManagerCerti&#125;<span class="tag">&lt;/<span class="name">pkg:binaryData</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pkg:part</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">#list</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>图：</p>
+<blockquote>
 <p><img src="//870727741.github.io/2020/03/26/Java-FreeMarker模板文档生成/1584880230599.png" alt="1584880230599"></p>
 </blockquote>
 <ul>
@@ -586,6 +584,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">博客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Api doc</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">书签</a>
               </li>
              
@@ -595,14 +601,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">tips</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">博客</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Api doc</a>
               </li>
              
               <li class="article-tag-list-item">
