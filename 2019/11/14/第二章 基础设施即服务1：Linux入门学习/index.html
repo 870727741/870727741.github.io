@@ -6,30 +6,39 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://870727741.github.io">
-  <title>基础设施即服务：Docker容器学习 | M</title>
+  <title>第二章 基础设施即服务1：Linux入门学习 | M</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="目的：部署项目到Docker  Docker 简介 什么是Docker 为什么要使用Docker   Docker基本概念 Docker 引擎 Docker架构 Docker镜像 Docker容器 Docker仓库   安装Docker Ubuntu安装Docker CentOS安装Docker Raspberry安装Docker macOS安装Docker Windows安装Docker Doc">
+  <meta name="description" content="linux linux简介 与Windows比较 安装Ubuntu Server 远程控制管理 目录结构 linux常用命令-操作文件目录 linux常用命令-系统管理命令 linux常用命令-开关机命令 linux常用命令-压缩命令 linux编辑器 linux软件包管理 linux用户和组管理 linux文件权限管理 linux安装java linux安装Tomcat linux安装MySq">
 <meta name="keywords" content="微服务">
 <meta property="og:type" content="article">
-<meta property="og:title" content="基础设施即服务：Docker容器学习">
-<meta property="og:url" content="https://870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/index.html">
+<meta property="og:title" content="第二章 基础设施即服务1：Linux入门学习">
+<meta property="og:url" content="https://870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/index.html">
 <meta property="og:site_name" content="M">
-<meta property="og:description" content="目的：部署项目到Docker  Docker 简介 什么是Docker 为什么要使用Docker   Docker基本概念 Docker 引擎 Docker架构 Docker镜像 Docker容器 Docker仓库   安装Docker Ubuntu安装Docker CentOS安装Docker Raspberry安装Docker macOS安装Docker Windows安装Docker Doc">
+<meta property="og:description" content="linux linux简介 与Windows比较 安装Ubuntu Server 远程控制管理 目录结构 linux常用命令-操作文件目录 linux常用命令-系统管理命令 linux常用命令-开关机命令 linux常用命令-压缩命令 linux编辑器 linux软件包管理 linux用户和组管理 linux文件权限管理 linux安装java linux安装Tomcat linux安装MySq">
 <meta property="og:locale" content="zh">
-<meta property="og:image" content="https://870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1572441146144.png">
-<meta property="og:image" content="https://870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1572441796976.png">
-<meta property="og:image" content="https://870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1572442678551.png">
-<meta property="og:image" content="https://870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1572442795039.png">
-<meta property="og:image" content="https://870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1573177178172.png">
-<meta property="og:image" content="https://870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1573261294732.png">
-<meta property="og:image" content="https://870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1573261229899.png">
-<meta property="og:image" content="https://870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1573268637616.png">
-<meta property="og:image" content="https://870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1573480831648.png">
-<meta property="og:updated_time" content="2020-05-12T01:01:12.157Z">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1568902136588.png">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1568902161051.png">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1568902216922.png">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1568902343314.png">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1568902385211.png">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1568902401903.png">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1568944702205.png">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1568944764146.png">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1568950394729.png">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1568992067178.png">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1569371529063.png">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1569371625766.png">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1569404584654.png">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1569749290304.png">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1569751365524.png">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1569751341902.png">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1572339034716.png">
+<meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1572343943716.png">
+<meta property="og:updated_time" content="2020-05-12T01:08:46.588Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="基础设施即服务：Docker容器学习">
-<meta name="twitter:description" content="目的：部署项目到Docker  Docker 简介 什么是Docker 为什么要使用Docker   Docker基本概念 Docker 引擎 Docker架构 Docker镜像 Docker容器 Docker仓库   安装Docker Ubuntu安装Docker CentOS安装Docker Raspberry安装Docker macOS安装Docker Windows安装Docker Doc">
-<meta name="twitter:image" content="https://870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1572441146144.png">
+<meta name="twitter:title" content="第二章 基础设施即服务1：Linux入门学习">
+<meta name="twitter:description" content="linux linux简介 与Windows比较 安装Ubuntu Server 远程控制管理 目录结构 linux常用命令-操作文件目录 linux常用命令-系统管理命令 linux常用命令-开关机命令 linux常用命令-压缩命令 linux编辑器 linux软件包管理 linux用户和组管理 linux文件权限管理 linux安装java linux安装Tomcat linux安装MySq">
+<meta name="twitter:image" content="https://870727741.github.io/2019/11/14/第二章%20基础设施即服务1：Linux入门学习/1568902136588.png">
   
     <link rel="alternative" href="/atom.xml" title="M" type="application/atom+xml">
   
@@ -159,670 +168,1035 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-基础设施即服务：Docker容器学习" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-第二章 基础设施即服务1：Linux入门学习" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      基础设施即服务：Docker容器学习
+      第二章 基础设施即服务1：Linux入门学习
     </h1>
   
 
         
-        <a href="/2019/11/14/基础设施即服务：Docker容器学习/" class="archive-article-date">
-  	<time datetime="2019-11-14T01:29:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-14</time>
+        <a href="/2019/11/14/第二章 基础设施即服务1：Linux入门学习/" class="archive-article-date">
+  	<time datetime="2019-11-14T01:28:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>目的：部署项目到Docker</strong></p>
-<ul>
-<li>Docker 简介<ul>
-<li>什么是Docker</li>
-<li>为什么要使用Docker</li>
-</ul>
-</li>
-<li>Docker基本概念<ul>
-<li>Docker 引擎</li>
-<li>Docker架构</li>
-<li>Docker镜像</li>
-<li>Docker容器</li>
-<li>Docker仓库</li>
-</ul>
-</li>
-<li>安装Docker<ul>
-<li>Ubuntu安装Docker</li>
-<li>CentOS安装Docker</li>
-<li>Raspberry安装Docker</li>
-<li>macOS安装Docker</li>
-<li>Windows安装Docker</li>
-<li>Docker镜像加速器</li>
-</ul>
-</li>
-<li>使用Docker镜像<ul>
-<li>获取镜像</li>
-<li>列出镜像</li>
-<li>删除本地镜像</li>
-<li>利用Commit理解镜像构成</li>
-<li>使用Dockerfile定制镜像</li>
-<li>Dockerfile指令详解</li>
+        <ul>
+<li>linux<ul>
+<li>linux简介</li>
+<li>与Windows比较</li>
+<li>安装Ubuntu Server</li>
+<li>远程控制管理</li>
+<li>目录结构</li>
+<li>linux常用命令-操作文件目录</li>
+<li>linux常用命令-系统管理命令</li>
+<li>linux常用命令-开关机命令</li>
+<li>linux常用命令-压缩命令</li>
+<li>linux编辑器</li>
+<li>linux软件包管理</li>
+<li>linux用户和组管理</li>
+<li>linux文件权限管理</li>
+<li>linux安装java</li>
+<li>linux安装Tomcat</li>
+<li>linux安装MySql<a id="more"></a>
+<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1></li>
 </ul>
 </li>
 </ul>
-<a id="more"></a>
-
-<h1 id="什么是Docker——新型的虚拟化技术"><a href="#什么是Docker——新型的虚拟化技术" class="headerlink" title="什么是Docker——新型的虚拟化技术"></a>什么是Docker——新型的虚拟化技术</h1><p><em>真正实现一次编译，到处运行~</em><br><em>想做微服务，分布式开发的所有人，不仅是JAVA，都要掌握Docker</em></p>
+<p><a href="http://c.biancheng.net/linux_tutorial/file_content/" target="_blank" rel="noopener">http://c.biancheng.net/linux_tutorial/file_content/</a></p>
+<h2 id="linux简介"><a href="#linux简介" class="headerlink" title="linux简介"></a>linux简介</h2><p>linux代表linux内核<br>基于linux内核的操作系统安装Ubuntu CE（社区产物，1个月一个版本，6个月一个稳定版 LTS），centos（有公司背景，稳定，更新缓慢）,（适用于互联网企业），redhat（政府企业常用），Debian,Fedora,SuSE,OpenSuSE….</p>
+<hr>
+<h2 id="linux与Windows比较"><a href="#linux与Windows比较" class="headerlink" title="linux与Windows比较"></a>linux与Windows比较</h2><ul>
+<li>Linux Server Ubuntu Server 默认不安装桌面，命令行工具</li>
+<li>Windows Server 可选是否安装桌面 是，PowerShow</li>
+<li>界面方面，使用，驱动程序，学习，软件<h2 id="安装-Ubuntu-Server"><a href="#安装-Ubuntu-Server" class="headerlink" title="安装 Ubuntu Server"></a>安装 Ubuntu Server</h2></li>
+</ul>
+<ol>
+<li>安装VMware</li>
+<li>安装Ubuntu[^1] Server(创建虚拟机是必须稍后手动安装操作系统)</li>
+</ol>
 <blockquote>
-<p>Go语言开发，基于Linux内核的cgroup，namespaces，以及AUFS类的Union FS等技术，对程序进行封装隔离，属于<strong>操作系统层面的虚拟化技术</strong>。由于隔离的进程独立于宿主和其他的隔离进程，因此也称其为容器，最初实现层基于LXC<br><strong>里程碑版本：</strong>1.11–&gt;1.12<br>VM :硬件 server–&gt;虚拟化操作系统(Hpervisor)–&gt;操作系统(Linux,Windows..)</p>
+<p>创建虚拟机</p>
 </blockquote>
-<h3 id="为什么使用Docker-相关名词定义"><a href="#为什么使用Docker-相关名词定义" class="headerlink" title="为什么使用Docker,相关名词定义"></a>为什么使用Docker,相关名词定义</h3><ul>
-<li><p>更高效的利用系统资源</p>
-</li>
-<li><p>更快启动资源</p>
-</li>
-<li><p>一致的运行环境</p>
-</li>
-<li><p>持续交付和部署</p>
-</li>
-<li><p>更轻松的迁移</p>
-</li>
-<li><p>更轻松的维护和扩展</p>
-<p><img src="//870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1572441146144.png" alt="1572441146144"></p>
-<h2 id="Docker引擎"><a href="#Docker引擎" class="headerlink" title="Docker引擎"></a>Docker引擎</h2></li>
-</ul>
-<p><em>是一个包含以下主要组件的 客户端 服务器 应用程序</em></p>
-<ul>
-<li><p>一种服务器</p>
-</li>
-<li><p>REST API用于指定程序可以用来与守护进程通讯的接口</p>
-</li>
-<li><p>一个有命令行（CLI）工具的客户端</p>
-</li>
-</ul>
-<p><img src="//870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1572441796976.png" alt="1572441796976"><br>*<em>管理-容器，镜像，网络，数据  *</em></p>
-<h2 id="Docker架构"><a href="#Docker架构" class="headerlink" title="Docker架构"></a>Docker架构</h2><p>Docker使用C/S架构模式，使用远程API来管理和创建Docker容器。<br>Docker容器通过Docker镜像来创建<br>容器与镜像的关系类似于面向对象编程中的对象与类</p>
-<p><img src="//870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1572442678551.png" alt="1572442678551"></p>
-<p><img src="//870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1572442795039.png" alt="1572442795039"></p>
-<h2 id="Docker仓库"><a href="#Docker仓库" class="headerlink" title="Docker仓库"></a>Docker仓库</h2><h3 id="公有仓库-Docker-Registry"><a href="#公有仓库-Docker-Registry" class="headerlink" title="公有仓库 Docker Registry"></a>公有仓库 Docker Registry</h3><p>官方的<a href="https://hub.docker.com/" target="_blank" rel="noopener">Docker Hub</a> ,CoreOS的Quay.io<br>国内访问这些服务比较慢，国内一些云服务商提供了针对DokerHub的镜像服务（Registry Mirror ），这些镜像服务被称为加速器，常见的有阿里云加速器，DaoCloud加速器等，使用加速器会直接从国内的网址下载Docker Hub镜像，速度会快很多<br>其他国内Docker加速器：时速云镜像仓库，DaoCloud镜像市场，阿里云镜像库</p>
-<h3 id="私有仓库"><a href="#私有仓库" class="headerlink" title="私有仓库"></a>私有仓库</h3><p>商业化版本 Docker Trusted Registry,VMWare Harbor,Sonatype Nexus </p>
-<h1 id="Ubuntu安装Docker"><a href="#Ubuntu安装Docker" class="headerlink" title="Ubuntu安装Docker"></a>Ubuntu安装Docker</h1><p>复制虚拟机系统镜像，创建Docker版虚拟机镜像（Ubuntu Server 64X Docker）<br><em>必须安装 64位 LTS（稳定发布版），Ubuntu CE社区版</em>（免费版）</p>
-<h2 id="安装Docker-CE（用下一个自动化脚本安装方式）"><a href="#安装Docker-CE（用下一个自动化脚本安装方式）" class="headerlink" title="安装Docker CE（用下一个自动化脚本安装方式）"></a>安装Docker CE（用下一个自动化脚本安装方式）</h2><p>更新APT软件包缓存，并安装Docker-ce</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install docker-ce</span><br></pre></td></tr></table></figure>
-
-<h2 id="使脚本自动安装"><a href="#使脚本自动安装" class="headerlink" title="使脚本自动安装"></a>使脚本自动安装</h2><p>在测试或开发环境中方，Docker官方为了简化安装流程，提供了一套便捷的安装脚本，Ubuntu系统上可以使用这套脚本安装</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#curl可以模拟各种请求协议向服务端发送请求，是一个很好用的接口测试命令行工具</span></span><br><span class="line"><span class="comment">#-o（小写的 o）：结果会被保存到命令行中提供的文件名docker</span></span><br><span class="line">curl  -fsSL get.docker.com -o get-docker.sh</span><br><span class="line"><span class="comment">##设置数据源</span></span><br><span class="line">sh get-docker.sh --mirror Aliyun</span><br><span class="line"><span class="comment">##检查安装结果</span></span><br><span class="line">docker version</span><br></pre></td></tr></table></figure>
-
-<p>执行这个命令后，脚本就会自动的将一切准备工作做好吧Docker CE的Edge版本安装在系统中。</p>
-<h2 id="启动Docker-CE"><a href="#启动Docker-CE" class="headerlink" title="启动Docker CE"></a>启动Docker CE</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl <span class="built_in">enable</span> docker</span><br><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
-
-<p>Ubuntu <strong>14.04</strong>请使用以下命令启动</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service docker start</span><br></pre></td></tr></table></figure>
-
-<h1 id="配置Docker镜像加速器"><a href="#配置Docker镜像加速器" class="headerlink" title="配置Docker镜像加速器"></a>配置Docker镜像加速器</h1><p>常见国内加速器</p>
-<ul>
-<li>Docker官方提供的中国 registry mirror</li>
-<li>阿里云加速器</li>
-<li><a href="https://www.daocloud.io/" target="_blank" rel="noopener">Dao加速器</a><h2 id="Ubuntu-16-04-Debian-8-CentOS-7"><a href="#Ubuntu-16-04-Debian-8-CentOS-7" class="headerlink" title="Ubuntu 16.04+,Debian 8+,CentOS 7"></a>Ubuntu 16.04+,Debian 8+,CentOS 7</h2>对于使用systemd的系统，请在<strong>/etc/docker/daemon.json</strong>写入如下内容（如果文件不存在请新建改文件）<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">        <span class="attr">"registry-mirrors"</span>: [</span><br><span class="line">                <span class="string">"https://registry.docker-cn.com"</span></span><br><span class="line">        ],</span><br><span class="line">        //docker根目录设置，--graph参数指定存储位置，docker安装的默认根目录/var/lib/docker不允许存放数据空间小</span><br><span class="line">        "graph": "/opt/docker/data"</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<p><strong>注意，一定要保证改文件符合json规范。否则Docker将不能启动。</strong><br>之后重新启动服务</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure>
-
-<h2 id="测试docker镜像加速器"><a href="#测试docker镜像加速器" class="headerlink" title="测试docker镜像加速器"></a>测试docker镜像加速器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">$ docker info</span><br><span class="line">&gt;</span><br><span class="line">...</span><br><span class="line">Docker Root Dir: /opt/docker/data</span><br><span class="line">...</span><br><span class="line"> Registry Mirrors:</span><br><span class="line">  https://registry.docker-cn.com/</span><br><span class="line">...</span><br><span class="line"><span class="comment">##下载tomcat镜像</span></span><br><span class="line"><span class="comment">##下载默认版本</span></span><br><span class="line">$ docker pull tomcat</span><br><span class="line"><span class="comment">##下载指定版本的镜像，现在官方（docker hub）上寻找需要的镜像版本https://hub.docker.com/search?q=tomcat&amp;type=image</span></span><br><span class="line">$ docker pull tomcat:9-jre8</span><br><span class="line"><span class="comment">##运行tomcat,-P 随机端口，-p指定端口</span></span><br><span class="line"><span class="comment">##（宿主机）设置了一个8080端口，映射到tomcat的8080端口</span></span><br><span class="line">$ docker run -p 8080:8080 tomcat</span><br></pre></td></tr></table></figure>
-
-<p>浏览器访问：<a href="http://ip:8080/" target="_blank" rel="noopener">http://ip:8080/</a></p>
-<h1 id="Docker镜像-和-容器"><a href="#Docker镜像-和-容器" class="headerlink" title="Docker镜像  和 容器"></a>Docker镜像  和 容器</h1><p>镜像是Docker的三大组件之一<br>Docker运行容器前需要本地存在对相应的镜像，如果本地不存在该镜像，Docker会从镜像仓库下载该镜像</p>
-<h2 id="镜像命令"><a href="#镜像命令" class="headerlink" title="镜像命令"></a>镜像命令</h2><p><img src="//870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1573177178172.png" alt="1573177178172"></p>
-<h2 id="从仓库获取镜像"><a href="#从仓库获取镜像" class="headerlink" title="从仓库获取镜像"></a>从仓库获取镜像</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ docker pull [选项] [Docker Registry 地址[:端口号]/]仓库名[:标签] </span><br><span class="line">$ docker pull --<span class="built_in">help</span></span><br><span class="line"><span class="comment">## 获取Ubuntu镜像</span></span><br><span class="line">$ docker pull ibuntu:版本号</span><br></pre></td></tr></table></figure>
-
-<h2 id="运行容器"><a href="#运行容器" class="headerlink" title="运行容器"></a>运行容器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##-it是两个参数，-i是交互式操作，-t是终端，进入bash执行一些命令，并返回结果，需要交互式终端</span></span><br><span class="line"><span class="comment">##--rm 容器退出后将其删除，测试用</span></span><br><span class="line"><span class="comment">##ubuntu:版本号 \ 使用Ubuntu为镜像起启动容器</span></span><br><span class="line"><span class="comment">##bash放在镜像名后镜像的命令，交互式shell</span></span><br><span class="line"><span class="comment">##通过exit退出容器，快捷键 CTRL+d</span></span><br><span class="line">root@unbuntu:~<span class="comment"># docker run -it  --rm\</span></span><br><span class="line">&gt; ubuntu:版本号 \</span><br><span class="line">&gt; bash</span><br></pre></td></tr></table></figure>
-
-<h2 id="管理本机上的镜像和容器"><a href="#管理本机上的镜像和容器" class="headerlink" title="管理本机上的镜像和容器"></a>管理本机上的镜像和容器</h2><ul>
-<li><p><strong>查看镜像列表信息</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ docker image ls</span><br><span class="line">$ docker images</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>虚悬镜像</strong><br>none:旧仓库名被取消产生的<br>docker pull/build都能产生</p>
-</li>
-<li><p><strong>删除镜像</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker rmi 镜像名字（多个用空格隔开）</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>查看容器列表信息</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker ps [-a]</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>删除容器</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker rm 容器id</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>进入已存在的容器对象</strong><br><font color="red">以交互的方式进入容器，并启动容器</font></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ docker ps</span><br><span class="line">$ docker <span class="built_in">exec</span> -it 容器名字 bash</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>利用commit理解镜像构成</strong></p>
-<h2 id="定制镜像–Dockerfile"><a href="#定制镜像–Dockerfile" class="headerlink" title="定制镜像–Dockerfile"></a><strong>定制镜像–Dockerfile</strong></h2><h3 id="一-创建Dockerfile文件"><a href="#一-创建Dockerfile文件" class="headerlink" title="一 创建Dockerfile文件"></a>一 创建Dockerfile文件</h3><p>DockerFile是一个文本文件，包含了一条条的指令，每一条指令构建一层，因此每一条指令的内容，就是描述该层如何构建。<br>使用DockerFile来定制<font color="red">Nginx</font>镜像<br>在一个空白的目录中，新建一个文本文件，并命名为DockerFile：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir mynginx</span><br><span class="line">$ <span class="built_in">cd</span> mynginx</span><br><span class="line">$ touch DockerFile</span><br><span class="line"><span class="comment">#自己练习</span></span><br><span class="line">$ mkdir docker/mytomcat/epms</span><br><span class="line">$ touch Dockerfile</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="编写DockerFile脚本"><a href="#编写DockerFile脚本" class="headerlink" title="编写DockerFile脚本"></a>编写DockerFile脚本</h3><p>其内容为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FROM nginx</span><br><span class="line">RUN echo &apos;&lt;h1&gt;hello,Docker!&lt;/h1&gt;&apos; /usr/share/nginx/html/index.html</span><br></pre></td></tr></table></figure>
-
-<p>涉及到命令<font color="red">FROM</font>和<font color="red">RUN</font><br>FROM指定基础镜像<br>RUN 命令行命令</p>
-<ul>
-<li>shell格式 RUN &lt;命令&gt; </li>
-<li>exec格式：RUN [“可执行文件”,”参数1”,”参数2”]<h3 id="构建镜像"><a href="#构建镜像" class="headerlink" title="构建镜像"></a>构建镜像</h3></li>
-<li>在Dokerfile文件目录执行以下：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##名字和标签，不给标签默认为latest,".":1 Dokerfile目录 2 构建镜像上下文（Context）</span></span><br><span class="line">$ docker build -t nginx[:v1] .</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<p><font color="red">docker build</font>工作原理</p>
+<p><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1568902136588.png" alt="1568902136588"></p>
+<p><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1568902161051.png" alt="1568902161051"></p>
 <blockquote>
-<p>Docker在运行时分为Docker引擎（也就是服务端守护进程）和客户端工具。引擎提供了一组REST API，被称为Docker Remote API，而如<font color="red">docker</font>命令这样的客户端工具，则是通过这组API和Docker引擎交互，从而完成各种功能吗，表面上我们是在docker本机执行各种font color=red&gt;docker功能，实际上一切都是使用远程调用的形式在服务器（Docker引擎）完成。C/S设计，远程操作服务器Docker引擎。<br>构建镜像过程：<br>构建是，用户会指定镜像的上下文路径，<font color="red">docker build</font>得知这个命令后，会将这个路径下的所有内容打包，然后上传给Docker引擎，Docker引擎收到这个上下文后，展开就会获得构建镜像所需要的一切文件。</p>
+<p>必须为64位</p>
 </blockquote>
-<h4 id="示例：定制Tomcat镜像"><a href="#示例：定制Tomcat镜像" class="headerlink" title="示例：定制Tomcat镜像"></a>示例：定制Tomcat镜像</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##交互式启动 一个tomcat镜像 命令行，了解镜像目录结构，其所放置位置</span></span><br><span class="line">root@ubuntuserver:~<span class="comment"># docker images</span></span><br><span class="line">REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE</span><br><span class="line">tomcat              latest              882487b8be1d        2 weeks ago         507MB</span><br><span class="line">root@ubuntuserver:~<span class="comment"># docker run -it --rm tomcat bash</span></span><br><span class="line">root@10d3619ade0e:/usr/<span class="built_in">local</span>/tomcat<span class="comment"># cd webapps/</span></span><br><span class="line">root@10d3619ade0e:/usr/<span class="built_in">local</span>/tomcat/webapps<span class="comment"># ls</span></span><br><span class="line">ROOT  docs  examples  host-manager  manager</span><br><span class="line">root@ubuntuserver:~<span class="comment"># docker ps -a</span></span><br><span class="line"><span class="comment">##根据查看的目录结构创建文件夹</span></span><br><span class="line">root@ubuntuserver:~<span class="comment"># cd /usr/local</span></span><br><span class="line">root@ubuntuserver:/usr/<span class="built_in">local</span><span class="comment"># mkdir docker</span></span><br><span class="line">root@ubuntuserver:/usr/<span class="built_in">local</span><span class="comment"># cd docker/</span></span><br><span class="line">root@ubuntuserver:/usr/<span class="built_in">local</span>/docker<span class="comment"># mkdir mytomcat</span></span><br><span class="line">root@ubuntuserver:/usr/<span class="built_in">local</span>/docker<span class="comment"># cd mytomcat/</span></span><br><span class="line">root@ubuntuserver:/usr/<span class="built_in">local</span>/docker/mytomcat<span class="comment"># vi Dockerfile</span></span><br><span class="line"><span class="comment">##写入以下内容</span></span><br><span class="line">FROM tomcat</span><br><span class="line">WORKDIR  /usr/<span class="built_in">local</span>/tomcat/webapps/ROOT</span><br><span class="line">RUN rm -fr *</span><br><span class="line">RUN <span class="built_in">echo</span> <span class="string">"&lt;h1&gt;hello,Docker Tomcat!&lt;h1&gt;"</span> &gt; /usr/<span class="built_in">local</span>/tomcat/webapps/ROOT/index.html</span><br><span class="line"><span class="comment">##构建镜像</span></span><br><span class="line">docker build -t mytomcat .</span><br><span class="line"><span class="comment">##删除虚悬镜像</span></span><br><span class="line">docker image prune</span><br><span class="line"><span class="comment">##运行镜像</span></span><br><span class="line"><span class="comment">##运行tomcat,-P 随机端口，-p指定端口</span></span><br><span class="line"><span class="comment">##（宿主机）设置了一个8080端口，映射到tomcat的8080端口</span></span><br><span class="line">docker run -p 8080:8080 mytomcat</span><br><span class="line"><span class="comment">##访问localhost:8080</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="Dockerfile文件指令详解"><a href="#Dockerfile文件指令详解" class="headerlink" title="Dockerfile文件指令详解"></a>Dockerfile文件指令详解</h3><table>
+<p><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1568902216922.png" alt="1568902216922"></p>
+<p><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1568902343314.png" alt="1568902343314"></p>
+<p><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1568902385211.png" alt="1568902385211"></p>
+<p><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1568902401903.png" alt="1568902401903"></p>
+<p>其他默认</p>
+<p><strong>LVM：磁盘扩容技术！</strong></p>
+<p>!! entires set up <strong>LVM</strong></p>
+<p>NO auto Update</p>
+<p>OpenSSH Server</p>
+<ul>
+<li>ifconfig 查看网络信息 ens33 网卡信息</li>
+<li>iwconfig</li>
+<li>iconfig</li>
+</ul>
+<p>[^1]: 必须安装64位 LTS（稳定发布版），Ubuntu CE社区版</p>
+<h2 id="Linux-远程控制"><a href="#Linux-远程控制" class="headerlink" title="Linux 远程控制"></a>Linux 远程控制</h2><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><ol>
+<li>服务器放在机房</li>
+<li>服务器需要被托管 </li>
+</ol>
+<ul>
+<li>SSH叫做Secure Shell ，通过SSH，可以将数据压缩加密，预防攻击加快传输速度</li>
+<li>连接都有客户端和服务端。<strong>服务端：</strong>创建监听端口。<strong>客户端：</strong>请求服务端的监听端口。</li>
+<li>基于口令的安全验证：知道服务器的账号密码可以远程登录，口令和数据在远程传输过程中都会被加密，</li>
+<li>基于密钥的安全验证：此时需要创建一对密钥，把公有密钥放到远程服务器上自己的宿主目录中，而私有密钥则由自己保存。<h3 id="XShell-服务器远程连接工具"><a href="#XShell-服务器远程连接工具" class="headerlink" title="XShell 服务器远程连接工具"></a>XShell 服务器远程连接工具</h3><blockquote>
+<p>远程连接服务器，需要知道服务器的IP，端口，用户名，密码<br><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1568944702205.png" alt="1568944702205"></p>
+<p><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1568944764146.png" alt="1568944764146"></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="XHttp-服务器远程软件的交互"><a href="#XHttp-服务器远程软件的交互" class="headerlink" title="XHttp 服务器远程软件的交互"></a>XHttp 服务器远程软件的交互</h3><h2 id="linux的目录结构"><a href="#linux的目录结构" class="headerlink" title="linux的目录结构"></a>linux的目录结构</h2><p><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1568950394729.png" alt="1568950394729"></p>
+<table>
 <thead>
 <tr>
-<th>指令</th>
+<th>目录</th>
 <th>说明</th>
-<th>格式</th>
-<th>示例</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>COPY</td>
-<td>复制文件，从构建上下文中源文件的路径，到新的一层的镜像内的目标路径位置</td>
-<td>COPY 原本路径 目标路径      （源路径可以是多个，甚至可以使用通配符，其通配符要满足GO的filepath.Match规则）</td>
-<td>COPY package.json /usr/src/app，COPY hom* /mydir/,COPY hom？.txt /mydir/</td>
+<td>bin</td>
+<td>存放二进制可执行文件（ls,cat,mkdir等)</td>
 </tr>
 <tr>
-<td>ADD</td>
-<td>复制文件，若源文件为tar包，会自动解压缩</td>
-<td>COPY 原本路径 目标路径（源路径可以是一个URL）</td>
-<td></td>
+<td>boot</td>
+<td>用于存放用于系统启动用到的文件</td>
 </tr>
 <tr>
-<td>CMD</td>
-<td>容器启动命令</td>
-<td>shell:CMD &lt;命令&gt;,exec: CMD [“可执行文件”，”参数1“，”参数2“…]</td>
-<td></td>
+<td>dev</td>
+<td>用于存放设备文件</td>
 </tr>
 <tr>
-<td>ENTRYPOINT</td>
-<td>入口点</td>
-<td></td>
-<td></td>
+<td><strong>etc</strong></td>
+<td>存放<strong>系统</strong>配置文件</td>
 </tr>
 <tr>
-<td>ENV</td>
-<td>配置环境变量（个人理解，就是设置了一个全局静态变量）</td>
-<td>ENV <key> <value>,ENV <key1>=<value1>  <key2>=<value2>…</value2></key2></value1></key1></value></key></td>
-<td>EVN CATALINA_HOME /usr/local/tomcat,EVN PATH $CATALINA_HOME/bin:$PATH</td>
+<td><strong>home</strong></td>
+<td>存放所有用户的根目录<font color="red">【可操作】</font></td>
 </tr>
 <tr>
-<td>VOLUME</td>
-<td>定义匿名卷</td>
-<td></td>
-<td></td>
+<td>lib</td>
+<td>存放根文件系统中程序运行所需要的共享库及内核模块</td>
 </tr>
 <tr>
-<td>EXPOSE</td>
-<td>暴漏端口号</td>
-<td>EXPOSE &lt;端口号1&gt; [&lt;端口号2&gt; …]</td>
-<td>EXPOSE 8080（来自官方Tomcat镜像）</td>
+<td></td>
+<td>系统管理员安装临时文件系统的安装点</td>
 </tr>
 <tr>
-<td>WORKDIR</td>
-<td>指定活动工作路径</td>
-<td></td>
-<td></td>
+<td>opt</td>
+<td>额外安装的可选应用程序包所放置的位置</td>
 </tr>
 <tr>
-<td>RUN</td>
-<td></td>
-<td></td>
-<td></td>
+<td>proc</td>
+<td>虚拟文件系统，存放当前内存的映射</td>
 </tr>
 <tr>
-<td>FROM</td>
-<td>设置基础镜像源</td>
-<td>From 官方镜像名称</td>
-<td>FROM tomcat</td>
+<td>root</td>
+<td>超级用户目录</td>
+</tr>
+<tr>
+<td>sbin</td>
+<td>存放二进制可执行文件，只有root才能访问</td>
+</tr>
+<tr>
+<td>tmp</td>
+<td>用于存放各种临时文件</td>
+</tr>
+<tr>
+<td><strong>usr</strong></td>
+<td>用于存放系统应用程序，<font color="red"><strong>比较重要/常用的目录/usr/local</strong> 【可操作】</font>本地管理员软件安装目录</td>
+</tr>
+<tr>
+<td><strong>var</strong></td>
+<td>用于存放运行时需要改变<strong>数据</strong>的文件</td>
 </tr>
 </tbody></table>
-<h3 id="部署项目到Docker容器"><a href="#部署项目到Docker容器" class="headerlink" title="部署项目到Docker容器"></a>部署项目到Docker容器</h3><ol>
-<li><p>拷贝项目.zip (war)-&gt;tomcat/webappps/ROOT</p>
-<p>Dockerfile文档编写</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">FROM tomcat</span><br><span class="line">WORKDIR /usr/<span class="built_in">local</span>/tomcat/webapps/ROOT</span><br><span class="line">RUN rm -fr *</span><br><span class="line">COPY 项目.zip .</span><br><span class="line">RUN unzip 项目.zip</span><br><span class="line">RUN rm -fr 项目.zip</span><br><span class="line">WORKDIR /usr/<span class="built_in">local</span>/tomcat</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改端口号为 80</p>
-<p><img src="//870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1573261294732.png" alt="1573261294732"></p>
-<p><img src="//870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1573261229899.png" alt="1573261229899"></p>
+<h2 id="Linux命令"><a href="#Linux命令" class="headerlink" title="Linux命令"></a>Linux命令</h2><p><a href="https://www.cnblogs.com/songjn/p/9015870.html" target="_blank" rel="noopener">linux常用命令总结</a></p>
+<p><em>**多行命令使用反斜杠 <font color="red">\</font> 分割</em></p>
+<h3 id="操作文件目录"><a href="#操作文件目录" class="headerlink" title="操作文件目录"></a>操作文件目录</h3><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+<th>语法</th>
+<th>参数</th>
+<th>参数说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ll</td>
+<td>ll不是命令，是<a href="https://www.baidu.com/s?wd=ls&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao" target="_blank" rel="noopener">ls</a>  [-l]别名</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ls</td>
+<td>显示文件和目录列表</td>
+<td>ls [-a|l]</td>
+<td>- l</td>
+<td>列出文件的详细信息</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>ls –help</td>
+<td>-a</td>
+<td>列出当前目录所有文件，包含隐藏文件</td>
+</tr>
+<tr>
+<td>mkdir</td>
+<td>创建目录</td>
+<td>mkdir [-p] dirName</td>
+<td>-p</td>
+<td>父级目录不存在的情况下生成父目录</td>
+</tr>
+<tr>
+<td>cd</td>
+<td>切换目录</td>
+<td>cd [dirNme]</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>touch</td>
+<td>生成一个空文件</td>
+<td>touch [fileName]</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>echo</td>
+<td>生成一个带内容的文件</td>
+<td>echo HelloWorkd  &gt; hello.txt(创建文件并写入内容)echo  jmp  &gt;&gt; hello.txt(追加内容)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>cat</td>
+<td>显示文本文件内容</td>
+<td>cat [-AbcenstTuv] [-help] [-version] fileName</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>cp</td>
+<td>复制文件或目录</td>
+<td>cp hello.txt hello/jmp/</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>rm</td>
+<td>删除文件</td>
+<td>rm [-fr] fileName</td>
+<td>-f</td>
+<td>强制删除</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>-r</td>
+<td>递归删除</td>
+</tr>
+<tr>
+<td>mv</td>
+<td>移动文件/文件目录/重命名文件夹/文件</td>
+<td>mv hello.txt hello/jmp/</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>find</td>
+<td></td>
+<td>find -name hello.txt</td>
+<td>- name</td>
+<td>文件名</td>
+</tr>
+<tr>
+<td>grep</td>
+<td>在指定的文件中招指定的字符串</td>
+<td>grep hello hello.txt</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>tree</td>
+<td>用于以树状图列出目录的内容</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pwd</td>
+<td>显示当前工作目录</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ln</td>
+<td>建立软链接</td>
+<td>ln /home/jmp/hello/jmp/hello.txt helloln.txt</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>more</td>
+<td>分页显示文本文件内容</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>head</td>
+<td>显示文件开头内容</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>tail</td>
+<td>显示文件结尾内容</td>
+<td></td>
+<td>-f</td>
+<td>跟踪输出</td>
+</tr>
+<tr>
+<td><strong>..</strong></td>
+<td>上级目录</td>
+<td>cp ../myhello.text .</td>
+<td></td>
+<td>拷贝上级目录的文件到当前目录</td>
+</tr>
+<tr>
+<td><strong>.</strong></td>
+<td>当前目录</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>[root@linuxidc net]# for i in <code>seq -w 10</code><br>&gt; do touch stu_$i_linux.jpg<br>&gt; done</td>
+<td>批量创建文件，修改文件名</td>
+<td><a href="https://www.cnblogs.com/zhizhiyu/p/10215869.html" target="_blank" rel="noopener">https://www.cnblogs.com/zhizhiyu/p/10215869.html</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>系统管理命令</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+<th>语法</th>
+<th>参数</th>
+<th>参数说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sudo</td>
+<td>提权（提高权限）</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>top</strong></td>
+<td>查看当前系统中耗资源最多的进程/类似任务管理器</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>stat</td>
+<td>显示指定文件的相关信息，比<strong>ls</strong>命令现实的内容更多</td>
+<td>stat -c ‘%G %U %u %n’ hello.txt</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>who</td>
+<td>显示在线登录用户</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>hostname</td>
+<td>显示主机名称</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>uname</td>
+<td>显示系统信息</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>ps</strong></td>
+<td>显示瞬间进程状态</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>du</strong></td>
+<td>显示指定文件（目录）已使用的磁盘空间的总量</td>
+<td>du  [-h]</td>
+<td>-h</td>
+<td>以M为单位显示</td>
+</tr>
+<tr>
+<td><strong>df</strong></td>
+<td>显示文件系统或磁盘空间的使用情况</td>
+<td>df [-h]</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>free</strong></td>
+<td>显示当前内存和交换空间的使用情况</td>
+<td>free [-h]</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>ifconfig</strong></td>
+<td>显示网络接口信息</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>ping</strong></td>
+<td>测试网络连通性</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>netstat</td>
+<td>显示网络状态信息</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>clear</strong></td>
+<td>清屏</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kill</td>
+<td>杀死一个进程</td>
+<td>ps (查看瞬时进程)    kill -9 pid(永久杀死)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>netstat</td>
+<td>查看端口情况</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="Linux重启与压缩命令"><a href="#Linux重启与压缩命令" class="headerlink" title="Linux重启与压缩命令"></a>Linux重启与压缩命令</h3><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+<th>语法</th>
+<th>参数</th>
+<th>参数说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>reboot</strong></td>
+<td>重启</td>
+<td>sudo reboot</td>
+<td>临时获取超管权限</td>
+<td></td>
+</tr>
+<tr>
+<td>shutdown</td>
+<td></td>
+<td>shutdown -r now</td>
+<td>-r</td>
+<td>重启</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>shutdown -h  now</td>
+<td>-h</td>
+<td>关机</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>[-t seconds] [-rkhncfF] time [message]</td>
+<td>-t seconds</td>
+<td>设定在几秒之后进行关机程序</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>time</td>
+<td>设置关机时间</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>-k message</td>
+<td>并不会真的关机，只是将警告讯息传给所有使用者</td>
+</tr>
+<tr>
+<td>tar</td>
+<td>压缩命令</td>
+<td>tar [-cxzjvf]压缩打包文件的名称，欲打包目录</td>
+<td>-c</td>
+<td>建立一个归档文件的参数指令</td>
+</tr>
+<tr>
+<td></td>
+<td>压缩文件</td>
+<td>tar -zcvf test.tar.gz test\</td>
+<td>-x</td>
+<td>解开一个归档文件的参数指令</td>
+</tr>
+<tr>
+<td></td>
+<td>解压文件</td>
+<td>tar -zxvf test.tar.gz</td>
+<td>-z</td>
+<td>是否需要用gzip压缩，压缩文件后缀为 gz</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>tar -jcvf test.tar.bz2 test\         tar -jxvf test.tar.bz2 test\</td>
+<td>-j</td>
+<td>是否需要用bzip2压缩，压缩文件后缀为bz2</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>-v</td>
+<td>压缩的过程中显示文件</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>-f</td>
+<td>使用档名，在f之后要立即接档名</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>-tf</td>
+<td>查看归档文件里面的文件</td>
+</tr>
+<tr>
+<td>gzip</td>
+<td></td>
+<td>gzip [选项] 解|压缩的文件</td>
+<td>-[d|l|v]</td>
+<td>解压缩|显示压缩/未压缩详情|显示文件名和压缩比</td>
+</tr>
+<tr>
+<td>bzip2</td>
+<td></td>
+<td>bzip2 [-c|d|z]</td>
+<td>-d|z</td>
+<td>解压缩|压缩参数</td>
+</tr>
+</tbody></table>
+<h2 id="Linux快捷键"><a href="#Linux快捷键" class="headerlink" title="Linux快捷键"></a>Linux快捷键</h2><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ctrl +c</td>
+<td>退出回到控制台，终止执行</td>
+<td></td>
+</tr>
+<tr>
+<td>ctrl+insert</td>
+<td>复制</td>
+<td></td>
+</tr>
+<tr>
+<td>shift+insert</td>
+<td>粘贴</td>
+<td></td>
+</tr>
+<tr>
+<td>shift z z</td>
+<td>vim 保存并退出</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<blockquote>
+<pre><code>[Linux中ctrl+z 、ctrl+c、 ctrl+d区别](https://www.cnblogs.com/kelamoyujuzhen/p/10269818.html)              
+
+Ctrl + C 和Ctrl + Z都是中断命令,但是他们的作用却不一样.
+
+Ctrl + C 是强制中断程序的执行,进程已经终止。 Ctrl + C 发送 SIGINT信号 参考：[linux信号](https://www.cnblogs.com/kelamoyujuzhen/p/9387739.html)
+
+Ctrl + Z 的是将任务中止（暂停的意思）,但是此任务并没有结束,他仍然在进程中他只是维持挂起的状态,用户可以使用fg/bg操作继续前台或后台的任务,fg命令重新启动前台被中断的任务,bg命令把被中断的任务放在后台执行.  参考：[bash工作管理](https://www.cnblogs.com/kelamoyujuzhen/p/10087378.html)
+
+例如:当你vi一个文件是,如果需要用shell执行别的操作,但是你又不打算关闭vi,因为你得存盘推出,你可以简单的按下ctrl+z,shell会将vi进程挂起~,当你结束了那个shell操作之后,你可以用fg命令继续vi你的文件。
+
+Ctrl + D 不是发送信号，而是表示一个特殊的二进制值，表示 EOF。</code></pre></blockquote>
+<h2 id="编辑器的使用"><a href="#编辑器的使用" class="headerlink" title="编辑器的使用"></a>编辑器的使用</h2><h3 id="vim-运行模式"><a href="#vim-运行模式" class="headerlink" title="vim :运行模式"></a>vim :运行模式</h3><p>编辑模式：等待编辑命令输入<br>插入模式：编辑模式下，输入 <font color="color">i</font>  插入文本信息<br>命令模式：ctl+C，输入<font color="color"> ： </font>进入命令模式</p>
+<p>vim编辑器要正常退出可以使用Shift-ZZ</p>
+<blockquote>
+<p>   开始编辑：a<br>       退出编辑 esc<br>       保存：shift+zz</p>
+<pre><code>使用技巧：
+
+Vi +文件名：打开文件
+gg：光标定位首行
+yy：复制光标所在行
+dd：剪切光标所在行
+p：粘贴
+u：撤销
+ctrl+r：反撤销
+：？查找内用：查找
+：%s/查找内容/替换内容/[g]：替换操作【g】全局替换
+i : 转换到插入模式
+x : 删除当前字符
+. : 重复最后一次的修改操作(同PS里ctrl+f执行滤镜)
+u : 撤销操作
+CTRL-R : 重做
+p : 将删除的字符插入到当前位置(put)
+
+退出保存：
+:q : 退出
+:q! : 不保存退出
+ZZ : 保存后退出
+:e! : 放弃修改重新编辑</code></pre></blockquote>
+<h4 id="vim-命令"><a href="#vim-命令" class="headerlink" title="vim : 命令"></a>vim : 命令</h4><table>
+<thead>
+<tr>
+<th>语法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>vi filename</td>
+<td></td>
+</tr>
+<tr>
+<td><font color="color">:q</font></td>
+<td>直接退出vi</td>
+</tr>
+<tr>
+<td><font color="color">:wq</font></td>
+<td>保存后退出vi,并可以新建文件</td>
+</tr>
+<tr>
+<td><font color="color">:q!</font></td>
+<td>强制退出</td>
+</tr>
+<tr>
+<td><font color="color">:w file</font></td>
+<td>将当前内容保存成某个文件</td>
+</tr>
+<tr>
+<td><font color="color">:set number</font></td>
+<td>在编辑文件时显示行号</td>
+</tr>
+<tr>
+<td><font color="color">:set nonumber</font></td>
+<td>不显示行号</td>
+</tr>
+<tr>
+<td>#### Linux中.swp 文件的产生与解决方法</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><a href="https://blog.csdn.net/qq_42200183/article/details/81531422" target="_blank" rel="noopener">Linux中.swp 文件的产生与解决方法</a></p>
+<h5 id="什么是-swp"><a href="#什么是-swp" class="headerlink" title="什么是.swp"></a>什么是.swp</h5><p>vim中的swp即swap（交换分区）的简写，在编辑文件时产生，它是隐藏文件。这个文件是一个临时交换文件，用来备份缓冲区中的内容。类似于Windows的虚拟内存，就是当内存不足的时候,把一部分硬盘空间虚拟成内存使用,从而解决内存容量不足的情况。</p>
+<p>如果文件正常退出，则此文件自动删除。</p>
+<p>如果并没有对文件进行修改，而只是读取文件，是不会产生swp文件的</p>
+<h5 id="swp的产生"><a href="#swp的产生" class="headerlink" title=".swp的产生"></a>.swp的产生</h5><p>1.当你用多个程序编辑同一个文件时</p>
+<p>#解决方法：</p>
+<blockquote>
+<p>选择readonly</p>
+</blockquote>
+<p>2.非常规退出时</p>
+<blockquote>
+<p>当强行关闭vi时，比如电源突然断掉或者你使用了Ctrl+ZZ，vi自动生成一个.swp文件，下次再编辑时就会出现一些提示。</p>
+</blockquote>
+<p>#解决方法：</p>
+<blockquote>
+<p>如果你正常退出，那么这个这个swp文件将会自动删除(vim编辑器要正常退出可以使用Shift-ZZ)。</p>
+<p>用</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vi -r xxx.c</span><br></pre></td></tr></table></figure>
+
+<p>来恢复文件，然后用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rm -rf xxx.swp</span><br></pre></td></tr></table></figure>
+
+<p>删除swp文件，不然每一次编辑时总是有这个提示。</p>
+<h3 id="nano"><a href="#nano" class="headerlink" title="nano"></a>nano</h3><p>字符终端文本编辑器</p>
+<h4 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h4><p>保存：ctrl+o<br>搜索：ctrl+w<br>上一页：ctrl+y<br>下一页：ctrl+v<br>退出：ctrl+x</p>
+<h2 id="查看内存占用情况—htop"><a href="#查看内存占用情况—htop" class="headerlink" title="查看内存占用情况—htop"></a>查看内存占用情况—htop</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install htop</span><br></pre></td></tr></table></figure>
+
+<h2 id="软件的安装与卸载"><a href="#软件的安装与卸载" class="headerlink" title="软件的安装与卸载"></a>软件的安装与卸载</h2><ul>
+<li>apt  ubuntu 的<strong>软件包管理程序</strong>，使用它可以找到想要的软件包，而且安装，卸载，更新都很渐变，也可以用来对Unbuntu进行升级，APT的源文件为 /etc/apt 目录下的 source.list 文件 。</li>
+<li>centOS用的软件包管理程序 yum<h3 id="修改数据源"><a href="#修改数据源" class="headerlink" title="修改数据源"></a>修改数据源</h3>下载软件加速<br>由于国内的网络环境问题，我们要将Ubuntu的数据源修改为国内的数据源，步骤如下：</li>
+</ul>
+<ol>
+<li>查看系统版本<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ lsb_release -a</span><br></pre></td></tr></table></figure>
+
 </li>
 </ol>
-<h2 id="介绍镜像实现的基本原理"><a href="#介绍镜像实现的基本原理" class="headerlink" title="介绍镜像实现的基本原理"></a>介绍镜像实现的基本原理</h2><h2 id="操作Docker容器"><a href="#操作Docker容器" class="headerlink" title="操作Docker容器"></a>操作Docker容器</h2><h3 id="启动命名容器"><a href="#启动命名容器" class="headerlink" title="启动命名容器"></a>启动命名容器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ docker run -p 80:8080 --name tomcat tomcat</span><br><span class="line"><span class="comment">##重启容器</span></span><br><span class="line">$ docker 容器id restart</span><br><span class="line">$ docker restart tomcat (容器名字)</span><br></pre></td></tr></table></figure>
+<p>输出结果</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">No LSB modules are available.</span><br><span class="line">Distributor ID:	Ubuntu</span><br><span class="line">Description:	Ubuntu 18.04.3 LTS</span><br><span class="line">Release:	18.04</span><br><span class="line">Codename:	bionic</span><br></pre></td></tr></table></figure>
 
-<h4 id="守护态运行容器——后台运行"><a href="#守护态运行容器——后台运行" class="headerlink" title="守护态运行容器——后台运行"></a>守护态运行容器——后台运行</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">$ docker run -p 80:8080 --name tomcat -d  tomcat</span><br><span class="line"><span class="comment">##利用不同端口映射启动同一个tomcat镜像，实现负载均衡</span></span><br><span class="line">Last login: Fri Nov  8 06:18:42 2019 from 192.168.47.1</span><br><span class="line">root@ubuntuserver:~<span class="comment"># docker ps</span></span><br><span class="line">CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES</span><br><span class="line">root@ubuntuserver:~<span class="comment"># docker images</span></span><br><span class="line">REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE</span><br><span class="line">mytomcat            latest              75a4afc8edd6        21 hours ago        507MB</span><br><span class="line">tomcat              latest              882487b8be1d        3 weeks ago         507MB</span><br><span class="line">root@ubuntuserver:~<span class="comment"># docker run -p 8081:8080 --name mytomcat1 -d mytomcat</span></span><br><span class="line">bbf6ed566fe22002bc45f69e345ff6578ee7755fdaee6392b799593c4401aa99</span><br><span class="line">root@ubuntuserver:~<span class="comment"># docker run -p 8082:8080 --name mytomcat2 -d mytomcat</span></span><br><span class="line">d545bae836765b1d2bc47d96e3594ab664435ee43d9edb0b69299ac54196ba61</span><br></pre></td></tr></table></figure>
+<p>注意:Codename:为bionic，该名称为Ubnuntu系统名称，修改数据源要用到</p>
+<ol start="2">
+<li>编辑数据源<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vi /etc/apt/source.list</span><br></pre></td></tr></table></figure>
 
-<p><img src="//870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1573268637616.png" alt="1573268637616"></p>
-<h3 id="终止容器"><a href="#终止容器" class="headerlink" title="终止容器"></a>终止容器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ docker stop 容器名字</span><br><span class="line">docker container stop 容器名字|容器ID</span><br><span class="line"><span class="comment">##删除未运行的容器</span></span><br><span class="line">$ docker container prune</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>删除全部文件（按两下 d）修改为下面：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deb http://mirrors.aliyun.com/ubuntu/bionic main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/bionic-security main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/bionic-updates main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/bionic-backports main restricted universe multiverse</span><br></pre></td></tr></table></figure>
 
-<h4 id="删除容器"><a href="#删除容器" class="headerlink" title="删除容器"></a>删除容器</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##删除容器</span></span><br><span class="line">$ docker rm [-f] 容器id</span><br></pre></td></tr></table></figure>
+<p><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1568992067178.png" alt="1568992067178"></p>
+<ol start="3">
+<li>更新数据源<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get update</span><br></pre></td></tr></table></figure>
 
-<h4 id="整体流程实例"><a href="#整体流程实例" class="headerlink" title="整体流程实例"></a>整体流程实例</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##启动容器</span></span><br><span class="line">$ docker run -p 80:8080 --name tomcat tomcat</span><br><span class="line"><span class="comment">##终止容器</span></span><br><span class="line">$ docker stop 容器名字</span><br><span class="line"><span class="comment">##退出容器</span></span><br><span class="line">$ <span class="built_in">exit</span>|ctrl+d</span><br><span class="line"><span class="comment">##查看容器</span></span><br><span class="line">$ docker ps [-a]</span><br><span class="line">$ docker container ls -a</span><br><span class="line"><span class="comment">##重启容器</span></span><br><span class="line">$ docker 容器ID restart</span><br><span class="line"><span class="comment">##删除容器</span></span><br><span class="line">$ docker rm [-f] 容器id</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="安装文件"><a href="#安装文件" class="headerlink" title="安装文件"></a>安装文件</h3><p>安装版 安装 = 打包  .exe 初始化操作,写入注册表  .jar 绿色版，压缩包</p>
+<ul>
+<li>安装nano <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##安装nano</span></span><br><span class="line">$ sudo apt-get install nano </span><br><span class="line"><span class="comment">## 使用nano</span></span><br><span class="line">$ nano hello.txt</span><br><span class="line"><span class="comment">## 卸载nano</span></span><br><span class="line">$ sudo apt-get remove nano</span><br></pre></td></tr></table></figure>
 
-<h1 id="Docker-仓库"><a href="#Docker-仓库" class="headerlink" title="Docker 仓库"></a>Docker 仓库</h1><h2 id="Docker-Hub"><a href="#Docker-Hub" class="headerlink" title="Docker Hub"></a>Docker Hub</h2><blockquote>
-<p>公共仓库 <a href="https://hub.docker.com/" target="_blank" rel="noopener">Docker Hub</a> </p>
+</li>
+</ul>
+<h3 id="常用的apt命令"><a href="#常用的apt命令" class="headerlink" title="常用的apt命令"></a>常用的apt命令</h3><ol>
+<li><p>安装软件包 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apt-get install packagename</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除软件包</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ apt-get remove packagename</span><br><span class="line"><span class="comment">## 正确删除带依赖一起删除</span></span><br><span class="line">$ sudo apt-get autoremove packagename</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更新软件包列表,<strong>更新之后记得再装一次</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apt-get update</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>升级有可用更新的系统（!慎用–不能用）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apt-get upgrade</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>搜索*</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apt-cache search package</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获取包信息</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apt-cache show package</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除包及配置文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apt-get remove package --purge</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>了解使用依赖</p>
+</li>
+<li><p>查看被哪些包依赖</p>
+</li>
+<li><p>安装相关的编译环境</p>
+</li>
+<li><p>下载源代码</p>
+</li>
+<li><p>清理无用的包 </p>
+</li>
+<li><p>检查是否有损坏的依赖 </p>
+</li>
+</ol>
+<h3 id="Linux中apt与apt-get命令的区别与解释"><a href="#Linux中apt与apt-get命令的区别与解释" class="headerlink" title="Linux中apt与apt-get命令的区别与解释"></a>Linux中apt与apt-get命令的区别与解释</h3><p>Ubuntu 16.04 发布时，一个引人注目的新特性便是 apt 命令的引入。其实早在 2014 年，apt 命令就已经发布了第一个稳定版，只是直到 2016 年的 Ubuntu 16.04 系统发布时才开始引人关注。</p>
+<blockquote>
+<p>简单来说就是：apt = apt-get、apt-cache 和 apt-config 中最常用命令选项的集合。</p>
 </blockquote>
+<p><strong>apt和apt-get命令之间的区别</strong></p>
+<p>虽然 apt 与 apt-get 有一些类似的命令选项，但它并不能完全向下兼容 apt-get 命令。也就是说，可以用 apt 替换部分 apt-get 系列命令，但不是全部。</p>
+<table>
+<thead>
+<tr>
+<th>apt 命令</th>
+<th>取代的命令</th>
+<th>命令的功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>apt install</td>
+<td>apt-get install</td>
+<td>安装软件包</td>
+</tr>
+<tr>
+<td>apt remove</td>
+<td>apt-get remove</td>
+<td>移除软件包</td>
+</tr>
+<tr>
+<td>apt purge</td>
+<td>apt-get purge</td>
+<td>移除软件包及配置文件</td>
+</tr>
+<tr>
+<td>apt update</td>
+<td>apt-get update</td>
+<td>刷新存储库索引</td>
+</tr>
+<tr>
+<td>apt upgrade</td>
+<td>apt-get upgrade</td>
+<td>升级所有可升级的软件包</td>
+</tr>
+<tr>
+<td>apt autoremove</td>
+<td>apt-get autoremove</td>
+<td>自动删除不需要的包</td>
+</tr>
+<tr>
+<td>apt full-upgrade</td>
+<td>apt-get dist-upgrade</td>
+<td>在升级软件包时自动处理依赖关系</td>
+</tr>
+<tr>
+<td>apt search</td>
+<td>apt-cache search</td>
+<td>搜索应用程序</td>
+</tr>
+<tr>
+<td>apt show</td>
+<td>apt-cache show</td>
+<td>显示安装细节</td>
+</tr>
+</tbody></table>
+<p>当然，apt 还有一些自己的命令：</p>
+<table>
+<thead>
+<tr>
+<th>新的apt命令</th>
+<th>命令的功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>apt list</td>
+<td>列出包含条件的包（已安装，可升级等）</td>
+</tr>
+<tr>
+<td>apt edit-sources</td>
+<td>编辑源列表</td>
+</tr>
+<tr>
+<td>## linux用户和组管理</td>
+<td></td>
+</tr>
+<tr>
+<td>个人理解：组类似角色</td>
+<td></td>
+</tr>
+<tr>
+<td>Linux系统是一个多用户操作系统，它允许多用户同时登录到系统上并使用资源。系统会根据账户来区分每个用户的文件，进程，任务和工作环境，使得每个用户工作都不受干扰。</td>
+<td></td>
+</tr>
+<tr>
+<td>### 使用Root用户</td>
+<td></td>
+</tr>
+<tr>
+<td>在实际生产操作中，我们基本上是使用超级管理员账户操作linux系统，也就是Root账户，Linux系统默认关闭Root账户，我们需要为Root账户设置一个初始密码以方便使用。</td>
+<td></td>
+</tr>
+<tr>
+<td>#### 设置Root账户密码</td>
+<td></td>
+</tr>
+<tr>
+<td><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ sudo passwd root</span><br><span class="line"></span><br><span class="line">jmp@ubuntuserver:~$ sudo passwd root</span><br><span class="line">[sudo] password <span class="keyword">for</span> jmp: </span><br><span class="line">Enter new UNIX password: </span><br><span class="line">Retype new UNIX password: </span><br><span class="line">passwd: password updated successfully</span><br><span class="line">jmp@ubuntuserver:~$</span><br></pre></td></tr></table></figure></td>
+<td></td>
+</tr>
+</tbody></table>
+<h4 id="切换到Root"><a href="#切换到Root" class="headerlink" title="切换到Root"></a>切换到Root</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ su</span><br></pre></td></tr></table></figure>
+
+<h4 id="设置允许远程登录Root-阿里云默认就是远程连接"><a href="#设置允许远程登录Root-阿里云默认就是远程连接" class="headerlink" title="设置允许远程登录Root //阿里云默认就是远程连接"></a>设置允许远程登录Root //阿里云默认就是远程连接</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ vi /etc/ssh/sshd_config</span><br><span class="line"></span><br><span class="line"><span class="comment"># Authentication:</span></span><br><span class="line">LoginGraceTime 120</span><br><span class="line"><span class="comment">#PermitRootLogin prohibit-password  ##注释掉此行</span></span><br><span class="line">PermitRootLogin yes    <span class="comment">##加入</span></span><br><span class="line">StrictModes yes</span><br><span class="line"></span><br><span class="line"><span class="comment">## 重启服务</span></span><br><span class="line">$ service ssh restart</span><br></pre></td></tr></table></figure>
+
+<h3 id="用户账户说明"><a href="#用户账户说明" class="headerlink" title="用户账户说明"></a>用户账户说明</h3><ul>
+<li>普通用户</li>
+<li>超级管理员</li>
+<li>安装时创建的系统用户<h3 id="组账户说明"><a href="#组账户说明" class="headerlink" title="组账户说明"></a>组账户说明</h3></li>
+<li>私有组</li>
+<li>标准组<h3 id="账户系统文件说明"><a href="#账户系统文件说明" class="headerlink" title="账户系统文件说明"></a>账户系统文件说明</h3><blockquote>
+<p>cat /etc/passwd</p>
+</blockquote>
+</li>
+</ul>
+<p>每一行代表一个账号，众多账号是系统正常运行所必需的的，例如Bin,nobody每定义一个用户账户，此文件对所有用户可读。每行账户信息包含如下信息：<br><font color="red">root:/root:/bin/bash</font></p>
+<ul>
+<li>用户名：就是账号，用来对应UID，root UID 是 0。</li>
+<li>口令：</li>
+<li>用户标示号（UID）：</li>
+<li>组标示号（GID）：</li>
+<li>注释：注释账号</li>
+<li>宿主目录（主文件夹）：用户登录系统后所进入的目录root在/root/itcast</li>
+<li>命令解释器（shell）：指定该用户使用的shell，默认的是/bin/bash</li>
+</ul>
 <hr>
 <blockquote>
-<p>注册：可以再<a href="https://cloud.docker.com" target="_blank" rel="noopener">https://cloud.docker.com</a>免费注册一个Docker账号<br>登录：docker login<br>退出：docker logout<br>查找镜像：docker search tomcat|centos|jmp/tomcat(用户名/镜像) –filter-stars-n(过滤收藏数量为n以上的镜像)<br>拉取镜像：docker pull tomcat<br>推送镜像：<br>docker tag ubuntu:17.10 username/ubuntu:17.10<br>docker image ls<br>docker push  username/mytomcat(自己的镜像)</p>
+<p>/etc/shadow</p>
 </blockquote>
-<h3 id="自动创建"><a href="#自动创建" class="headerlink" title="自动创建"></a>自动创建</h3><p>自动创建功能对于对于经常升级镜像内程序来说十分方便。<br>有时候，用户创建了镜像，安装了某个软件，如果软件更新则需要手动更新镜像。</p>
-<p>而自动创建允许用户通过Docker Hub 指定跟踪一个目标网站（目前支持GitHub和BItBucket）上的项目，一旦项目发生新的提交或者创建新的标签（tag），Docker Hub会自动构建镜像并推送到Docker Hub 中。</p>
-<blockquote>
-<p>配置自动创建步骤如下：</p>
+<p>  为了增加系统的安全性。用户口令通常用shadow passwords 保护，只有rootk可读，每行包括以下信息：<br>  账号名称：<br>  密码：<br>  最近修改密码日期<br>  …</p>
+<h2 id="linux文件权限管理"><a href="#linux文件权限管理" class="headerlink" title="linux文件权限管理"></a><strong>linux文件权限管理</strong></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##第一位：d：文件夹 -：</span></span><br><span class="line"><span class="comment">## 文件 后面 ：wxr -xr --- 组权限，用户权限，其他用户权限</span></span><br><span class="line"><span class="comment">## 权限 r:读 w：写  x：可执行</span></span><br><span class="line">drwxr-xr-x 24 root root 4096 Sep 20 02:55 ../</span><br><span class="line">-rw-------  1 root root   76 Sep 21 11:43 .bash_history</span><br></pre></td></tr></table></figure>
+
+<h3 id="shell文件-可执行的脚本文件"><a href="#shell文件-可执行的脚本文件" class="headerlink" title="shell文件 可执行的脚本文件"></a>shell文件 可执行的脚本文件</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> vi shell.sh</span></span><br><span class="line"><span class="meta">#</span><span class="bash">/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">echo</span> <span class="string">'hello root shell'</span></span></span><br></pre></td></tr></table></figure>
+
+<h3 id="更改权限操作"><a href="#更改权限操作" class="headerlink" title="更改权限操作"></a>更改权限操作</h3><h4 id="chown"><a href="#chown" class="headerlink" title="chown"></a><strong>chown</strong></h4><ul>
+<li>主要作用是修改文件或者目录所有者，所有者包含用户和用户组</li>
+<li>chown [-R] 用户名称 文件或目录</li>
+<li>chown [-R] 用户名称 文件或目录</li>
+<li>-R：进行递归式的权限更改，将目录下的所有文件，子目录更新为指定用户组权限<h4 id="chmod"><a href="#chmod" class="headerlink" title="chmod"></a><strong>chmod</strong></h4>改变访问权限<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#who:表示操作对象是以下字母的一个或者组合</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># u:用户user g:用户组 group o :表示其他用户 a： 表示所有用户，是系统默认的 </span></span></span><br><span class="line">- chmod [who] [-|+|=] 文件名</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#eg:</span></span></span><br><span class="line">chmod +x shell.sh</span><br><span class="line">chmod -x shell.sh</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#将文件夹 test 所有者更改所有者为jmp组的jmp用户</span></span></span><br><span class="line">chown jmp:jmp test/</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="权限的数字设定法"><a href="#权限的数字设定法" class="headerlink" title="权限的数字设定法"></a><strong>权限的数字设定法</strong></h4><table>
+<thead>
+<tr>
+<th>0</th>
+<th>1=x</th>
+<th>2=w</th>
+<th>4=r</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>没有任何权限</td>
+<td>可执行权限</td>
+<td>可写权限</td>
+<td>可读权限</td>
+</tr>
+</tbody></table>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#eg </span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> chmod 000 <span class="built_in">test</span>/</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> chomd 750 <span class="built_in">test</span>/  <span class="comment">## 755 700</span></span></span><br></pre></td></tr></table></figure>
+
+<h2 id="linxu安装java"><a href="#linxu安装java" class="headerlink" title="linxu安装java"></a>linxu安装java</h2><h3 id="JRE"><a href="#JRE" class="headerlink" title="JRE"></a>JRE</h3><p>下载地址：<a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">https://www.oracle.com/technetwork/java/javase/downloads/index.html</a><br>下载JRE :1.8</p>
+<p><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1569371529063.png" alt="1569371529063"></p>
+<p><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1569371625766.png" alt="1569371625766"></p>
+<ul>
+<li><p>关闭 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shutdown -h now</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开虚拟机 VMware，克隆副本</p>
+<p><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1569404584654.png" alt="1569404584654"></p>
+</li>
+</ul>
+<p>运行克隆版虚拟机</p>
+<h2 id="linxu安装JRE"><a href="#linxu安装JRE" class="headerlink" title="linxu安装JRE"></a>linxu安装JRE</h2><ul>
+<li>将下载的jre传输到服务器</li>
+</ul>
+<p><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1569749290304.png" alt="1569749290304"></p>
+<ul>
+<li><p>解压安装包 ==自己装软件一定要放在/usr/local/下面==</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">root@ubuntuserver:~<span class="comment"># cd soft</span></span><br><span class="line">root@ubuntuserver:~/soft<span class="comment"># tar -xzvf jre-8u221-linux-x64.tar.gz</span></span><br><span class="line"><span class="comment">##创建一个放置jre的文件件，自己装软件一定要放在/usr/local/下面</span></span><br><span class="line">$ mkdir /usr/<span class="built_in">local</span>/java</span><br><span class="line"><span class="comment">##移动解压后的jre文件夹</span></span><br><span class="line">$ mv jre1.8.0_221/ /usr/<span class="built_in">local</span>/java</span><br><span class="line"><span class="comment">##设置所有者</span></span><br><span class="line">$ chown -R root:root /usr/<span class="built_in">local</span>/java/</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置环境变量 <a href="https://www.jianshu.com/p/3a3447902f05" target="_blank" rel="noopener">https://www.jianshu.com/p/3a3447902f05</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##配置系统环境变量</span></span><br><span class="line">$ vi /etc/enviroment</span><br><span class="line"><span class="comment">##追加以下内容</span></span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/<span class="built_in">local</span>/java</span><br><span class="line"><span class="built_in">export</span> JRE_HOME=/usr/<span class="built_in">local</span>/java/jre1.8.0_221</span><br><span class="line"><span class="built_in">export</span> CLASSPATH=<span class="variable">$CLASSPATH</span>:<span class="variable">$JRE_HOME</span>/lib</span><br><span class="line"><span class="comment">##jdk的</span></span><br><span class="line"><span class="built_in">export</span> CLASSPATH=<span class="variable">$CLASSPATH</span>:<span class="variable">$JAVA_HOME</span>/lib:<span class="variable">$JAVA_HOME</span>/jre/lib</span><br><span class="line">$ vi /etc/profile</span><br><span class="line"> <span class="comment">##两段代码之间追加</span></span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/<span class="built_in">local</span>/java</span><br><span class="line"><span class="built_in">export</span> JRE_HOME=/usr/<span class="built_in">local</span>/java/jre1.8.0_221</span><br><span class="line"><span class="built_in">export</span> CLASSPATH=<span class="variable">$CLASSPATH</span>:<span class="variable">$JRE_HOME</span>/lib</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$JRE_HOME</span>/bin</span><br></pre></td></tr></table></figure>
+
+<p><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1569751365524.png" alt="1569751365524"></p>
+<p><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1569751341902.png" alt="1569751341902"></p>
+</li>
+<li><p>使环境变量生效</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">source</span> /etc/profile</span><br><span class="line"><span class="comment">##检查</span></span><br><span class="line">$ java -version</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="Linux装Tomcat"><a href="#Linux装Tomcat" class="headerlink" title="Linux装Tomcat"></a>Linux装Tomcat</h2><p>下载和JDK/JRE对应的Tomcat放到/root/soft文件夹下<br>下载地址：<a href="https://tomcat.apache.org/download-80.cgi" target="_blank" rel="noopener">https://tomcat.apache.org/download-80.cgi</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##解压</span></span><br><span class="line">root@ubuntuserver:~/soft<span class="comment"># tar -xzvf apache-tomcat-8.5.46.tar.gz</span></span><br><span class="line"><span class="comment">##移动</span></span><br><span class="line">$ mv apache-tomcat-8.5.46/ /usr/<span class="built_in">local</span>/</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/apache-tomcat-8.5.46/bin</span><br><span class="line"><span class="comment">##启动tomcat</span></span><br><span class="line"> ./startup.sh</span><br><span class="line"><span class="comment">##浏览器访问</span></span><br><span class="line">IP：8080</span><br><span class="line">/conf/server.xml 端口改为80 </span><br><span class="line">hosts改为 : 192.168.47.128 www.jmp.com</span><br><span class="line">服务启动后可以直接访问www.jmp.com</span><br></pre></td></tr></table></figure>
+
+<h3 id="linxu安装MySql"><a href="#linxu安装MySql" class="headerlink" title="linxu安装MySql"></a>linxu安装MySql</h3><blockquote>
+<p>遇到的问题</p>
 <ol>
-<li>创建并登陆Docker Hub,以及目标网站；</li>
-<li>在目标网站中连接账户到Docker Hub；</li>
-<li>在Docker Hub中配置一个 自动创建；</li>
-<li>选取一个目标网站中的项目（需要含有Dockerfiel）和分支；<ol start="5">
-<li>指定Dockerfile的位置，并提交创建</li>
-<li>之后可以在Docker Hub的自动创建页面中跟踪每次创建的状态。</li>
+<li><strong>安装时没有提醒设置密码</strong></li>
 </ol>
-</li>
+<p>网上方案：<a href="https://www.cnblogs.com/super-zhangkun/p/9435974.html" target="_blank" rel="noopener">https://www.cnblogs.com/super-zhangkun/p/9435974.html</a></p>
+<p>无效？</p>
+<ol start="2">
+<li>远程登陆和服务器登录任何用户都可以直接登录</li>
 </ol>
 </blockquote>
-<h2 id="Docker-私用仓库"><a href="#Docker-私用仓库" class="headerlink" title="Docker 私用仓库"></a>Docker 私用仓库</h2><p><strong>第三章——镜像管理平台 中讲解</strong></p>
-<h2 id="数据卷！"><a href="#数据卷！" class="headerlink" title="数据卷！"></a>数据卷！</h2><p><font color="red">数据卷</font>是一个可以供一个或多个容器使用的特使目录，她绕过UFS，可以提供很多有用的特性</p>
-<ul>
-<li>数据卷可以在容器之间共享和重用</li>
-<li>对数据卷的修改可以立马生效</li>
-<li>对数据卷的更新，不会影响镜像</li>
-<li>数据卷默认会一直存在，即使容器被删除</li>
-</ul>
-<p><strong>注意：</strong>数据卷的使用，类似于Linux下对目录或文件进行mount，镜像中的被指定为挂载点的目录中的文件会隐藏掉，能显示看的是挂载的数据卷<br>参数选择</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##新用户选择，推荐使用</span></span><br><span class="line">--mount</span><br><span class="line"><span class="comment">##经验丰富的Docker使用者</span></span><br><span class="line">-v</span><br><span class="line">--volume</span><br><span class="line"><span class="comment">##创建一个数据卷</span></span><br><span class="line">docker volume create my -vol</span><br><span class="line"><span class="comment">##查看所有的数据卷</span></span><br><span class="line">docker volume ls</span><br><span class="line"><span class="comment">##主机里使用以下命令可以查看指定数据卷的信息</span></span><br><span class="line">$ docker volume inspect my-vol</span><br><span class="line"><span class="comment">##守护态，命名为tomcat端口号映射为8081启动镜像tomcat，使用数据卷，将/usr/local/docker/mytomcat/ROOT的文件映射到镜像中的/usr/local/tomcat/webapps/ROOT tomcat</span></span><br><span class="line">$ docker run -p 8081:8080 --name tomcat -d -v /usr/<span class="built_in">local</span>/docker/mytomcat/ROOT:/usr/<span class="built_in">local</span>/tomcat/webapps/ROOT tomcat</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ apt-get install mysql-server</span><br><span class="line"><span class="comment">##安全脚本</span></span><br><span class="line">$ mysql_secure_installation</span><br></pre></td></tr></table></figure>
 
-<p><img src="//870727741.github.io/2019/11/14/基础设施即服务：Docker容器学习/1573480831648.png" alt="1573480831648"></p>
-<p>数据卷可以共用</p>
-<h1 id="Docker-部署数据库"><a href="#Docker-部署数据库" class="headerlink" title="Docker 部署数据库"></a>Docker 部署数据库</h1><h2 id="下载数据库镜像"><a href="#下载数据库镜像" class="headerlink" title="下载数据库镜像"></a>下载数据库镜像</h2><p><em>数据库版本参考MySQL版本特性.md</em></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">$ docker pull mysql:5.7.22</span><br><span class="line"><span class="comment">##启动mysql，docker配置数据库可以参考docker mysql官方文档</span></span><br><span class="line">$ docker run -p 3306:3306 --name mysql \</span><br><span class="line">-v /usr/<span class="built_in">local</span>/docker/jmysql/conf:/etc/mysql \</span><br><span class="line">-v /usr/<span class="built_in">local</span>/docker/jmysql/logs:/var/<span class="built_in">log</span>/mysql \</span><br><span class="line">-v /usr/<span class="built_in">local</span>/docker/jmysql/data:/var/lib/mysql \</span><br><span class="line">-e MYSQL_ROOT_PASSWORD=root \</span><br><span class="line">-d mysql:5.7.22</span><br><span class="line"></span><br><span class="line"><span class="comment">##查看目录结构</span></span><br><span class="line">$ whereis mysql</span><br><span class="line"><span class="comment">##远程导入数据库sql文件失败</span></span><br><span class="line"><span class="comment">##配置远程导入sql文件的配置</span></span><br><span class="line">$ docker <span class="built_in">exec</span> -it mysql bash</span><br><span class="line">$ <span class="built_in">cd</span> /etc/mysql/conf.d</span><br><span class="line">$ cat mysqldump.cnf</span><br><span class="line"><span class="comment">#复制 max_allowed_packet=16M</span></span><br><span class="line">$ <span class="built_in">exit</span> </span><br><span class="line"><span class="comment">##停止正在运行的Mysql容器</span></span><br><span class="line">$ docker rm 容器id</span><br><span class="line">$ docker run -p 3306:3306 --name mysql \</span><br><span class="line">-v /usr/<span class="built_in">local</span>/docker/jmysql/logs:/var/<span class="built_in">log</span>/mysql \</span><br><span class="line">-v /usr/<span class="built_in">local</span>/docker/jmysql/data:/var/lib/mysql \</span><br><span class="line">-e MYSQL_ROOT_PASSWORD=root \</span><br><span class="line">-d mysql:5.7.22</span><br><span class="line"><span class="comment">##以交互方式进入容器</span></span><br><span class="line">$ docker <span class="built_in">exec</span> -it mysql bash</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> /etc/mysql/mysql.conf.d</span><br><span class="line">$ <span class="built_in">echo</span> max_allowed_packet=16M &gt;&gt; mysqld.cnf</span><br><span class="line">$ <span class="built_in">exit</span></span><br><span class="line"><span class="comment">#重启容器</span></span><br><span class="line">$ docker restart mysql</span><br></pre></td></tr></table></figure>
+<h3 id="配置远程访问"><a href="#配置远程访问" class="headerlink" title="配置远程访问"></a>配置远程访问</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##打开注释掉 cd /etc/mysql/mysql.conf.d/</span></span><br><span class="line">$ vi mysqld.cnf</span><br><span class="line"><span class="comment">#bind-address         = 127.0.0.1</span></span><br><span class="line"><span class="comment">##或者修改为以下，表示所有人都能访问</span></span><br><span class="line"><span class="built_in">bind</span>-address          = 0.0.0.0</span><br><span class="line"><span class="comment">##进入mysql，授权 </span></span><br><span class="line">mysql&gt; grant all privileges on *.* to <span class="string">'root'</span>@<span class="string">'%'</span> identified by <span class="string">'你的mysql root 账户密码'</span>;</span><br></pre></td></tr></table></figure>
 
-<h2 id="（本地）远程连接服务器Docker-MySQL"><a href="#（本地）远程连接服务器Docker-MySQL" class="headerlink" title="（本地）远程连接服务器Docker MySQL"></a>（本地）远程连接服务器Docker MySQL</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ip</span><br><span class="line">用户：root</span><br><span class="line">密码：root</span><br><span class="line">端口：33061</span><br></pre></td></tr></table></figure>
-
-<h3 id="失败-10061-2013可能原因"><a href="#失败-10061-2013可能原因" class="headerlink" title="失败 10061 2013可能原因"></a>失败 10061 2013可能原因</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker mysql 2013 - Lost connection to MySQL server at &apos;reading initial communication packet&apos;, system error: O &quot;Internal error/check (Not system error)</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p><strong>解决方案</strong>：认真检车创建MySQL容器的语句，端口映射是否有误</p>
-</blockquote>
-<h2 id="是数据库数据及配置持久化"><a href="#是数据库数据及配置持久化" class="headerlink" title="是数据库数据及配置持久化"></a>是数据库数据及配置持久化</h2><ul>
-<li><p><em>将容器的文件复制到宿主机</em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ cd /usr/local/docker/Jmysql/conf</span><br><span class="line">#复制容器中mysql相关的配置文件到宿主机自定义文件夹下</span><br><span class="line">$ dockr cp mysql:/etc/mysql .</span><br><span class="line">$ cd mysql/</span><br><span class="line">$ mv *.*  ..</span><br><span class="line">$ rm -fr mysql</span><br></pre></td></tr></table></figure>
+<h2 id="linux项目部署"><a href="#linux项目部署" class="headerlink" title="linux项目部署"></a>linux项目部署</h2><ul>
+<li><p>项目数据库导入到服务器数据库</p>
 </li>
-<li><p><em>配置本地数据卷映射镜像数据目录创建启动容器</em></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 停止并删除原有MySQL容器</span></span><br><span class="line">$ docker stop mysql</span><br><span class="line">$ docker rm mysql </span><br><span class="line"><span class="comment">#配置宿主机数据卷守护态启动MySQL</span></span><br><span class="line">$ docker run -p 3306:3306 --name mysql \</span><br><span class="line">-v /usr/<span class="built_in">local</span>/docker/jmysql/conf:/etc/mysql \</span><br><span class="line">-v /usr/<span class="built_in">local</span>/docker/jmysql/logs:/var/<span class="built_in">log</span>/mysql \</span><br><span class="line">-v /usr/<span class="built_in">local</span>/docker/jmysql/data:/var/lib/mysql \</span><br><span class="line">-e MYSQL_ROOT_PASSWORD=root \</span><br><span class="line">-d mysql:5.7.22</span><br></pre></td></tr></table></figure>
-
+<li><p>到代码目录下 命令行打包</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn clean package -Dmaven.test.skip=<span class="literal">true</span>(存在测试文件时候)</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-<h1 id="项目的容器化部署"><a href="#项目的容器化部署" class="headerlink" title="项目的容器化部署"></a>项目的容器化部署</h1><ol>
-<li>将项目部署的zip文件传输到服务器，放在自定义的 /usr/local/docker/jtomcat/项目名/ROOT 目录下并解压</li>
-<li>修改项目数据源为数据库地址</li>
-<li>创建启动挂载宿主机数据卷的tomcat<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker run -p 8080:8080 --name 项目名 -v /usr/<span class="built_in">local</span>/docker/jtomcat/项目名/ROOT:/usr/<span class="built_in">local</span>/tomcat/webapps/ROOT -d tomcat</span><br></pre></td></tr></table></figure>
-
+<li><p>war包部署会删除原文件夹重新部署，建议将打包后的文件夹压缩（zip）</p>
+<p><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1572339034716.png" alt="1572339034716"></p>
 </li>
-</ol>
-<h2 id="查看容器日志"><a href="#查看容器日志" class="headerlink" title="查看容器日志"></a>查看容器日志</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker logs [-f] 容器名</span><br></pre></td></tr></table></figure>
-
-<h2 id="Docker-常用命令总结"><a href="#Docker-常用命令总结" class="headerlink" title="Docker 常用命令总结"></a>Docker 常用命令总结</h2><h2 id="Docker-Compose"><a href="#Docker-Compose" class="headerlink" title="Docker Compose"></a>Docker Compose</h2><h2 id="Docker-Compose-简介、安装与卸载"><a href="#Docker-Compose-简介、安装与卸载" class="headerlink" title="Docker Compose 简介、安装与卸载"></a>Docker Compose 简介、安装与卸载</h2><p><strong>Docker Compose 是Docker官方编排项目之一，负责快速部署分布式应用。</strong>Compose是Docker官方的开源项目，负责实现对Docker容器集群的快速编排。从功能上看，跟OpenStack中的Heat十分类似。</p>
-<p>Compose的定位是定义和运行多个Docker容器应用，其前身是开源项目Fig.</p>
-<p>Compose允许用户通过一个单独的<font color="red">docker-compose.yml</font>模板文件，来定义一组关联的应用容器为一个项目。</p>
-<p>Compose中有两个重要概念：</p>
-<ul>
-<li><font color="red">服务（service）:</font>一个应用的容器，实际上可以包括若干运行相同镜像的容器实例</li>
-<li><font color="red">项目（project）:</font>由一组关联的应用容器完成的一个完整业务单元，在<font color="red">docker-compose.yml</font>文件中定义。</li>
-<li>Compose 默认的管理对象是项目，通过子命令对项目中的一组容器进行便捷的生命周期管理。</li>
-<li>Compose 项目有Pyhon编写，实现上调用了Docker服务提供的API对容器进行管理，因此，只要操作的平台支持 Docker API ，就可以利用Compose进行编排管理。</li>
-</ul>
-<h2 id="Docker-Compose-使用"><a href="#Docker-Compose-使用" class="headerlink" title="Docker Compose 使用"></a>Docker Compose 使用</h2><p>Compose 支持Linux ，MacOS，Windows 10三大平台。</p>
-<p>Compose 可以通过Python的包管理工具PIP进行安装，也可以直接下载编译好的二进制文件使用，甚至能够直接在Docker容器中运行。</p>
-<p>前两种是传统方式，适合在本地环境下安装使用，最后一种方式则不破话系统环境，更适合云计算场合。</p>
-<h3 id="Linux系统安装Compose"><a href="#Linux系统安装Compose" class="headerlink" title="Linux系统安装Compose"></a>Linux系统安装Compose</h3><ul>
-<li><p><strong>二进制包</strong></p>
-<p>从官方<a href="https://github.com/docker/compose/releases" target="_blank" rel="noopener">Github Release</a>直接下载编译好的二进制文件即可。</p>
-<p>例如，在Linux x64位系统上直接下载对应的二进制包。</p>
+<li><p>通过xftp上传到服务器文件夹下</p>
+<p><img src="//870727741.github.io/2019/11/14/第二章 基础设施即服务1：Linux入门学习/1572343943716.png" alt="1572343943716"></p>
 </li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##(官网上有这个链接,找新的复制即可)在安装docker之后直接执行这一步</span></span><br><span class="line">$ curl -L https://github.com/docker/compose/releases/download/1.25.0-rc4/docker-compose-`uname -s`-`uname -m` -o /usr/<span class="built_in">local</span>/bin/docker-compose</span><br><span class="line">chmod +x /usr/<span class="built_in">local</span>/bin/docker-compose</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>更改权限为可执行</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/bin/</span><br><span class="line">$ chmod +x docker-compose </span><br><span class="line">$ docker-compose version</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>卸载docker-compose</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo /usr/<span class="built_in">local</span>/bin/docker-compose</span><br><span class="line"><span class="comment">##如果是通过PIP安装的,则执行以下命令</span></span><br><span class="line">$ sudo pip uninstall docker-compose</span><br></pre></td></tr></table></figure>
-
-<h2 id="Docker-Compose-命令"><a href="#Docker-Compose-命令" class="headerlink" title="Docker Compose 命令"></a>Docker Compose 命令</h2><h3 id="命令选项"><a href="#命令选项" class="headerlink" title="命令选项"></a>命令选项</h3><table>
-<thead>
-<tr>
-<th>命令选项</th>
-<th>命令选项说明</th>
-<th>示例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-f,–file FILE</td>
-<td>指定使用的Compose模板文件，默认为docker-compose.yml，可以指定多次</td>
-<td></td>
-</tr>
-<tr>
-<td>-p,–project-name NAME</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>–x -nerworking</td>
-<td>使用Docker的可拔插网络后端特性</td>
-<td></td>
-</tr>
-<tr>
-<td>–x-network-driver DRIVER</td>
-<td>指定网路后端的驱动，默认为bridge</td>
-<td></td>
-</tr>
-<tr>
-<td>–verbose</td>
-<td>输出更多调试信息</td>
-<td></td>
-</tr>
-<tr>
-<td>-v,–version</td>
-<td>打印版本并退出</td>
-<td></td>
-</tr>
-</tbody></table>
-<h3 id="命令使用说明"><a href="#命令使用说明" class="headerlink" title="命令使用说明"></a>命令使用说明</h3><ul>
-<li><p><font color="red">build</font></p>
-<p>格式为<font color="red">docker-compose build [options] [SERVICE…]</font></p>
-<p>构建（重新构建）项目中的服务容器</p>
-<p>服务容器一旦构建后，将会带上一个标记名，</p>
-<table>
-<thead>
-<tr>
-<th>命令选项</th>
-<th>命令选项说明</th>
-<th>示例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>–force-rm</td>
-<td>删除构建过程中的临时容器</td>
-<td></td>
-</tr>
-<tr>
-<td>–no-cache</td>
-<td>构建镜像过程中不使用cache(这将加长构建过程)</td>
-<td></td>
-</tr>
-<tr>
-<td>–pull</td>
-<td>始终尝试通过pull来获取和更新版本的镜像</td>
-<td></td>
-</tr>
-</tbody></table>
+<li><p>到服务器上解压</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ apt-get install unzip</span><br><span class="line">$ <span class="built_in">cd</span> soft/</span><br><span class="line">$ unzip 项目.zip</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><font color="red">config：</font>验证Compose文件格式是否正确</p>
-</li>
-<li><p><font color="red">down：</font>此命令将会停止<font color="red">up</font>命令所启动的容器，并移除网络</p>
-</li>
-<li><p><font color="red">exec：</font>进入指定的容器</p>
-</li>
-<li><p><font color="red">help：</font>获取命令帮助</p>
-</li>
-<li><p><font color="red">images：</font>列出Compse文件中所包含的镜像</p>
-</li>
-<li><p><font color="red">kil：</font></p>
-<p>格式为<font color="red">docker-compose kill [options] [SERVICE…]</font></p>
-<p>通过发送SIGKILL信号来强制停止服务容器</p>
-<p>支持通过<font color="red">-s</font>参数来指定发送的信号</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker-compose <span class="built_in">kill</span> -s SIGINT</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><font color="red">logs：</font></p>
-<p>格式为<font color="red">docker-compose logs [options] [SERVICE…]</font></p>
-<p><font color="red">–no-color</font>来关闭日志颜色</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker-compose logs -f tomcat</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><font color="red">pause：</font></p>
-<p>格式为<font color="red">docker-compose pause [SERVICE…]</font></p>
-<p>暂停一个服务容器</p>
-</li>
-<li><p><font color="red">port：</font></p>
-<p>格式为<font color="red">docker-compose port [options] SERVICE PRIVATE_PORT</font></p>
-<p>打印某个容器端口所映射的公共端口</p>
-<table>
-<thead>
-<tr>
-<th>命令选项</th>
-<th>命令选项说明</th>
-<th>示例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>–protocol-proto</td>
-<td>指定端口协议，tcp(默认)或者udp</td>
-<td></td>
-</tr>
-<tr>
-<td>–index-index</td>
-<td>如果同一个服务存在多个容器，指定命令对象容器的序号（默认为1）</td>
-<td></td>
-</tr>
-</tbody></table>
-</li>
-<li><p><font color="red">ps：</font></p>
-<p>格式为<font color="red">docker-compose port [options]  [SERVICE…]</font></p>
-<p>列出目前项目中所有的容器</p>
-<p><font color="red">-q</font>只打印容器ID信息</p>
-</li>
-<li><p><font color="red">push</font></p>
-</li>
-<li><p><font color="red">restart</font></p>
-</li>
-<li><p><font color="red">rm</font></p>
-</li>
-</ul>
-<h3 id="Docker-Compose模板文件"><a href="#Docker-Compose模板文件" class="headerlink" title="Docker Compose模板文件"></a>Docker Compose模板文件</h3><table>
-<thead>
-<tr>
-<th>指令</th>
-<th>说明</th>
-<th>示例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>build</td>
-<td>指定Dockerfile文件夹路径，自动构建镜像</td>
-<td></td>
-</tr>
-<tr>
-<td>cap_add,cap_drop</td>
-<td>指定容器的内核能力分配</td>
-<td></td>
-</tr>
-<tr>
-<td>command</td>
-<td>容器启动后默认执行的命令</td>
-<td></td>
-</tr>
-<tr>
-<td>configs</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>cgroup_parent</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>container_name</td>
-<td>指定容器名</td>
-<td></td>
-</tr>
-<tr>
-<td>deploy</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>devices</td>
-<td>指定容器映射关系</td>
-<td></td>
-</tr>
-<tr>
-<td>depends_on</td>
-<td>解决容器的依赖，启动先后的问题</td>
-<td></td>
-</tr>
-<tr>
-<td>dns</td>
-<td>自定义DNS服务，可以是一个值，也可以是一个列表</td>
-<td></td>
-</tr>
-<tr>
-<td>dns_serach</td>
-<td>配置DNS搜索域</td>
-<td></td>
-</tr>
-<tr>
-<td>tmpfs</td>
-<td>挂载一个tmpfs文件系统到容器</td>
-<td></td>
-</tr>
-<tr>
-<td>env_file</td>
-<td>从文件中获取环境变量，可以为单独的文件路径或列表</td>
-<td></td>
-</tr>
-<tr>
-<td>environment</td>
-<td>设置环境变量，可以使用数组或字典两种风格</td>
-<td></td>
-</tr>
-<tr>
-<td>expose</td>
-<td>暴露端口号</td>
-<td></td>
-</tr>
-<tr>
-<td>external_links</td>
-<td>不建议使用</td>
-<td></td>
-</tr>
-<tr>
-<td>extra_hosts</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>healthcheck</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>image</td>
-<td>指定镜像名或镜像ID，如果不存在，或尝试pull</td>
-<td></td>
-</tr>
-<tr>
-<td>labels</td>
-<td>为容器添加Docker元数据信息，例如可以为容器添加辅助说明信息</td>
-<td></td>
-</tr>
-<tr>
-<td>links</td>
-<td>不推荐使用</td>
-<td></td>
-</tr>
-<tr>
-<td>logging</td>
-<td>配置日志选项</td>
-<td></td>
-</tr>
-<tr>
-<td>network_mode</td>
-<td>设置网络模式</td>
-<td></td>
-</tr>
-<tr>
-<td>networks</td>
-<td>配置容器连接的网络</td>
-<td></td>
-</tr>
-<tr>
-<td>pids</td>
-<td>跟主机共享进程命名空间，打开该选项的容器和宿主机系统之间可以通过进程id来互相访问和操作</td>
-<td></td>
-</tr>
-<tr>
-<td>ports</td>
-<td>暴露端口信息，宿主机端口：容器端口，或者仅仅指定容器的端口都可以</td>
-<td></td>
-</tr>
-<tr>
-<td>secrets</td>
-<td>存储敏感数据，例如mysql服务密码</td>
-<td></td>
-</tr>
-<tr>
-<td>security_opt</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>sysctls</td>
-<td>配置容器内核参数</td>
-<td></td>
-</tr>
-<tr>
-<td>ulimits</td>
-<td>指定容器的ulimits限制值</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>数据卷所挂载路径设置，可以设置宿主机路径或加上访问模式 宿主机路径：容器内路径</td>
-<td></td>
-</tr>
-</tbody></table>
-<h3 id="Docker-Compoe使用：启动一个tomcat"><a href="#Docker-Compoe使用：启动一个tomcat" class="headerlink" title="Docker Compoe使用：启动一个tomcat"></a>Docker Compoe使用：启动一个tomcat</h3><ul>
-<li>新建编写docker-compose.yml文件（Compose使用的主模板文件）<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/docker/jtomcat/projectNmae</span><br><span class="line">$ vi docker-compose.yml</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">'3'</span></span><br><span class="line"><span class="attr">services:</span> </span><br><span class="line"><span class="attr">  tomcat:</span></span><br><span class="line"><span class="attr">   restart:</span> <span class="string">always</span></span><br><span class="line"><span class="attr">   image:</span> <span class="string">tomcat</span></span><br><span class="line"><span class="attr">   container_name:</span> <span class="string">tomcat</span></span><br><span class="line"><span class="attr">   ports:</span> </span><br><span class="line"><span class="bullet">    -</span> <span class="number">8080</span><span class="string">:8080</span></span><br><span class="line"><span class="bullet">    -</span> <span class="number">8081</span><span class="string">:8080</span></span><br><span class="line"><span class="bullet">    -</span> <span class="number">7080</span><span class="string">:8080</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">'3'</span></span><br><span class="line"><span class="attr">services:</span> </span><br><span class="line"><span class="attr">  tomcat:</span></span><br><span class="line"><span class="attr">   restart:</span> <span class="string">always</span></span><br><span class="line"><span class="attr">   image:</span> <span class="string">tomcat</span></span><br><span class="line"><span class="attr">   container_name:</span> <span class="string">tomcat</span></span><br><span class="line"><span class="attr">   ports:</span> </span><br><span class="line"><span class="bullet">    -</span> <span class="number">8080</span><span class="string">:8080</span></span><br><span class="line"><span class="bullet">    -</span> <span class="number">8081</span><span class="string">:8080</span></span><br><span class="line"><span class="bullet">    -</span> <span class="number">7080</span><span class="string">:8080</span></span><br><span class="line"><span class="attr">   volumes:</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">"/usr/local/docker/jtomcat/webapps:/user/local/tomcat/webapps"</span></span><br><span class="line"><span class="attr">   mysql:</span> </span><br><span class="line"><span class="attr">    restart:</span> <span class="string">always</span></span><br><span class="line"><span class="attr">    image:</span> <span class="attr">mysql:5.7.28</span></span><br><span class="line"><span class="attr">    container_name:</span> <span class="string">mysql</span></span><br><span class="line"><span class="attr">    ports:</span> </span><br><span class="line"><span class="bullet">     -</span> <span class="number">3306</span><span class="string">:3306</span></span><br><span class="line"><span class="attr">    environment:</span> </span><br><span class="line"><span class="attr">     TZ:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"><span class="attr">     MYSQL_ROOT_PASSWORD:</span> <span class="string">root</span></span><br><span class="line"><span class="attr">    command:</span> </span><br><span class="line"><span class="bullet">     -</span><span class="bullet">-character-set-server=utf8mb4</span></span><br><span class="line"><span class="bullet">     -</span><span class="bullet">-collation-server=utf8mb4_general_ci</span></span><br><span class="line"><span class="bullet">     -</span><span class="bullet">-explicit_defaults_for_timestamp=true</span></span><br><span class="line"><span class="bullet">     -</span><span class="bullet">-max_allowed_packet=128M</span></span><br><span class="line"><span class="bullet">     -</span><span class="bullet">-sql-mode="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBTITUTION,NO_ZERO_DATE,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO"</span></span><br><span class="line"><span class="attr">    volumes:</span> </span><br><span class="line"><span class="attr">     - mysql-data:</span><span class="string">/var/lib/mysql</span></span><br><span class="line"><span class="attr">volumes:</span> </span><br><span class="line"><span class="attr"> mysql-data:</span></span><br></pre></td></tr></table></figure>
-
-<p>Docker管理的数据卷(volumes:  mysql-data: )未设置情况下默认放在/usr/lib/docker/volums/</p>
-<ul>
-<li>启动</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##守护态启动</span></span><br><span class="line">$ docker-compose up -d</span><br><span class="line">$ docker-compose logs -f tomcat</span><br><span class="line">$ docker-compose down</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>浏览器访问<blockquote>
-<p><a href="http://192.168.0.100:7080/" target="_blank" rel="noopener">http://192.168.0.100:7080/</a></p>
-<p><a href="http://192.168.0.100:8080/" target="_blank" rel="noopener">http://192.168.0.100:8080/</a></p>
-<p><a href="http://192.168.0.100:8081/" target="_blank" rel="noopener">http://192.168.0.100:8081/</a></p>
-</blockquote>
-</li>
+<li><p>解压出来的文件移动到tomcat下的webapps</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">root@ubuntuserver:/usr/<span class="built_in">local</span>/apache-tomcat-8.5.46/webapps/ROOT<span class="comment"># rm-fr *</span></span><br><span class="line">root@ubuntuserver:/usr/<span class="built_in">local</span>/apache-tomcat-8.5.46/webapps/ROOT<span class="comment"># mv /root/soft/项目.zip</span></span><br><span class="line">root@ubuntuserver:/usr/<span class="built_in">local</span>/apache-tomcat-8.5.46/webapps/ROOT<span class="comment"># unzip 项目.zip</span></span><br><span class="line">root@ubuntuserver:/usr/<span class="built_in">local</span>/apache-tomcat-8.5.46/webapps/ROOT<span class="comment"># rm -fr 项目.zip</span></span><br><span class="line"><span class="built_in">cd</span> bin/</span><br><span class="line">./shutdown.sh </span><br><span class="line">./startup.sh </span><br><span class="line"><span class="comment">#查看日志</span></span><br><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/apache-tomcat-8.5.46/webapps/<span class="built_in">log</span></span><br><span class="line">$ tail -f catalina.out</span><br></pre></td></tr></table></figure></li>
 </ul>
 
       
@@ -898,18 +1272,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/03/26/Java-FreeMarker模板文档生成/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/11/14/第二章 基础设施即服务2：Docker容器学习/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Java-FreeMarker模板文档生成
+          第二章 基础设施即服务2：Docker容器学习
         
       </div>
     </a>
   
   
-    <a href="/2019/11/14/基础设施即服务：Linux入门学习/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">基础设施即服务：Linux入门学习</div>
+    <a href="/2019/11/14/第一章 关于微服务/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">第一章 微服务架构</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -936,7 +1310,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#什么是Docker——新型的虚拟化技术"><span class="toc-number">1.</span> <span class="toc-text">什么是Docker——新型的虚拟化技术</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#为什么使用Docker-相关名词定义"><span class="toc-number">1.0.1.</span> <span class="toc-text">为什么使用Docker,相关名词定义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker引擎"><span class="toc-number">1.1.</span> <span class="toc-text">Docker引擎</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker架构"><span class="toc-number">1.2.</span> <span class="toc-text">Docker架构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker仓库"><span class="toc-number">1.3.</span> <span class="toc-text">Docker仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#公有仓库-Docker-Registry"><span class="toc-number">1.3.1.</span> <span class="toc-text">公有仓库 Docker Registry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#私有仓库"><span class="toc-number">1.3.2.</span> <span class="toc-text">私有仓库</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Ubuntu安装Docker"><span class="toc-number">2.</span> <span class="toc-text">Ubuntu安装Docker</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Docker-CE（用下一个自动化脚本安装方式）"><span class="toc-number">2.1.</span> <span class="toc-text">安装Docker CE（用下一个自动化脚本安装方式）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使脚本自动安装"><span class="toc-number">2.2.</span> <span class="toc-text">使脚本自动安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动Docker-CE"><span class="toc-number">2.3.</span> <span class="toc-text">启动Docker CE</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#配置Docker镜像加速器"><span class="toc-number">3.</span> <span class="toc-text">配置Docker镜像加速器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Ubuntu-16-04-Debian-8-CentOS-7"><span class="toc-number">3.1.</span> <span class="toc-text">Ubuntu 16.04+,Debian 8+,CentOS 7</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#测试docker镜像加速器"><span class="toc-number">3.2.</span> <span class="toc-text">测试docker镜像加速器</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Docker镜像-和-容器"><span class="toc-number">4.</span> <span class="toc-text">Docker镜像  和 容器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#镜像命令"><span class="toc-number">4.1.</span> <span class="toc-text">镜像命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#从仓库获取镜像"><span class="toc-number">4.2.</span> <span class="toc-text">从仓库获取镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#运行容器"><span class="toc-number">4.3.</span> <span class="toc-text">运行容器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#管理本机上的镜像和容器"><span class="toc-number">4.4.</span> <span class="toc-text">管理本机上的镜像和容器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定制镜像–Dockerfile"><span class="toc-number">4.5.</span> <span class="toc-text">定制镜像–Dockerfile</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-创建Dockerfile文件"><span class="toc-number">4.5.1.</span> <span class="toc-text">一 创建Dockerfile文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#编写DockerFile脚本"><span class="toc-number">4.5.2.</span> <span class="toc-text">编写DockerFile脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#构建镜像"><span class="toc-number">4.5.3.</span> <span class="toc-text">构建镜像</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#示例：定制Tomcat镜像"><span class="toc-number">4.5.3.1.</span> <span class="toc-text">示例：定制Tomcat镜像</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Dockerfile文件指令详解"><span class="toc-number">4.5.4.</span> <span class="toc-text">Dockerfile文件指令详解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#部署项目到Docker容器"><span class="toc-number">4.5.5.</span> <span class="toc-text">部署项目到Docker容器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#介绍镜像实现的基本原理"><span class="toc-number">4.6.</span> <span class="toc-text">介绍镜像实现的基本原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#操作Docker容器"><span class="toc-number">4.7.</span> <span class="toc-text">操作Docker容器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#启动命名容器"><span class="toc-number">4.7.1.</span> <span class="toc-text">启动命名容器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#守护态运行容器——后台运行"><span class="toc-number">4.7.1.1.</span> <span class="toc-text">守护态运行容器——后台运行</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#终止容器"><span class="toc-number">4.7.2.</span> <span class="toc-text">终止容器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#删除容器"><span class="toc-number">4.7.2.1.</span> <span class="toc-text">删除容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#整体流程实例"><span class="toc-number">4.7.2.2.</span> <span class="toc-text">整体流程实例</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Docker-仓库"><span class="toc-number">5.</span> <span class="toc-text">Docker 仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-Hub"><span class="toc-number">5.1.</span> <span class="toc-text">Docker Hub</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#自动创建"><span class="toc-number">5.1.1.</span> <span class="toc-text">自动创建</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-私用仓库"><span class="toc-number">5.2.</span> <span class="toc-text">Docker 私用仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据卷！"><span class="toc-number">5.3.</span> <span class="toc-text">数据卷！</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Docker-部署数据库"><span class="toc-number">6.</span> <span class="toc-text">Docker 部署数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载数据库镜像"><span class="toc-number">6.1.</span> <span class="toc-text">下载数据库镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#（本地）远程连接服务器Docker-MySQL"><span class="toc-number">6.2.</span> <span class="toc-text">（本地）远程连接服务器Docker MySQL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#失败-10061-2013可能原因"><span class="toc-number">6.2.1.</span> <span class="toc-text">失败 10061 2013可能原因</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#是数据库数据及配置持久化"><span class="toc-number">6.3.</span> <span class="toc-text">是数据库数据及配置持久化</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#项目的容器化部署"><span class="toc-number">7.</span> <span class="toc-text">项目的容器化部署</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#查看容器日志"><span class="toc-number">7.1.</span> <span class="toc-text">查看容器日志</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-常用命令总结"><span class="toc-number">7.2.</span> <span class="toc-text">Docker 常用命令总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-Compose"><span class="toc-number">7.3.</span> <span class="toc-text">Docker Compose</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-Compose-简介、安装与卸载"><span class="toc-number">7.4.</span> <span class="toc-text">Docker Compose 简介、安装与卸载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-Compose-使用"><span class="toc-number">7.5.</span> <span class="toc-text">Docker Compose 使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Linux系统安装Compose"><span class="toc-number">7.5.1.</span> <span class="toc-text">Linux系统安装Compose</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-Compose-命令"><span class="toc-number">7.6.</span> <span class="toc-text">Docker Compose 命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#命令选项"><span class="toc-number">7.6.1.</span> <span class="toc-text">命令选项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#命令使用说明"><span class="toc-number">7.6.2.</span> <span class="toc-text">命令使用说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Docker-Compose模板文件"><span class="toc-number">7.6.3.</span> <span class="toc-text">Docker Compose模板文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Docker-Compoe使用：启动一个tomcat"><span class="toc-number">7.6.4.</span> <span class="toc-text">Docker Compoe使用：启动一个tomcat</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux"><span class="toc-number">1.</span> <span class="toc-text">Linux</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#linux简介"><span class="toc-number">1.1.</span> <span class="toc-text">linux简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux与Windows比较"><span class="toc-number">1.2.</span> <span class="toc-text">linux与Windows比较</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-Ubuntu-Server"><span class="toc-number">1.3.</span> <span class="toc-text">安装 Ubuntu Server</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-远程控制"><span class="toc-number">1.4.</span> <span class="toc-text">Linux 远程控制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#原因"><span class="toc-number">1.4.1.</span> <span class="toc-text">原因</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#XShell-服务器远程连接工具"><span class="toc-number">1.4.2.</span> <span class="toc-text">XShell 服务器远程连接工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#XHttp-服务器远程软件的交互"><span class="toc-number">1.4.3.</span> <span class="toc-text">XHttp 服务器远程软件的交互</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux的目录结构"><span class="toc-number">1.5.</span> <span class="toc-text">linux的目录结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux命令"><span class="toc-number">1.6.</span> <span class="toc-text">Linux命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#操作文件目录"><span class="toc-number">1.6.1.</span> <span class="toc-text">操作文件目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linux重启与压缩命令"><span class="toc-number">1.6.2.</span> <span class="toc-text">Linux重启与压缩命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux快捷键"><span class="toc-number">1.7.</span> <span class="toc-text">Linux快捷键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编辑器的使用"><span class="toc-number">1.8.</span> <span class="toc-text">编辑器的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#vim-运行模式"><span class="toc-number">1.8.1.</span> <span class="toc-text">vim :运行模式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#vim-命令"><span class="toc-number">1.8.1.1.</span> <span class="toc-text">vim : 命令</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#什么是-swp"><span class="toc-number">1.8.1.1.1.</span> <span class="toc-text">什么是.swp</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#swp的产生"><span class="toc-number">1.8.1.1.2.</span> <span class="toc-text">.swp的产生</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nano"><span class="toc-number">1.8.2.</span> <span class="toc-text">nano</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#命令"><span class="toc-number">1.8.2.1.</span> <span class="toc-text">命令</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看内存占用情况—htop"><span class="toc-number">1.9.</span> <span class="toc-text">查看内存占用情况—htop</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#软件的安装与卸载"><span class="toc-number">1.10.</span> <span class="toc-text">软件的安装与卸载</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#修改数据源"><span class="toc-number">1.10.1.</span> <span class="toc-text">修改数据源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装文件"><span class="toc-number">1.10.2.</span> <span class="toc-text">安装文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用的apt命令"><span class="toc-number">1.10.3.</span> <span class="toc-text">常用的apt命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linux中apt与apt-get命令的区别与解释"><span class="toc-number">1.10.4.</span> <span class="toc-text">Linux中apt与apt-get命令的区别与解释</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#切换到Root"><span class="toc-number">1.10.4.1.</span> <span class="toc-text">切换到Root</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设置允许远程登录Root-阿里云默认就是远程连接"><span class="toc-number">1.10.4.2.</span> <span class="toc-text">设置允许远程登录Root //阿里云默认就是远程连接</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#用户账户说明"><span class="toc-number">1.10.5.</span> <span class="toc-text">用户账户说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#组账户说明"><span class="toc-number">1.10.6.</span> <span class="toc-text">组账户说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#账户系统文件说明"><span class="toc-number">1.10.7.</span> <span class="toc-text">账户系统文件说明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux文件权限管理"><span class="toc-number">1.11.</span> <span class="toc-text">linux文件权限管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#shell文件-可执行的脚本文件"><span class="toc-number">1.11.1.</span> <span class="toc-text">shell文件 可执行的脚本文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更改权限操作"><span class="toc-number">1.11.2.</span> <span class="toc-text">更改权限操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#chown"><span class="toc-number">1.11.2.1.</span> <span class="toc-text">chown</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#chmod"><span class="toc-number">1.11.2.2.</span> <span class="toc-text">chmod</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#权限的数字设定法"><span class="toc-number">1.11.2.3.</span> <span class="toc-text">权限的数字设定法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linxu安装java"><span class="toc-number">1.12.</span> <span class="toc-text">linxu安装java</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#JRE"><span class="toc-number">1.12.1.</span> <span class="toc-text">JRE</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linxu安装JRE"><span class="toc-number">1.13.</span> <span class="toc-text">linxu安装JRE</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux装Tomcat"><span class="toc-number">1.14.</span> <span class="toc-text">Linux装Tomcat</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#linxu安装MySql"><span class="toc-number">1.14.1.</span> <span class="toc-text">linxu安装MySql</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置远程访问"><span class="toc-number">1.14.2.</span> <span class="toc-text">配置远程访问</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux项目部署"><span class="toc-number">1.15.</span> <span class="toc-text">linux项目部署</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -961,7 +1335,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css"/>
 <script>
 var gitment = new Gitment({
-  id: "基础设施即服务：Docker容器学习",
+  id: "第二章 基础设施即服务1：Linux入门学习",
   owner: '870727741',
   repo: '870727741.github.io',
   oauth: {
@@ -1064,18 +1438,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">微服务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">博客</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Api doc</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">书签</a>
               </li>
              
@@ -1085,6 +1447,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">tips</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">微服务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">博客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Api doc</a>
               </li>
              
               <li class="article-tag-list-item">

@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://870727741.github.io">
-  <title>微服务架构 | M</title>
+  <title>第三章 PaaS :平台即服务 | M</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="视频链接  《微服务：从设计到部署》 《重构改变既有代码的设计》 《研磨设计模式》 IaaS :基础设施即服务 PaaS:平台即服务 SaaS:软件即服务 云计算、云服务、云存储。全栈 持续集成与持续交付">
+  <meta name="description" content="GitLab(代码管理平台) 什么是Git Git的一般工作流程 Git的基本操作 TortoiscGit简化Git操作 什么是GitLab 基于Docker安装GitLab GitLab基本设置 GitLab账户管理 GitLab创建第一个项目   Nexus(依赖管理平台) 什么是Nexus 基于Docker安装Nexus Maven仓库介绍 在项目中使用Maven私服   Registry">
 <meta name="keywords" content="微服务">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微服务架构">
-<meta property="og:url" content="https://870727741.github.io/2019/11/14/关于微服务/index.html">
+<meta property="og:title" content="第三章 PaaS :平台即服务">
+<meta property="og:url" content="https://870727741.github.io/2019/11/14/第三章 PaaS：平台即服务/index.html">
 <meta property="og:site_name" content="M">
-<meta property="og:description" content="视频链接  《微服务：从设计到部署》 《重构改变既有代码的设计》 《研磨设计模式》 IaaS :基础设施即服务 PaaS:平台即服务 SaaS:软件即服务 云计算、云服务、云存储。全栈 持续集成与持续交付">
+<meta property="og:description" content="GitLab(代码管理平台) 什么是Git Git的一般工作流程 Git的基本操作 TortoiscGit简化Git操作 什么是GitLab 基于Docker安装GitLab GitLab基本设置 GitLab账户管理 GitLab创建第一个项目   Nexus(依赖管理平台) 什么是Nexus 基于Docker安装Nexus Maven仓库介绍 在项目中使用Maven私服   Registry">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-11-20T02:35:07.139Z">
+<meta property="og:updated_time" content="2020-05-12T01:36:11.207Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="微服务架构">
-<meta name="twitter:description" content="视频链接  《微服务：从设计到部署》 《重构改变既有代码的设计》 《研磨设计模式》 IaaS :基础设施即服务 PaaS:平台即服务 SaaS:软件即服务 云计算、云服务、云存储。全栈 持续集成与持续交付">
+<meta name="twitter:title" content="第三章 PaaS :平台即服务">
+<meta name="twitter:description" content="GitLab(代码管理平台) 什么是Git Git的一般工作流程 Git的基本操作 TortoiscGit简化Git操作 什么是GitLab 基于Docker安装GitLab GitLab基本设置 GitLab账户管理 GitLab创建第一个项目   Nexus(依赖管理平台) 什么是Nexus 基于Docker安装Nexus Maven仓库介绍 在项目中使用Maven私服   Registry">
   
     <link rel="alternative" href="/atom.xml" title="M" type="application/atom+xml">
   
@@ -149,65 +149,286 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-关于微服务" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-第三章 PaaS：平台即服务" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      微服务架构
+      第三章 PaaS :平台即服务
     </h1>
   
 
         
-        <a href="/2019/11/14/关于微服务/" class="archive-article-date">
-  	<time datetime="2019-11-14T01:27:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-14</time>
+        <a href="/2019/11/14/第三章 PaaS：平台即服务/" class="archive-article-date">
+  	<time datetime="2019-11-14T01:30:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><a href="https://www.bilibili.com/video/av36042649/?p=2" target="_blank" rel="noopener">视频链接</a></p>
-<ul>
-<li>《微服务：从设计到部署》</li>
-<li>《重构改变既有代码的设计》</li>
-<li>《研磨设计模式》</li>
-<li>IaaS :基础设施即服务</li>
-<li>PaaS:平台即服务</li>
-<li>SaaS:软件即服务</li>
-<li>云计算、云服务、云存储。全栈</li>
-<li>持续集成与持续交付<a id="more"></a>
-<h2 id="微服务简介"><a href="#微服务简介" class="headerlink" title="微服务简介"></a>微服务简介</h2></li>
-<li>这是一种思想，可以用于Java开发的一种思想</li>
-<li>将应用开发或者重构成为服务以分离服务，通过API以明确的方式来相互“对话”。例如，每个微服务都各自包含，各自维护自己的数据存储，可以独立更新其他服务。</li>
-<li>微服务最大的进步在于改变了我们的工作方式。敏捷软件开发技术、应用迁移云端、DevOps文化、持续集成与持续部署（CI/CD）和容器应用都使用了微服务来革新应用开发与交付。</li>
-<li>重构单体为微服务</li>
-<li>一个微服务会暴露一个提供其他微服务或客户端消费的API，其他微服务可能实现了一个WEB UI，在运行时，每个实例通常是一个云虚拟机（VM），或一个<strong>Docker容器</strong>(必须会！！)。</li>
-<li>应用不能直接访问后端服务，他们之间是由一个API网关（API Gateway）的中介负责，API网关负责负载均衡、缓存、访问控制，API计量和监控，可以通过NGINX（engine x）实现<blockquote>
-<p>linux上安装Docker，Docker上部署服务</p>
-</blockquote>
+        <ul>
+<li>GitLab(代码管理平台)<ul>
+<li>什么是Git</li>
+<li>Git的一般工作流程</li>
+<li>Git的基本操作</li>
+<li>TortoiscGit简化Git操作</li>
+<li>什么是GitLab</li>
+<li>基于Docker安装GitLab</li>
+<li>GitLab基本设置</li>
+<li>GitLab账户管理</li>
+<li>GitLab创建第一个项目</li>
+</ul>
 </li>
-<li>数据库设计反范式</li>
+<li>Nexus(依赖管理平台)<ul>
+<li>什么是Nexus</li>
+<li>基于Docker安装Nexus</li>
+<li>Maven仓库介绍</li>
+<li>在项目中使用Maven私服</li>
 </ul>
-<h2 id="微服务的缺点"><a href="#微服务的缺点" class="headerlink" title="微服务的缺点"></a>微服务的缺点</h2><ul>
-<li>分布式系统，整体复杂</li>
-<li>分区数据库架构</li>
-<li>测试微服务应用程序也很复杂</li>
-<li>实现跨越多服务变更</li>
-<li>部署复杂</li>
-<li>每个服务有多个运行实例</li>
+</li>
+<li>Registry（镜像管理平台）</li>
+<li>Docker实战</li>
 </ul>
-<h2 id="单体应用的缺点"><a href="#单体应用的缺点" class="headerlink" title="单体应用的缺点"></a>单体应用的缺点</h2><ul>
-<li>可靠性低</li>
-<li>启动时间长</li>
-<li>SaaS 软件即服务，每次多次变更，直接推送上线</li>
-<li>当存在资源需求冲突时，功能难以扩展</li>
-<li>密集型计算 占用CUP</li>
-<li>存储型 占用内存</li>
-</ul>
+<a id="more"></a>
 
+<h1 id="GitLab-代码管理平台，吃内存，启动慢"><a href="#GitLab-代码管理平台，吃内存，启动慢" class="headerlink" title="GitLab(代码管理平台，吃内存，启动慢)"></a>GitLab(代码管理平台，吃内存，启动慢)</h1><p>只管理源代码，与开发工具无关</p>
+<h2 id="什么是Git"><a href="#什么是Git" class="headerlink" title="什么是Git"></a>什么是Git</h2><ul>
+<li>一个开源的分布式版本控制系统，用于敏捷高效地处理任何大或小的项目。</li>
+<li>是Linus Torvalds为了帮助管理Linux内核开发而开发的一个开放源码的版本控制软件。</li>
+<li>与常用的版本控制工具CVS，Subversion不同，它采用了分布式版本库的方式，不必服务器端软件支持。</li>
+<li>Git下载地址：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></li>
+<li>TortoiseGit下载地址：<a href="https://tortoisegit.org/download/" target="_blank" rel="noopener">https://tortoisegit.org/download/</a></li>
+<li>常见的第三方代码托管平台：GitHub（全球最大的代码开源平台），Gitee 码云，码市，GitLab</li>
+</ul>
+<p><font color="red">使用别人代码前了解使用协议/开源协议</font></p>
+<h3 id="Git撤销本地commit"><a href="#Git撤销本地commit" class="headerlink" title="Git撤销本地commit"></a><a href="https://blog.csdn.net/lpy943739901/article/details/90374730" target="_blank" rel="noopener">Git撤销本地commit</a></h3><blockquote>
+<p>今天用IDEA 合并了个yml文件，结果他把我整个git目录下所有修改的文件都提交了，瞬间慌成一匹马</p>
+</blockquote>
+<ul>
+<li><p>找到git目录</p>
+</li>
+<li><p>用git log 找到你想要回退的那个commit</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --soft commit_id</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>以下为reset的参数：</li>
+</ul>
+<p>git reset –mixed：此为默认方式，不带任何参数的git reset，即时这种方式，它回退到某个版本，只保留源码，回退commit和index信息<br> git reset –soft：回退到某个版本，只回退了commit的信息，不会恢复到index file一级。如果还要提交，直接commit即可<br> git reset –hard：彻底回退到某个版本，本地的源码也会变为上一个版本的内容</p>
+<h2 id="Git的一般工作流程、基本操作"><a href="#Git的一般工作流程、基本操作" class="headerlink" title="Git的一般工作流程、基本操作"></a>Git的一般工作流程、基本操作</h2><h3 id="建立gitHub仓库，上传代码"><a href="#建立gitHub仓库，上传代码" class="headerlink" title="建立gitHub仓库，上传代码"></a>建立gitHub仓库，上传代码</h3><ol>
+<li><a href="https://github.com/870727741/code_community" target="_blank" rel="noopener">https://github.com/870727741/code_community</a> 新建gitHub空白仓库</li>
+<li>–&gt;Setting–&gt;Deploy keys 部署key 公钥/私钥？ </li>
+<li>建立本地代码仓库并提交到github</li>
+</ol>
+<p><strong>打开终端  terminal</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> pa=%<span class="built_in">cd</span>%</span><br><span class="line"><span class="built_in">echo</span> %pa% <span class="comment">#查看当前路径</span></span><br><span class="line">git init</span><br><span class="line">git status   <span class="comment">##查看所有文件状态，红色未提交</span></span><br><span class="line">git add .    <span class="comment">##此操作前先检查忽略文件</span></span><br><span class="line">git commit -m <span class="string">"init repo"</span></span><br><span class="line">git status  </span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line">git remote add origin https://github.com/870727741/code_community.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>创建README.md （自述文件）</li>
+<li>更新本地仓库并推送到远端<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git add.</span><br><span class="line">git status</span><br><span class="line">git commit -m <span class="string">"自述文档"</span> <span class="comment">#-m 意思是添加注释？</span></span><br><span class="line"><span class="comment">##commit 之后又修改了一小部分，用下列命令</span></span><br><span class="line">git add .</span><br><span class="line">git commit --amend --no-edit <span class="comment">#--amend 追加</span></span><br><span class="line"><span class="comment">##最后再推送</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="什么是GitLab"><a href="#什么是GitLab" class="headerlink" title="什么是GitLab"></a>什么是<a href="https://about.gitlab.com/" target="_blank" rel="noopener">GitLab</a></h2><p>GitLab是利用Ruby on Rails一个开源的版本管理系统，实现一个自托管的Git项目仓库，可以通过Web界面进行访问公开或者私人项目，它拥有与GitHub类似的功能，能够浏览代码，管理缺陷和注释，可以管理团队对仓库的访问，它非常易于浏览提交过的版本并提供文件历史库。团队成员可以利用内置的简单聊天程序进行简单交流，它还提供一个代码片段收集功能，可以实现代码复用，便于日后需要时候进行查找。</p>
+<h2 id="基于Docker安装GitLab"><a href="#基于Docker安装GitLab" class="headerlink" title="基于Docker安装GitLab"></a>基于Docker安装GitLab</h2><p><strong>GitLib运行内存至少2Gb以上！</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ docker pull twang2218/gitlab-ce-zh</span><br><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/docker/gitlab</span><br><span class="line">$ vi docker-compose.yml</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">'3'</span></span><br><span class="line"><span class="attr">services:</span> </span><br><span class="line"><span class="attr"> gitlab:</span> </span><br><span class="line"><span class="attr">  image:</span> <span class="string">'twang2218/gitlab-ce-zh:10.5'</span></span><br><span class="line"><span class="attr">  restart:</span> <span class="string">always</span></span><br><span class="line"><span class="attr">  hostname:</span> <span class="string">'192.168.0.100'</span></span><br><span class="line"><span class="attr">  environment:</span> </span><br><span class="line"><span class="attr">   TZ:</span> <span class="string">'Asia/Shanghai'</span></span><br><span class="line"><span class="attr">   GITLAB_OMNIBUS_CONFIG:</span> </span><br><span class="line">    <span class="string">external_url</span> <span class="string">'http://192.168.0.100'</span></span><br><span class="line">    <span class="comment">#初始化配置失败，后续手动修改配置文件</span></span><br><span class="line">    <span class="comment">#gitlab_rails['gitlab_shell_ssh_port'] = 2222</span></span><br><span class="line">    <span class="comment">#unicorn['port'] = 8888</span></span><br><span class="line">    <span class="comment">#nginx['listen_port'] = 80</span></span><br><span class="line"><span class="attr">  ports:</span> </span><br><span class="line"><span class="bullet">   -</span> <span class="string">'80:80'</span> </span><br><span class="line"><span class="bullet">   -</span> <span class="string">'8443:443'</span> </span><br><span class="line"><span class="bullet">   -</span> <span class="string">'2222:22'</span> </span><br><span class="line"><span class="attr">  volumes:</span> </span><br><span class="line"><span class="bullet">   -</span> <span class="string">/usr/local/docker/gitlab/config:/etc/gitlab</span></span><br><span class="line"><span class="bullet">   -</span> <span class="string">/usr/local/docker/gitlab/data:/var/opt/gitlab</span></span><br><span class="line"><span class="bullet">   -</span> <span class="string">/usr/local/docker/gitlab/logs:/var/log/gitlab</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用GitLab"><a href="#使用GitLab" class="headerlink" title="使用GitLab"></a>使用GitLab</h2><ul>
+<li>浏览器访问 192.168.0.100(docker-compose.yml文件中有设置)</li>
+<li>登陆进入后添加一个自己的管理员账号root，私人账号<strong><a href="mailto:kyrd@qq.com" target="_blank" rel="noopener">kyrd@qq.com</a></strong>，学习用密码：12345678（最少八位）、</li>
+<li>点击管理区域按钮“（小扳手），在设置部分关闭头像和注册功能</li>
+<li>新建空白项目</li>
+<li>本地git拉取空白项目</li>
+<li>git init 初始化</li>
+<li>对项目进行完善后进行添加 git add .</li>
+<li>git commit -m “init” #提交</li>
+<li>git push #推送<h3 id="使用SSH拉取和推送项目"><a href="#使用SSH拉取和推送项目" class="headerlink" title="使用SSH拉取和推送项目"></a>使用SSH拉取和推送项目</h3></li>
+</ul>
+<p><strong>实现免密登录，为持续集成、交付做准备</strong></p>
+<ul>
+<li>生成SSH KEY<blockquote>
+<p>使用ssh-keygen工具生成，位置在Git安装目录下 ..\Git\usr\bin<br>rsa:公钥私钥<br>输入命令：</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"kyrd@qq.com"</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>执行后效果：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">Microsoft Windows [版本 10.0.18362.476]</span><br><span class="line">(c) 2019 Microsoft Corporation。保留所有权利。</span><br><span class="line"></span><br><span class="line">D:\Office\VersionControl\Git\Git\usr\bin&gt;ssh-keygen -t rsa -C <span class="string">"kyrd@qq.com"</span></span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/c/Users/Monica J/.ssh/id_rsa):</span><br><span class="line">/c/Users/Monica J/.ssh/id_rsa already exists.</span><br><span class="line">Overwrite (y/n)? y</span><br><span class="line"><span class="comment">##下面直接回车</span></span><br><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):</span><br><span class="line">Enter same passphrase again:</span><br><span class="line">Your identification has been saved <span class="keyword">in</span> /c/Users/Monica J/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved <span class="keyword">in</span> /c/Users/Monica J/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:/9+u6r99cmdoZJurTpNE8letYBGYPJKbjnsuAX9IVrI kyrd@qq.com</span><br><span class="line">The key<span class="string">'s randomart image is:</span></span><br><span class="line"><span class="string">+---[RSA 2048]----+</span></span><br><span class="line"><span class="string">|         o oo.   |</span></span><br><span class="line"><span class="string">|      . + =  .  .|</span></span><br><span class="line"><span class="string">|       + +..+   o|</span></span><br><span class="line"><span class="string">|    . E o  = . o |</span></span><br><span class="line"><span class="string">|     = +S   o o  |</span></span><br><span class="line"><span class="string">|      = o. . oo  |</span></span><br><span class="line"><span class="string">|       +  . +o + |</span></span><br><span class="line"><span class="string">|      o .  o .*o=|</span></span><br><span class="line"><span class="string">|       +.  o***O*|</span></span><br><span class="line"><span class="string">+----[SHA256]-----+</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">D:\Office\VersionControl\Git\Git\usr\bin&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>复制SSH-KEY公钥信息到GitLab</p>
+<p>切换到文件夹C:\Users\Monica J.ssh</p>
+<p>打开<font color="red">id_rsa.pub</font>，复制文件中的全部内容</p>
+<p>粘贴到GitLab</p>
+<p>![1574134813167](第三章 PaaS ：平台即服务/1574134813167.png)</p>
+</li>
+<li><p>备份私钥？</p>
+</li>
+<li><p>本地从Gitlab克隆项目通过ssh</p>
+<p><font color="red">/usr/local/docker/gitlab/config/gitlab.rb</font>配置文件中加入如下配置：<br><strong>不加配置无法通过SSH方式访问操作项目</strong></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">gitlab_rails['gitlab_shell_ssh_port']</span> <span class="string">=</span> <span class="number">2222</span></span><br><span class="line"><span class="string">unicorn['port']</span> <span class="string">=</span> <span class="number">8888</span></span><br><span class="line"><span class="string">nginx['listen_port']</span> <span class="string">=</span> <span class="number">80</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ docker-compose down</span><br><span class="line">$ down-compose up -d</span><br></pre></td></tr></table></figure>
+
+<p>切换到存放GitLab项目的文件夹：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> ssh://git@192.168.0.100:2222/Monica/project_manager.git</span><br></pre></td></tr></table></figure>
+
+<h1 id="Nexus-依赖管理平台-吃内存，启动慢"><a href="#Nexus-依赖管理平台-吃内存，启动慢" class="headerlink" title="Nexus(依赖管理平台,吃内存，启动慢)"></a>Nexus(依赖管理平台,吃内存，启动慢)</h1><h2 id="什么是Nexus"><a href="#什么是Nexus" class="headerlink" title="什么是Nexus"></a>什么是Nexus</h2><p>是一个强大的仓库管理器，极大地简化了内部仓库的维护和外部仓库的访问。<br>2016.4.6 Nexus 3.0发布，相比较2.x版本有了极大改变：</p>
+<ul>
+<li>对底层代码进行了大规模重构</li>
+<li>提供新的安装包，让部署更加简单</li>
+<li>升级界面，简化操作管理</li>
+<li>增加了对Docker，NetGet，npm，Bower的支持</li>
+<li>提供新的管理接口，以及增强对自动任务的管理<br>解决的问题：<ul>
+<li>多公司开发项目，外公司使用本公司写的公用通用功能，不能提供源码时，放在公司的私服里，让其依赖</li>
+<li>公司的工具类都是宝贵的资源，员工可能离职，不能公开源码，公司员工使用时依赖员私服<h2 id="基于Docker安装Nexus"><a href="#基于Docker安装Nexus" class="headerlink" title="基于Docker安装Nexus"></a>基于Docker安装Nexus</h2></li>
+</ul>
+</li>
+<li><font color="red">Docker Hub搜索Nexus，寻找nexus3</font></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ docker pull sonatype/nexus3</span><br><span class="line"><span class="comment">#创建Nexus安装文件夹</span></span><br><span class="line">$ mkdir -p /usr/<span class="built_in">local</span>/docker/nexus</span><br><span class="line">$ vi docker-compose.yml</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>根据Docker Hub上的镜像说明文档编写：<font color="red">docker-compose.yml</font></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">'3.1'</span></span><br><span class="line"><span class="attr">services:</span> </span><br><span class="line"><span class="attr"> nexus:</span></span><br><span class="line"><span class="attr">  restart:</span> <span class="string">always</span></span><br><span class="line"><span class="attr">  image:</span> <span class="string">sonatype/nexus3</span></span><br><span class="line"><span class="attr">  container_name:</span> <span class="string">nexus</span></span><br><span class="line"><span class="attr">  ports:</span> </span><br><span class="line"><span class="bullet">   -</span> <span class="number">8081</span><span class="string">:8081</span></span><br><span class="line"><span class="attr">  volumes:</span> </span><br><span class="line"><span class="bullet">   -</span> <span class="string">/usr/local/docker/nexus/data:/nexus-data</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><font color="red">运行启动</font></p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ chmod 777 data/</span><br><span class="line">$ docker-compose up -d</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong>如果没有修改权限启动失败后，先关闭容器</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ docker-compose down</span><br><span class="line"><span class="comment">##修改权限后，先删除映射数据卷中的已存在的文件</span></span><br><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/docker/nexus/data</span><br><span class="line">$ rm -fr *</span><br><span class="line"><span class="comment">##然后启动容器即可</span></span><br><span class="line">$ docker-compose up -d</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><font color="red">登录控制台验证安装</font><br>地址：ip:8081<br>用户名：admmin<br>密码：admin123</li>
+</ul>
+<h2 id="Maven仓库介绍"><a href="#Maven仓库介绍" class="headerlink" title="Maven仓库介绍"></a>Maven仓库介绍</h2><h2 id="在项目项目项目中使用Maven私服"><a href="#在项目项目项目中使用Maven私服" class="headerlink" title="在项目项目项目中使用Maven私服"></a>在项目项目项目中使用Maven私服</h2><h3 id="配置认证信息"><a href="#配置认证信息" class="headerlink" title="配置认证信息"></a>配置认证信息</h3><p>在Maven setting.xml中添加Nexus认证信息（<font color="red">servers</font>节点下）：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">id</span>&gt;</span>nexus-releases<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">username</span>&gt;</span>admin<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">password</span>&gt;</span>admin123<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">id</span>&gt;</span>nexus-snapshots<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">username</span>&gt;</span>admin<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">password</span>&gt;</span>admin123<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="项目与私服建立关联"><a href="#项目与私服建立关联" class="headerlink" title="项目与私服建立关联"></a>项目与私服建立关联</h3><p>在pom.xml(主项目，非Module)文件中加入以下内容</p>
+<p>##注意事项：</p>
+<ul>
+<li>url在私服的仓库了可以看到，复制即可<br>![1574159680424](第三章 PaaS ：平台即服务/1574159680424.png)</li>
+<li>ID名称必须要于setting.xml文件中Servers配置的ID名称保持一致</li>
+<li>项目版本号中有SNAPSHOT标识的，会发布到Nexus Snapshot Repository,否则发布到Nexus Release Repository，并根据ID去匹配授权账号</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">id</span>&gt;</span>nexus-releases<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>Nexus Release Repository<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://私服ip:8081/repository/maven-releases<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>nexus-snapshots<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>Nexus Snapshot Repository<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://私服ip:8081/repository/maven-snapshots<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">distributionManagement</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Snapshots与Releases的区别"><a href="#Snapshots与Releases的区别" class="headerlink" title="Snapshots与Releases的区别"></a>Snapshots与Releases的区别</h4><ul>
+<li><p>nexus-releases用于发布Releases版本</p>
+</li>
+<li><p>nexus-snapshots用于发布Snapshot版本（快照版）</p>
+</li>
+<li><p>Releases版本和Snapshot版本定义如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Release:1.0.0/1.0.0-RELEASE</span><br><span class="line">Snapshot:1.0.0-SNAPSHOT</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在项目<font color="red">pom.xml</font>中设置版本号添加<font color="red">SNAPSHOT</font>标识都会发布为SNAPSHOT版本，没有<font color="red">SNAPSHOT</font>标识都会发布为<font color="red">RELEASE</font>版本。</p>
+</li>
+<li><p><font color="red">SNAPSHOT</font>版本会自动添加一个时间作为标识</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.zzdy<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>epms<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">version</span>&gt;</span>0.0.1-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">name</span>&gt;</span>epms<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">description</span>&gt;</span>epms project for Spring Boot<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="项目署到私服仓库，可以用于依赖"><a href="#项目署到私服仓库，可以用于依赖" class="headerlink" title="项目署到私服仓库，可以用于依赖"></a>项目署到私服仓库，可以用于依赖</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##RELEASE不可重复部署</span></span><br><span class="line">$ mvn deploy</span><br></pre></td></tr></table></figure>
+
+<h3 id="去私服仓库查看"><a href="#去私服仓库查看" class="headerlink" title="去私服仓库查看"></a>去私服仓库查看</h3><p>![1574160242959](第三章 PaaS ：平台即服务/1574160242959.png)</p>
+<h3 id="设置IDEA，总是使用最新的快照版本"><a href="#设置IDEA，总是使用最新的快照版本" class="headerlink" title="设置IDEA，总是使用最新的快照版本"></a>设置IDEA，总是使用最新的快照版本</h3><p>![1574160186507](第三章 PaaS ：平台即服务/1574160186507.png)</p>
+<h2 id="上传本地的第三方jar包"><a href="#上传本地的第三方jar包" class="headerlink" title="上传本地的第三方jar包"></a>上传本地的第三方jar包</h2><p><font color="red">注意事项:</font></p>
+<ul>
+<li>建议在上传第三方jar包时，创建单独的第三方JAR包管理仓库，便于管理维护（maven-3rd）</li>
+<li>DrepositoryId和maven setting servers配置中的ID一致</li>
+</ul>
+<p>上传可以使用maven命令，也可以在页面进行上传<br>命令上传：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##实际要写成一行,url选择私服已有的仓库</span></span><br><span class="line"><span class="comment">##DrepositoryId需要和maven配置文件setting中的一致</span></span><br><span class="line">$ mvn deploy:deploy-file </span><br><span class="line">	-DgroupId=com.aliyun.oss</span><br><span class="line">	-DartifactId=aliyun-sdk-oss</span><br><span class="line">	-Dversion=2.2.3</span><br><span class="line">	-Dpackaging=jar</span><br><span class="line">	-Dfile=D:\aliyun-sdk-oss-2.2.3.jar</span><br><span class="line">	-Durl=http://私服ip:8081/repository/maven-3rd/</span><br><span class="line">	-DrepositoryId=nexus-releases</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##DrepositoryId和maven setting servers配置中的ID一致</span></span><br><span class="line">$ mvn deploy:deploy-file -DgroupId=com.goole.code.kaptcha -DartifactId=kaptcha -Dversion=2.3 -Dpackaging=jar -Dfile=D:\kaptcha-2.3.jar -Durl=http://私服ip:8081/repository/maven-releases/ -DrepositoryId=nexus-releases</span><br></pre></td></tr></table></figure>
+
+<p>页面上传：</p>
+<p><font color="red">项目—&gt;本地仓库—&gt;私服仓库—&gt;官方仓库</font></p>
+<h3 id="配置代理仓库"><a href="#配置代理仓库" class="headerlink" title="配置代理仓库"></a>配置代理仓库</h3><p><font color="red">项目—&gt;主项目pom.xml中：</font></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">reporitory</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">id</span>&gt;</span>nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>Nexus Repository<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://私服IP:8081/repository/maven-public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">snapshots</span>&gt;</span></span><br><span class="line">        	<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">snapshots</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">releases</span>&gt;</span></span><br><span class="line">        	<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">releases</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">reporitory</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">id</span>&gt;</span>nexus<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>Nexus Plugin Repository<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://私服IP:8081/repository/maven-public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">snapshots</span>&gt;</span></span><br><span class="line">        	<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">snapshots</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">releases</span>&gt;</span></span><br><span class="line">        	<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">releases</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">pluginRepositories</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Nexus使用好处："><a href="#Nexus使用好处：" class="headerlink" title="Nexus使用好处："></a>Nexus使用好处：</h2><ul>
+<li>官方仓库jar下载在私服，加快项目新成员下载jar包</li>
+<li>发布快照版本，方便协同开发即时更新，加快开发，不用通过GitLab下载新代码</li>
+<li>网络上没有的jar可以手动上传到私服仓库(Nexus)</li>
+</ul>
+<h1 id="Registry-镜像管理平台-Dcoker私服"><a href="#Registry-镜像管理平台-Dcoker私服" class="headerlink" title="Registry(镜像管理平台,Dcoker私服)"></a>Registry(镜像管理平台,Dcoker私服)</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>官方的Docker Hub是一个用于管理公共镜像的地方，我们可以在上面找到我们想要的镜像，也可以把我们自己的镜像推上去，但是，有时候我们的服务器无法访问互联网，或者你不希望自己的镜像放在公网当中，那么你就需要Docker Registry,他可以用来存储和管理自己的镜像。</p>
+<h2 id="安装Dcoker-Registry-私服"><a href="#安装Dcoker-Registry-私服" class="headerlink" title="安装Dcoker Registry 私服"></a>安装Dcoker Registry 私服</h2><p>之前Docker私有仓库章节中已经提到过如何配置和使用容器运行私有仓库，这里我们使用docker-compose来安装，<font color="red">docker-compose.yml</font></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">'3.1'</span></span><br><span class="line"><span class="attr">services:</span> </span><br><span class="line"><span class="attr"> registry:</span> </span><br><span class="line"><span class="attr">  image:</span> <span class="string">registry</span></span><br><span class="line"><span class="attr">  restart:</span> <span class="string">always</span></span><br><span class="line"><span class="attr">  container_name:</span> <span class="string">registry</span></span><br><span class="line"><span class="attr">  ports:</span> </span><br><span class="line"><span class="bullet">   -</span> <span class="number">5000</span><span class="string">:5000</span></span><br><span class="line"><span class="attr">  volumes:</span> </span><br><span class="line"><span class="bullet">   -</span> <span class="string">/usr/local/docker/registry/data:/var/lib/registry</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>启动成功后需要测试服务端是否能够正常提供服务，有两种方式：</p>
+<ul>
+<li>浏览器端访问：<a href="http:ip:5000/v2/" target="_blank" rel="noopener">http:ip:5000/v2/</a></li>
+<li>终端访问<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ curl http://ip:5000/v2/</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="配置Docker-Registry客户端"><a href="#配置Docker-Registry客户端" class="headerlink" title="配置Docker Registry客户端"></a>配置Docker Registry<em>客户端</em></h2><h3 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h3><p>学习使用的系统为Ubuntu 16.04 LTS 版本，属于systemd系统，需要在<font color="red">/etc/docker/daemon.json</font>中加入如下内容（如果文件不存在新建改文件,改文件必须符合json规范，否则Docker不能启动）</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"registry-mirrors"</span>: [</span><br><span class="line">        <span class="string">"https://registry.docker-cn.com"</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">"insecure-registries"</span>: [</span><br><span class="line">        <span class="string">"服务器ip:5000"</span></span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>之后重新启动服务</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo systemctl daemon-reload</span><br><span class="line">$ sudo systemctl restart docker</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
+
+<p>检查客户端配置是否生效：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ docker info</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
+
+<h3 id="客户端测试"><a href="#客户端测试" class="headerlink" title="客户端测试"></a>客户端测试</h3><h4 id="测试镜像上传"><a href="#测试镜像上传" class="headerlink" title="测试镜像上传"></a>测试镜像上传</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##拉取一个镜像</span></span><br><span class="line">$ docker pull tomcat</span><br><span class="line"><span class="comment">##查看全部镜像</span></span><br><span class="line">$ docker images</span><br><span class="line"><span class="comment">##标记本地镜像并指向目标仓库</span></span><br><span class="line">$ docker tag 私服RegietryIP:5000/tomcat</span><br><span class="line"><span class="comment">##提交镜像到仓库</span></span><br><span class="line">$ docker push 私服RegietryIP:5000/tomcat</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##带版本标记本地镜像并指向目标仓库</span></span><br><span class="line">$ docker tag 私服RegietryIP:5000/tomcat:8.5.32</span><br><span class="line"><span class="comment">##提交镜像到仓库</span></span><br><span class="line">$ docker push 私服RegietryIP:5000/tomcat:8.5.32</span><br></pre></td></tr></table></figure>
+
+<h4 id="查看全部镜像"><a href="#查看全部镜像" class="headerlink" title="查看全部镜像"></a>查看全部镜像</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ curl -XGET http://私服RegietryIP:5000/v2/_catalog</span><br></pre></td></tr></table></figure>
+
+<h4 id="查看指定镜像"><a href="#查看指定镜像" class="headerlink" title="查看指定镜像"></a>查看指定镜像</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##以tomcat为例，查看已提交的列表</span></span><br><span class="line">$ curl -XGET http://私服RegietryIP:5000/v2/tomcat/tags/list</span><br></pre></td></tr></table></figure>
+
+<h4 id="测试拉取镜像"><a href="#测试拉取镜像" class="headerlink" title="测试拉取镜像"></a>测试拉取镜像</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##先删除镜像</span></span><br><span class="line">$ docker rmi tomcat</span><br><span class="line">$ docker rmi 私服RegietryIP:5000/tomcat</span><br></pre></td></tr></table></figure>
+
+<h2 id="部署WebUI与客户端"><a href="#部署WebUI与客户端" class="headerlink" title="部署WebUI与客户端"></a>部署WebUI与客户端</h2><p>利用Docker Registry WebUI工具管理镜像：</p>
+<ul>
+<li>docker-registry-frontend</li>
+<li>docker-registry-web<br>两个工具的功能和界面差不多，以<font color="red">docker-registry-frontend</font>为例进行学习。<h3 id="docker-registry-frontend"><a href="#docker-registry-frontend" class="headerlink" title="docker-registry-frontend"></a>docker-registry-frontend</h3></li>
+</ul>
+<p><strong>我们使用Docker-compos来安装和运行，<font color="red">docker-compose.yml</font>配置如下</strong>：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="number">3.1</span></span><br><span class="line"><span class="attr">services:</span> </span><br><span class="line"><span class="attr">  registry:</span> </span><br><span class="line"><span class="attr">    image:</span> <span class="string">registry</span></span><br><span class="line"><span class="attr">    restart:</span> <span class="string">always</span></span><br><span class="line"><span class="attr">    container_name:</span> <span class="string">registry</span></span><br><span class="line"><span class="attr">    ports:</span> </span><br><span class="line"><span class="bullet">      -</span> <span class="number">5000</span><span class="string">:5000</span></span><br><span class="line"><span class="attr">    volumes:</span> </span><br><span class="line"><span class="bullet">      -</span> <span class="string">/usr/local/docker/registry/data:/var/lib/registry</span></span><br><span class="line"><span class="attr">  frontend:</span> </span><br><span class="line"><span class="attr">    image:</span> <span class="string">konradleine/docker-registry-frontend:v2</span></span><br><span class="line"><span class="attr">    ports:</span> </span><br><span class="line"><span class="bullet">      -</span> <span class="number">8080</span><span class="string">:80</span></span><br><span class="line"><span class="attr">    volumes:</span> </span><br><span class="line"><span class="bullet">      -</span> <span class="string">./certs/frontend.crt:/etc/apahe2/server.crt:ro</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">./certs/frontend.key:/etc/apahe2/server.key:ro</span></span><br><span class="line"><span class="attr">    environment:</span> </span><br><span class="line"><span class="bullet">      -</span> <span class="string">ENV_DOCKER_REGISTRY_HOST=192.168.75.133</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">ENV_DOCKER_REGISTRY_PORT=5000</span></span><br></pre></td></tr></table></figure>
+
+<p>![1574233632872](第三章 PaaS ：平台即服务/1574233632872.png)</p>
+<h1 id="Docker实战：真正实现一次构建，到处运行"><a href="#Docker实战：真正实现一次构建，到处运行" class="headerlink" title="Docker实战：真正实现一次构建，到处运行"></a>Docker实战：真正实现一次构建，到处运行</h1><p>参考视频链接：<a href="https://www.bilibili.com/video/av36042649?p=56" target="_blank" rel="noopener">https://www.bilibili.com/video/av36042649?p=56</a><br><strong>！开始前先根据平台即服务建好平台服务</strong></p>
+<h2 id="1-上传代码到GitLab私服（GitLab搭建参考前面笔记）"><a href="#1-上传代码到GitLab私服（GitLab搭建参考前面笔记）" class="headerlink" title="1 上传代码到GitLab私服（GitLab搭建参考前面笔记）"></a>1 上传代码到GitLab私服（GitLab搭建参考前面笔记）</h2><p>1.1 Gitlab新建空白项目<br>1.2 然后到项目目录下，打开命令行工具(记得添加忽略文件)<br>参考忽略文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">target/</span><br><span class="line">!.mvn/wrapper/maven-wrapper.jar</span><br><span class="line"></span><br><span class="line">##STS##</span><br><span class="line">.apt_generated</span><br><span class="line">.classpath</span><br><span class="line">.factorypath</span><br><span class="line">.project</span><br><span class="line">.srttings</span><br><span class="line">.springBeans</span><br><span class="line"></span><br><span class="line">##IntelliJ IDEA##</span><br><span class="line">.idea</span><br><span class="line">*.iws</span><br><span class="line">*.iml</span><br><span class="line">*.ipr</span><br><span class="line"></span><br><span class="line">##JRebel##</span><br><span class="line">rebel.xml</span><br><span class="line"></span><br><span class="line">##MAC##</span><br><span class="line">.DS_Store</span><br><span class="line"></span><br><span class="line">##Other##</span><br><span class="line">logs/</span><br><span class="line">temp/</span><br></pre></td></tr></table></figure>
+
+<p><strong>生成项目镜像</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##已经有项目</span></span><br><span class="line">$ git init</span><br><span class="line">$ git status</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m <span class="string">"第一次提交"</span></span><br><span class="line">$ git status</span><br><span class="line">$ git remote add origin git仓库ssh地址</span><br><span class="line">$ git push -u origin master</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">##没有项目情况下</span></span><br><span class="line"><span class="comment">#1 创建项目文件夹，并切换到文件夹下</span></span><br><span class="line"><span class="comment">#从GitLab克隆项目</span></span><br><span class="line">$ git <span class="built_in">clone</span> git仓库ssh地址</span><br><span class="line"><span class="comment">#修改/添加/删除操作后</span></span><br><span class="line">$ git status</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m <span class="string">"第一次提交"</span></span><br><span class="line">$ git status</span><br><span class="line">$ git push</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-到部署服务器部署项目"><a href="#2-到部署服务器部署项目" class="headerlink" title="2 到部署服务器部署项目"></a>2 到部署服务器部署项目</h2><p><strong>部署服务器自带已安装并配置好的Docke和Docker-Composer</strong><br>2.1 新建项目放置目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir -p /usr/<span class="built_in">local</span>/docker</span><br><span class="line"><span class="comment">##建好之后检查下</span></span><br><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/docker</span><br><span class="line"></span><br><span class="line"><span class="comment">##检查git</span></span><br><span class="line">$ git version</span><br><span class="line"><span class="comment">##安装git</span></span><br><span class="line">$ apt-get install git</span><br><span class="line"></span><br><span class="line"><span class="comment">##检查maven是否存在</span></span><br><span class="line">$ mvn -v</span><br><span class="line"><span class="comment">##安装maven</span></span><br><span class="line">$ mkdir - p /usr/<span class="built_in">local</span>/maven</span><br><span class="line"><span class="comment">##从本地电脑下载maven安装包通过xftp传输到到服务器/usr/local/maven</span></span><br><span class="line"><span class="comment">#解压</span></span><br><span class="line">$ tar -xzvf maven压缩包</span><br><span class="line"><span class="comment">##删掉压缩包，解压缩后的目录转移到/usr/local</span></span><br><span class="line"><span class="comment">##配置环境变量，参考Linux安装java配置环境变量章节/百度</span></span><br><span class="line"><span class="comment">##apt安装不需要配置环境变量？</span></span><br><span class="line">$ vi /etc/profile</span><br><span class="line"><span class="built_in">export</span> MAVEN_HOME=/usr/<span class="built_in">local</span>/apache-maven-3.XXX</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$MAVEN_HOME</span>/bin:<span class="variable">$PATH</span>:<span class="variable">$HOME</span>/bin</span><br><span class="line">$ <span class="built_in">source</span> /etc/profile</span><br><span class="line"></span><br><span class="line"><span class="comment">##maven需要依赖java</span></span><br><span class="line"><span class="comment">##从本地电脑下载jdk/jre安装包通过xftp传输到到服务器/usr/local/</span></span><br><span class="line"><span class="comment">#解压</span></span><br><span class="line"><span class="comment">##删掉压缩包</span></span><br><span class="line">$ vi /etc/profile</span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/<span class="built_in">local</span>/jdk1.8.xx</span><br><span class="line"><span class="built_in">export</span>  JRE_HOME=/usr/<span class="built_in">local</span>/jdk1.8.xx/jre</span><br><span class="line"><span class="built_in">export</span> CLASSPATH=<span class="variable">$CLASSPATH</span>:<span class="variable">$JAVA_HOME</span>/lib:<span class="variable">$JAVA_HOME</span>/jre/lib</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$JAVA_HOME</span>/bin:<span class="variable">$JAVA_HOME</span>/jre/bin:<span class="variable">$MAVEN_HOME</span>/bin:<span class="variable">$PATH</span>:<span class="variable">$HOME</span>/bin</span><br><span class="line">$ <span class="built_in">source</span> /etc/profile</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">##部署服务器生成SSH密匙，具体参考GitLab章节笔记</span></span><br><span class="line"><span class="comment">##生成SSH KEY,执行下列命令，连按三次回车键</span></span><br><span class="line">$ ssh-keygen -t rsa -C <span class="string">"kyrd@qq.com"</span></span><br><span class="line"><span class="comment">##查看复制生成好的公钥</span></span><br><span class="line">$ <span class="built_in">cd</span> /root/.ssh</span><br><span class="line">$ cat id_rsa.pub</span><br><span class="line"><span class="comment">##到GibLab页面在用户设置里添加SSH密钥</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##克隆项目</span></span><br><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/docker/projects</span><br><span class="line">$ git <span class="built_in">clone</span> git仓库ssh地址</span><br><span class="line"></span><br><span class="line"><span class="comment">##打包项目（数据源别忘了）</span></span><br><span class="line">$ <span class="built_in">cd</span>/usr/<span class="built_in">local</span>/docker/projects/项目</span><br><span class="line">$ mvn clean -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##向服务器导入数据库</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#生成镜像</span></span><br><span class="line"><span class="comment">##移动打好的包到上下文中</span></span><br><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/docker/projects/myshop/my-shop-web-admin/target/my-shop-web-admin-1.0.0-SNAPSHOT</span><br><span class="line">$ tar -zcvf myshop.tar.gz .</span><br><span class="line">$ mkdir -p  /usr/<span class="built_in">local</span>/docker/dockerfileimages/myshop/</span><br><span class="line">$ mv myshop.tar.gz /usr/<span class="built_in">local</span>/docker/dockerfileimages/myshop/</span><br><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/docker/dockerfileimages/myshop</span><br><span class="line">$ vi Dockerfile</span><br><span class="line"></span><br><span class="line">FROM tomcat</span><br><span class="line">WORKDIR /usr/<span class="built_in">local</span>/tomcat/webapps/ROOT</span><br><span class="line">RUN rm -fr *</span><br><span class="line">ADD myshop.tar.gz /usr/<span class="built_in">local</span>/tomcat/webapps/ROOT</span><br><span class="line">RUN rm -fr myshop.tar.gz</span><br><span class="line">WORKDIR /usr/<span class="built_in">local</span>/tomcat</span><br><span class="line"></span><br><span class="line"><span class="comment">##构建镜像</span></span><br><span class="line">$ docker build -t 镜像私服IP:5000/myshop .</span><br><span class="line"><span class="comment">##推送镜像到镜像私服</span></span><br><span class="line">$ docker push 镜像私服IP:5000/myshop .</span><br></pre></td></tr></table></figure>
+
+<p><strong>部署上线</strong><br>新建项目运行<strong>服务器</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir -p /usr/<span class="built_in">local</span>/docker/myshop</span><br><span class="line">$ vi docker-compose.yml</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">'3.1'</span></span><br><span class="line"><span class="attr">services:</span> </span><br><span class="line"><span class="attr">  myshop:</span> </span><br><span class="line"><span class="attr">    restart:</span> <span class="string">always</span></span><br><span class="line"><span class="attr">    image:</span> <span class="string">镜像私服IP:5000/myshop</span></span><br><span class="line"><span class="attr">    container_name:</span> <span class="string">myshop</span></span><br><span class="line"><span class="attr">    ports:</span> </span><br><span class="line"><span class="bullet">      -</span> <span class="number">8080</span><span class="string">:8080</span></span><br></pre></td></tr></table></figure>
+
+<p><em>数据卷可自行配置</em></p>
+<ul>
+<li>docker配置镜像私服信息<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vi /etc/docker/daemon.json</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>添加以下内容</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    “insecure-registries”: [</span><br><span class="line">    <span class="string">"镜像私服IP:5000"</span></span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ systemctl daemon-reload</span><br><span class="line">$ systemctl restart docker</span><br><span class="line">$ docker-compose up -d</span><br></pre></td></tr></table></figure>
       
 
       
@@ -281,18 +502,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/11/14/基础设施即服务：Linux入门学习/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/03/26/Java-FreeMarker模板文档生成/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          基础设施即服务：Linux入门学习
+          Java-FreeMarker模板文档生成
         
       </div>
     </a>
   
   
-    <a href="/2019/09/16/给项目生成接口文档：API DOC/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">给项目生成接口文档：API DOC</div>
+    <a href="/2019/11/14/第二章 基础设施即服务2：Docker容器学习/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">第二章 基础设施即服务2：Docker容器学习</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -319,7 +540,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#微服务简介"><span class="toc-number">1.</span> <span class="toc-text">微服务简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#微服务的缺点"><span class="toc-number">2.</span> <span class="toc-text">微服务的缺点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单体应用的缺点"><span class="toc-number">3.</span> <span class="toc-text">单体应用的缺点</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#GitLab-代码管理平台，吃内存，启动慢"><span class="toc-number">1.</span> <span class="toc-text">GitLab(代码管理平台，吃内存，启动慢)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是Git"><span class="toc-number">1.1.</span> <span class="toc-text">什么是Git</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Git撤销本地commit"><span class="toc-number">1.1.1.</span> <span class="toc-text">Git撤销本地commit</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git的一般工作流程、基本操作"><span class="toc-number">1.2.</span> <span class="toc-text">Git的一般工作流程、基本操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#建立gitHub仓库，上传代码"><span class="toc-number">1.2.1.</span> <span class="toc-text">建立gitHub仓库，上传代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是GitLab"><span class="toc-number">1.3.</span> <span class="toc-text">什么是GitLab</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基于Docker安装GitLab"><span class="toc-number">1.4.</span> <span class="toc-text">基于Docker安装GitLab</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用GitLab"><span class="toc-number">1.5.</span> <span class="toc-text">使用GitLab</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用SSH拉取和推送项目"><span class="toc-number">1.5.1.</span> <span class="toc-text">使用SSH拉取和推送项目</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Nexus-依赖管理平台-吃内存，启动慢"><span class="toc-number">2.</span> <span class="toc-text">Nexus(依赖管理平台,吃内存，启动慢)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是Nexus"><span class="toc-number">2.1.</span> <span class="toc-text">什么是Nexus</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基于Docker安装Nexus"><span class="toc-number">2.2.</span> <span class="toc-text">基于Docker安装Nexus</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Maven仓库介绍"><span class="toc-number">2.3.</span> <span class="toc-text">Maven仓库介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在项目项目项目中使用Maven私服"><span class="toc-number">2.4.</span> <span class="toc-text">在项目项目项目中使用Maven私服</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置认证信息"><span class="toc-number">2.4.1.</span> <span class="toc-text">配置认证信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#项目与私服建立关联"><span class="toc-number">2.4.2.</span> <span class="toc-text">项目与私服建立关联</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Snapshots与Releases的区别"><span class="toc-number">2.4.2.1.</span> <span class="toc-text">Snapshots与Releases的区别</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#项目署到私服仓库，可以用于依赖"><span class="toc-number">2.4.3.</span> <span class="toc-text">项目署到私服仓库，可以用于依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#去私服仓库查看"><span class="toc-number">2.4.4.</span> <span class="toc-text">去私服仓库查看</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置IDEA，总是使用最新的快照版本"><span class="toc-number">2.4.5.</span> <span class="toc-text">设置IDEA，总是使用最新的快照版本</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#上传本地的第三方jar包"><span class="toc-number">2.5.</span> <span class="toc-text">上传本地的第三方jar包</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置代理仓库"><span class="toc-number">2.5.1.</span> <span class="toc-text">配置代理仓库</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Nexus使用好处："><span class="toc-number">2.6.</span> <span class="toc-text">Nexus使用好处：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Registry-镜像管理平台-Dcoker私服"><span class="toc-number">3.</span> <span class="toc-text">Registry(镜像管理平台,Dcoker私服)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">3.1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Dcoker-Registry-私服"><span class="toc-number">3.2.</span> <span class="toc-text">安装Dcoker Registry 私服</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#测试"><span class="toc-number">3.3.</span> <span class="toc-text">测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Docker-Registry客户端"><span class="toc-number">3.4.</span> <span class="toc-text">配置Docker Registry客户端</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#客户端配置"><span class="toc-number">3.4.1.</span> <span class="toc-text">客户端配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#客户端测试"><span class="toc-number">3.4.2.</span> <span class="toc-text">客户端测试</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#测试镜像上传"><span class="toc-number">3.4.2.1.</span> <span class="toc-text">测试镜像上传</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#查看全部镜像"><span class="toc-number">3.4.2.2.</span> <span class="toc-text">查看全部镜像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#查看指定镜像"><span class="toc-number">3.4.2.3.</span> <span class="toc-text">查看指定镜像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#测试拉取镜像"><span class="toc-number">3.4.2.4.</span> <span class="toc-text">测试拉取镜像</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署WebUI与客户端"><span class="toc-number">3.5.</span> <span class="toc-text">部署WebUI与客户端</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-registry-frontend"><span class="toc-number">3.5.1.</span> <span class="toc-text">docker-registry-frontend</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Docker实战：真正实现一次构建，到处运行"><span class="toc-number">4.</span> <span class="toc-text">Docker实战：真正实现一次构建，到处运行</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-上传代码到GitLab私服（GitLab搭建参考前面笔记）"><span class="toc-number">4.1.</span> <span class="toc-text">1 上传代码到GitLab私服（GitLab搭建参考前面笔记）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-到部署服务器部署项目"><span class="toc-number">4.2.</span> <span class="toc-text">2 到部署服务器部署项目</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -344,7 +565,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css"/>
 <script>
 var gitment = new Gitment({
-  id: "微服务架构",
+  id: "第三章 PaaS :平台即服务",
   owner: '870727741',
   repo: '870727741.github.io',
   oauth: {
@@ -447,18 +668,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">微服务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">博客</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Api doc</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">书签</a>
               </li>
              
@@ -468,6 +677,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">tips</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">微服务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">博客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Api doc</a>
               </li>
              
               <li class="article-tag-list-item">
