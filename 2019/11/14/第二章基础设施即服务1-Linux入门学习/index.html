@@ -34,7 +34,7 @@
 <meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章基础设施即服务1-Linux入门学习/1569751341902.png">
 <meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章基础设施即服务1-Linux入门学习/1572339034716.png">
 <meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章基础设施即服务1-Linux入门学习/1572343943716.png">
-<meta property="og:updated_time" content="2020-05-12T02:35:09.776Z">
+<meta property="og:updated_time" content="2020-05-12T02:55:37.299Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第二章 基础设施即服务1：Linux入门学习">
 <meta name="twitter:description" content="linux linux简介 与Windows比较 安装Ubuntu Server 远程控制管理 目录结构 linux常用命令-操作文件目录 linux常用命令-系统管理命令 linux常用命令-开关机命令 linux常用命令-压缩命令 linux编辑器 linux软件包管理 linux用户和组管理 linux文件权限管理 linux安装java linux安装Tomcat linux安装MySq">
@@ -216,9 +216,9 @@
 <h2 id="linux与Windows比较"><a href="#linux与Windows比较" class="headerlink" title="linux与Windows比较"></a>linux与Windows比较</h2><ul>
 <li>Linux Server Ubuntu Server 默认不安装桌面，命令行工具</li>
 <li>Windows Server 可选是否安装桌面 是，PowerShow</li>
-<li>界面方面，使用，驱动程序，学习，软件<h2 id="安装-Ubuntu-Server"><a href="#安装-Ubuntu-Server" class="headerlink" title="安装 Ubuntu Server"></a>安装 Ubuntu Server</h2></li>
+<li>界面方面，使用，驱动程序，学习，软件</li>
 </ul>
-<ol>
+<h2 id="安装-Ubuntu-Server"><a href="#安装-Ubuntu-Server" class="headerlink" title="安装 Ubuntu Server"></a>安装 Ubuntu Server</h2><ol>
 <li>安装VMware</li>
 <li>安装Ubuntu[^1] Server(创建虚拟机是必须稍后手动安装操作系统)</li>
 </ol>
@@ -253,12 +253,12 @@
 <li>SSH叫做Secure Shell ，通过SSH，可以将数据压缩加密，预防攻击加快传输速度</li>
 <li>连接都有客户端和服务端。<strong>服务端：</strong>创建监听端口。<strong>客户端：</strong>请求服务端的监听端口。</li>
 <li>基于口令的安全验证：知道服务器的账号密码可以远程登录，口令和数据在远程传输过程中都会被加密，</li>
-<li>基于密钥的安全验证：此时需要创建一对密钥，把公有密钥放到远程服务器上自己的宿主目录中，而私有密钥则由自己保存。<h3 id="XShell-服务器远程连接工具"><a href="#XShell-服务器远程连接工具" class="headerlink" title="XShell 服务器远程连接工具"></a>XShell 服务器远程连接工具</h3><blockquote>
+<li>基于密钥的安全验证：此时需要创建一对密钥，把公有密钥放到远程服务器上自己的宿主目录中，而私有密钥则由自己保存。</li>
+</ul>
+<h3 id="XShell-服务器远程连接工具"><a href="#XShell-服务器远程连接工具" class="headerlink" title="XShell 服务器远程连接工具"></a>XShell 服务器远程连接工具</h3><blockquote>
 <p>远程连接服务器，需要知道服务器的IP，端口，用户名，密码<br><img src="//870727741.github.io/2019/11/14/第二章基础设施即服务1-Linux入门学习/1568944702205.png" alt="1568944702205"></p>
 <p><img src="//870727741.github.io/2019/11/14/第二章基础设施即服务1-Linux入门学习/1568944764146.png" alt="1568944764146"></p>
 </blockquote>
-</li>
-</ul>
 <h3 id="XHttp-服务器远程软件的交互"><a href="#XHttp-服务器远程软件的交互" class="headerlink" title="XHttp 服务器远程软件的交互"></a>XHttp 服务器远程软件的交互</h3><h2 id="linux的目录结构"><a href="#linux的目录结构" class="headerlink" title="linux的目录结构"></a>linux的目录结构</h2><p><img src="//870727741.github.io/2019/11/14/第二章基础设施即服务1-Linux入门学习/1568950394729.png" alt="1568950394729"></p>
 <table>
 <thead>
@@ -866,12 +866,8 @@ ZZ : 保存后退出
 <td><font color="color">:set nonumber</font></td>
 <td>不显示行号</td>
 </tr>
-<tr>
-<td>#### Linux中.swp 文件的产生与解决方法</td>
-<td></td>
-</tr>
 </tbody></table>
-<p><a href="https://blog.csdn.net/qq_42200183/article/details/81531422" target="_blank" rel="noopener">Linux中.swp 文件的产生与解决方法</a></p>
+<h4 id="Linux中-swp-文件的产生与解决方法"><a href="#Linux中-swp-文件的产生与解决方法" class="headerlink" title="Linux中.swp 文件的产生与解决方法"></a>Linux中.swp 文件的产生与解决方法</h4><p><a href="https://blog.csdn.net/qq_42200183/article/details/81531422" target="_blank" rel="noopener">Linux中.swp 文件的产生与解决方法</a></p>
 <h5 id="什么是-swp"><a href="#什么是-swp" class="headerlink" title="什么是.swp"></a>什么是.swp</h5><p>vim中的swp即swap（交换分区）的简写，在编辑文件时产生，它是隐藏文件。这个文件是一个临时交换文件，用来备份缓冲区中的内容。类似于Windows的虚拟内存，就是当内存不足的时候,把一部分硬盘空间虚拟成内存使用,从而解决内存容量不足的情况。</p>
 <p>如果文件正常退出，则此文件自动删除。</p>
 <p>如果并没有对文件进行修改，而只是读取文件，是不会产生swp文件的</p>
@@ -886,8 +882,7 @@ ZZ : 保存后退出
 </blockquote>
 <p>#解决方法：</p>
 <blockquote>
-<p>如果你正常退出，那么这个这个swp文件将会自动删除(vim编辑器要正常退出可以使用Shift-ZZ)。</p>
-<p>用</p>
+<p>如果你正常退出，那么这个这个swp文件将会自动删除(vim编辑器要正常退出可以使用Shift-ZZ)。<br>用</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vi -r xxx.c</span><br></pre></td></tr></table></figure>
 
@@ -901,71 +896,80 @@ ZZ : 保存后退出
 
 <h2 id="软件的安装与卸载"><a href="#软件的安装与卸载" class="headerlink" title="软件的安装与卸载"></a>软件的安装与卸载</h2><ul>
 <li>apt  ubuntu 的<strong>软件包管理程序</strong>，使用它可以找到想要的软件包，而且安装，卸载，更新都很渐变，也可以用来对Unbuntu进行升级，APT的源文件为 /etc/apt 目录下的 source.list 文件 。</li>
-<li>centOS用的软件包管理程序 yum<h3 id="修改数据源"><a href="#修改数据源" class="headerlink" title="修改数据源"></a>修改数据源</h3>下载软件加速<br>由于国内的网络环境问题，我们要将Ubuntu的数据源修改为国内的数据源，步骤如下：</li>
+<li>centOS用的软件包管理程序 yum</li>
 </ul>
+<h3 id="修改数据源"><a href="#修改数据源" class="headerlink" title="修改数据源"></a>修改数据源</h3><p>下载软件加速<br>由于国内的网络环境问题，我们要将Ubuntu的数据源修改为国内的数据源，步骤如下：</p>
 <ol>
-<li>查看系统版本<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ lsb_release -a</span><br></pre></td></tr></table></figure>
-
-</li>
+<li>查看系统版本</li>
 </ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ lsb_release -a</span><br></pre></td></tr></table></figure>
+
 <p>输出结果</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">No LSB modules are available.</span><br><span class="line">Distributor ID:	Ubuntu</span><br><span class="line">Description:	Ubuntu 18.04.3 LTS</span><br><span class="line">Release:	18.04</span><br><span class="line">Codename:	bionic</span><br></pre></td></tr></table></figure>
 
 <p>注意:Codename:为bionic，该名称为Ubnuntu系统名称，修改数据源要用到</p>
 <ol start="2">
-<li>编辑数据源<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vi /etc/apt/source.list</span><br></pre></td></tr></table></figure>
-
-</li>
+<li>编辑数据源</li>
 </ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vi /etc/apt/source.list</span><br></pre></td></tr></table></figure>
+
 <p>删除全部文件（按两下 d）修改为下面：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deb http://mirrors.aliyun.com/ubuntu/bionic main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/bionic-security main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/bionic-updates main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/bionic-backports main restricted universe multiverse</span><br></pre></td></tr></table></figure>
 
 <p><img src="//870727741.github.io/2019/11/14/第二章基础设施即服务1-Linux入门学习/1568992067178.png" alt="1568992067178"></p>
 <ol start="3">
-<li>更新数据源<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get update</span><br></pre></td></tr></table></figure>
-
-</li>
+<li>更新数据源</li>
 </ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get update</span><br></pre></td></tr></table></figure>
+
 <h3 id="安装文件"><a href="#安装文件" class="headerlink" title="安装文件"></a>安装文件</h3><p>安装版 安装 = 打包  .exe 初始化操作,写入注册表  .jar 绿色版，压缩包</p>
 <ul>
-<li>安装nano <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##安装nano</span></span><br><span class="line">$ sudo apt-get install nano </span><br><span class="line"><span class="comment">## 使用nano</span></span><br><span class="line">$ nano hello.txt</span><br><span class="line"><span class="comment">## 卸载nano</span></span><br><span class="line">$ sudo apt-get remove nano</span><br></pre></td></tr></table></figure>
-
-</li>
+<li>安装nano </li>
 </ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##安装nano</span></span><br><span class="line">$ sudo apt-get install nano </span><br><span class="line"><span class="comment">## 使用nano</span></span><br><span class="line">$ nano hello.txt</span><br><span class="line"><span class="comment">## 卸载nano</span></span><br><span class="line">$ sudo apt-get remove nano</span><br></pre></td></tr></table></figure>
+
 <h3 id="常用的apt命令"><a href="#常用的apt命令" class="headerlink" title="常用的apt命令"></a>常用的apt命令</h3><ol>
-<li><p>安装软件包 </p>
+<li>安装软件包</li>
+</ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apt-get install packagename</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除软件包</p>
+
+<ol start="2">
+<li>删除软件包</li>
+</ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ apt-get remove packagename</span><br><span class="line"><span class="comment">## 正确删除带依赖一起删除</span></span><br><span class="line">$ sudo apt-get autoremove packagename</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>更新软件包列表,<strong>更新之后记得再装一次</strong></p>
+
+<ol start="3">
+<li>更新软件包列表,<strong>更新之后记得再装一次</strong></li>
+</ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apt-get update</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>升级有可用更新的系统（!慎用–不能用）</p>
+
+<ol start="4">
+<li>升级有可用更新的系统（!慎用–不能用）</li>
+</ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apt-get upgrade</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>搜索*</p>
+
+<ol start="5">
+<li>搜索*</li>
+</ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apt-cache search package</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取包信息</p>
+
+<ol start="6">
+<li>获取包信息</li>
+</ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apt-cache show package</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除包及配置文件</p>
+
+<ol start="7">
+<li>删除包及配置文件</li>
+</ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apt-get remove package --purge</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>了解使用依赖</p>
-</li>
-<li><p>查看被哪些包依赖</p>
-</li>
-<li><p>安装相关的编译环境</p>
-</li>
-<li><p>下载源代码</p>
-</li>
-<li><p>清理无用的包 </p>
-</li>
-<li><p>检查是否有损坏的依赖 </p>
-</li>
+
+<ol start="8">
+<li>了解使用依赖</li>
+<li>查看被哪些包依赖</li>
+<li>安装相关的编译环境</li>
+<li>下载源代码</li>
+<li>清理无用的包 </li>
+<li>检查是否有损坏的依赖 </li>
 </ol>
 <h3 id="Linux中apt与apt-get命令的区别与解释"><a href="#Linux中apt与apt-get命令的区别与解释" class="headerlink" title="Linux中apt与apt-get命令的区别与解释"></a>Linux中apt与apt-get命令的区别与解释</h3><p>Ubuntu 16.04 发布时，一个引人注目的新特性便是 apt 命令的引入。其实早在 2014 年，apt 命令就已经发布了第一个稳定版，只是直到 2016 年的 Ubuntu 16.04 系统发布时才开始引人关注。</p>
 <blockquote>
@@ -1043,35 +1047,11 @@ ZZ : 保存后退出
 <td>apt edit-sources</td>
 <td>编辑源列表</td>
 </tr>
-<tr>
-<td>## linux用户和组管理</td>
-<td></td>
-</tr>
-<tr>
-<td>个人理解：组类似角色</td>
-<td></td>
-</tr>
-<tr>
-<td>Linux系统是一个多用户操作系统，它允许多用户同时登录到系统上并使用资源。系统会根据账户来区分每个用户的文件，进程，任务和工作环境，使得每个用户工作都不受干扰。</td>
-<td></td>
-</tr>
-<tr>
-<td>### 使用Root用户</td>
-<td></td>
-</tr>
-<tr>
-<td>在实际生产操作中，我们基本上是使用超级管理员账户操作linux系统，也就是Root账户，Linux系统默认关闭Root账户，我们需要为Root账户设置一个初始密码以方便使用。</td>
-<td></td>
-</tr>
-<tr>
-<td>#### 设置Root账户密码</td>
-<td></td>
-</tr>
-<tr>
-<td><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ sudo passwd root</span><br><span class="line"></span><br><span class="line">jmp@ubuntuserver:~$ sudo passwd root</span><br><span class="line">[sudo] password <span class="keyword">for</span> jmp: </span><br><span class="line">Enter new UNIX password: </span><br><span class="line">Retype new UNIX password: </span><br><span class="line">passwd: password updated successfully</span><br><span class="line">jmp@ubuntuserver:~$</span><br></pre></td></tr></table></figure></td>
-<td></td>
-</tr>
 </tbody></table>
+<h2 id="linux用户和组管理"><a href="#linux用户和组管理" class="headerlink" title="linux用户和组管理"></a>linux用户和组管理</h2><p>个人理解：组类似角色<br>Linux系统是一个多用户操作系统，它允许多用户同时登录到系统上并使用资源。系统会根据账户来区分每个用户的文件，进程，任务和工作环境，使得每个用户工作都不受干扰。</p>
+<h3 id="使用Root用户"><a href="#使用Root用户" class="headerlink" title="使用Root用户"></a>使用Root用户</h3><p>在实际生产操作中，我们基本上是使用超级管理员账户操作linux系统，也就是Root账户，Linux系统默认关闭Root账户，我们需要为Root账户设置一个初始密码以方便使用。</p>
+<h4 id="设置Root账户密码"><a href="#设置Root账户密码" class="headerlink" title="设置Root账户密码"></a>设置Root账户密码</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ sudo passwd root</span><br><span class="line"></span><br><span class="line">jmp@ubuntuserver:~$ sudo passwd root</span><br><span class="line">[sudo] password <span class="keyword">for</span> jmp: </span><br><span class="line">Enter new UNIX password: </span><br><span class="line">Retype new UNIX password: </span><br><span class="line">passwd: password updated successfully</span><br><span class="line">jmp@ubuntuserver:~$</span><br></pre></td></tr></table></figure>
+
 <h4 id="切换到Root"><a href="#切换到Root" class="headerlink" title="切换到Root"></a>切换到Root</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ su</span><br></pre></td></tr></table></figure>
 
 <h4 id="设置允许远程登录Root-阿里云默认就是远程连接"><a href="#设置允许远程登录Root-阿里云默认就是远程连接" class="headerlink" title="设置允许远程登录Root //阿里云默认就是远程连接"></a>设置允许远程登录Root //阿里云默认就是远程连接</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ vi /etc/ssh/sshd_config</span><br><span class="line"></span><br><span class="line"><span class="comment"># Authentication:</span></span><br><span class="line">LoginGraceTime 120</span><br><span class="line"><span class="comment">#PermitRootLogin prohibit-password  ##注释掉此行</span></span><br><span class="line">PermitRootLogin yes    <span class="comment">##加入</span></span><br><span class="line">StrictModes yes</span><br><span class="line"></span><br><span class="line"><span class="comment">## 重启服务</span></span><br><span class="line">$ service ssh restart</span><br></pre></td></tr></table></figure>
@@ -1079,13 +1059,15 @@ ZZ : 保存后退出
 <h3 id="用户账户说明"><a href="#用户账户说明" class="headerlink" title="用户账户说明"></a>用户账户说明</h3><ul>
 <li>普通用户</li>
 <li>超级管理员</li>
-<li>安装时创建的系统用户<h3 id="组账户说明"><a href="#组账户说明" class="headerlink" title="组账户说明"></a>组账户说明</h3></li>
+<li>安装时创建的系统用户</li>
+</ul>
+<h3 id="组账户说明"><a href="#组账户说明" class="headerlink" title="组账户说明"></a>组账户说明</h3><ul>
 <li>私有组</li>
-<li>标准组<h3 id="账户系统文件说明"><a href="#账户系统文件说明" class="headerlink" title="账户系统文件说明"></a>账户系统文件说明</h3><blockquote>
+<li>标准组</li>
+</ul>
+<h3 id="账户系统文件说明"><a href="#账户系统文件说明" class="headerlink" title="账户系统文件说明"></a>账户系统文件说明</h3><blockquote>
 <p>cat /etc/passwd</p>
 </blockquote>
-</li>
-</ul>
 <p>每一行代表一个账号，众多账号是系统正常运行所必需的的，例如Bin,nobody每定义一个用户账户，此文件对所有用户可读。每行账户信息包含如下信息：<br><font color="red">root:/root:/bin/bash</font></p>
 <ul>
 <li>用户名：就是账号，用来对应UID，root UID 是 0。</li>
@@ -1109,10 +1091,11 @@ ZZ : 保存后退出
 <li>主要作用是修改文件或者目录所有者，所有者包含用户和用户组</li>
 <li>chown [-R] 用户名称 文件或目录</li>
 <li>chown [-R] 用户名称 文件或目录</li>
-<li>-R：进行递归式的权限更改，将目录下的所有文件，子目录更新为指定用户组权限<h4 id="chmod"><a href="#chmod" class="headerlink" title="chmod"></a><strong>chmod</strong></h4>改变访问权限<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#who:表示操作对象是以下字母的一个或者组合</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># u:用户user g:用户组 group o :表示其他用户 a： 表示所有用户，是系统默认的 </span></span></span><br><span class="line">- chmod [who] [-|+|=] 文件名</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#eg:</span></span></span><br><span class="line">chmod +x shell.sh</span><br><span class="line">chmod -x shell.sh</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#将文件夹 test 所有者更改所有者为jmp组的jmp用户</span></span></span><br><span class="line">chown jmp:jmp test/</span><br></pre></td></tr></table></figure>
-
-</li>
+<li>-R：进行递归式的权限更改，将目录下的所有文件，子目录更新为指定用户组权限</li>
 </ul>
+<h4 id="chmod"><a href="#chmod" class="headerlink" title="chmod"></a><strong>chmod</strong></h4><p>改变访问权限</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#who:表示操作对象是以下字母的一个或者组合</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># u:用户user g:用户组 group o :表示其他用户 a： 表示所有用户，是系统默认的 </span></span></span><br><span class="line">- chmod [who] [-|+|=] 文件名</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#eg:</span></span></span><br><span class="line">chmod +x shell.sh</span><br><span class="line">chmod -x shell.sh</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#将文件夹 test 所有者更改所有者为jmp组的jmp用户</span></span></span><br><span class="line">chown jmp:jmp test/</span><br></pre></td></tr></table></figure>
+
 <h4 id="权限的数字设定法"><a href="#权限的数字设定法" class="headerlink" title="权限的数字设定法"></a><strong>权限的数字设定法</strong></h4><table>
 <thead>
 <tr>
@@ -1135,33 +1118,36 @@ ZZ : 保存后退出
 <p><img src="//870727741.github.io/2019/11/14/第二章基础设施即服务1-Linux入门学习/1569371529063.png" alt="1569371529063"></p>
 <p><img src="//870727741.github.io/2019/11/14/第二章基础设施即服务1-Linux入门学习/1569371625766.png" alt="1569371625766"></p>
 <ul>
-<li><p>关闭 </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shutdown -h now</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>打开虚拟机 VMware，克隆副本</p>
-<p><img src="//870727741.github.io/2019/11/14/第二章基础设施即服务1-Linux入门学习/1569404584654.png" alt="1569404584654"></p>
-</li>
+<li>关闭 </li>
 </ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shutdown -h now</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>打开虚拟机 VMware，克隆副本</li>
+</ul>
+<p><img src="//870727741.github.io/2019/11/14/第二章基础设施即服务1-Linux入门学习/1569404584654.png" alt="1569404584654"></p>
 <p>运行克隆版虚拟机</p>
 <h2 id="linxu安装JRE"><a href="#linxu安装JRE" class="headerlink" title="linxu安装JRE"></a>linxu安装JRE</h2><ul>
 <li>将下载的jre传输到服务器</li>
 </ul>
 <p><img src="//870727741.github.io/2019/11/14/第二章基础设施即服务1-Linux入门学习/1569749290304.png" alt="1569749290304"></p>
 <ul>
-<li><p>解压安装包 <font color="red">自己装软件一定要放在/usr/local/下面</font></p>
+<li>解压安装包 <font color="red">自己装软件一定要放在/usr/local/下面</font></li>
+</ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">root@ubuntuserver:~<span class="comment"># cd soft</span></span><br><span class="line">root@ubuntuserver:~/soft<span class="comment"># tar -xzvf jre-8u221-linux-x64.tar.gz</span></span><br><span class="line"><span class="comment">##创建一个放置jre的文件件，自己装软件一定要放在/usr/local/下面</span></span><br><span class="line">$ mkdir /usr/<span class="built_in">local</span>/java</span><br><span class="line"><span class="comment">##移动解压后的jre文件夹</span></span><br><span class="line">$ mv jre1.8.0_221/ /usr/<span class="built_in">local</span>/java</span><br><span class="line"><span class="comment">##设置所有者</span></span><br><span class="line">$ chown -R root:root /usr/<span class="built_in">local</span>/java/</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>配置环境变量 <a href="https://www.jianshu.com/p/3a3447902f05" target="_blank" rel="noopener">https://www.jianshu.com/p/3a3447902f05</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##配置系统环境变量</span></span><br><span class="line">$ vi /etc/enviroment</span><br><span class="line"><span class="comment">##追加以下内容</span></span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/<span class="built_in">local</span>/java</span><br><span class="line"><span class="built_in">export</span> JRE_HOME=/usr/<span class="built_in">local</span>/java/jre1.8.0_221</span><br><span class="line"><span class="built_in">export</span> CLASSPATH=<span class="variable">$CLASSPATH</span>:<span class="variable">$JRE_HOME</span>/lib</span><br><span class="line"><span class="comment">##jdk的</span></span><br><span class="line"><span class="built_in">export</span> CLASSPATH=<span class="variable">$CLASSPATH</span>:<span class="variable">$JAVA_HOME</span>/lib:<span class="variable">$JAVA_HOME</span>/jre/lib</span><br><span class="line">$ vi /etc/profile</span><br><span class="line"> <span class="comment">##两段代码之间追加</span></span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/<span class="built_in">local</span>/java</span><br><span class="line"><span class="built_in">export</span> JRE_HOME=/usr/<span class="built_in">local</span>/java/jre1.8.0_221</span><br><span class="line"><span class="built_in">export</span> CLASSPATH=<span class="variable">$CLASSPATH</span>:<span class="variable">$JRE_HOME</span>/lib</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$JRE_HOME</span>/bin</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>配置环境变量 <a href="https://www.jianshu.com/p/3a3447902f05" target="_blank" rel="noopener">https://www.jianshu.com/p/3a3447902f05</a></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##配置系统环境变量</span></span><br><span class="line">$ vi /etc/enviroment</span><br><span class="line"><span class="comment">##追加以下内容</span></span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/<span class="built_in">local</span>/java</span><br><span class="line"><span class="built_in">export</span> JRE_HOME=/usr/<span class="built_in">local</span>/java/jre1.8.0_221</span><br><span class="line"><span class="built_in">export</span> CLASSPATH=<span class="variable">$CLASSPATH</span>:<span class="variable">$JRE_HOME</span>/lib</span><br><span class="line"><span class="comment">##jdk的</span></span><br><span class="line"><span class="built_in">export</span> CLASSPATH=<span class="variable">$CLASSPATH</span>:<span class="variable">$JAVA_HOME</span>/lib:<span class="variable">$JAVA_HOME</span>/jre/lib</span><br><span class="line">$ vi /etc/profile</span><br><span class="line"><span class="comment">##两段代码之间追加</span></span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/<span class="built_in">local</span>/java</span><br><span class="line"><span class="built_in">export</span> JRE_HOME=/usr/<span class="built_in">local</span>/java/jre1.8.0_221</span><br><span class="line"><span class="built_in">export</span> CLASSPATH=<span class="variable">$CLASSPATH</span>:<span class="variable">$JRE_HOME</span>/lib</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$JRE_HOME</span>/bin</span><br></pre></td></tr></table></figure>
 
 <p><img src="//870727741.github.io/2019/11/14/第二章基础设施即服务1-Linux入门学习/1569751365524.png" alt="1569751365524"></p>
 <p><img src="//870727741.github.io/2019/11/14/第二章基础设施即服务1-Linux入门学习/1569751341902.png" alt="1569751341902"></p>
-</li>
-<li><p>使环境变量生效</p>
+<ul>
+<li>使环境变量生效</li>
+</ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">source</span> /etc/profile</span><br><span class="line"><span class="comment">##检查</span></span><br><span class="line">$ java -version</span><br></pre></td></tr></table></figure>
 
-</li>
-</ul>
 <h2 id="Linux装Tomcat"><a href="#Linux装Tomcat" class="headerlink" title="Linux装Tomcat"></a>Linux装Tomcat</h2><p>下载和JDK/JRE对应的Tomcat放到/root/soft文件夹下<br>下载地址：<a href="https://tomcat.apache.org/download-80.cgi" target="_blank" rel="noopener">https://tomcat.apache.org/download-80.cgi</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##解压</span></span><br><span class="line">root@ubuntuserver:~/soft<span class="comment"># tar -xzvf apache-tomcat-8.5.46.tar.gz</span></span><br><span class="line"><span class="comment">##移动</span></span><br><span class="line">$ mv apache-tomcat-8.5.46/ /usr/<span class="built_in">local</span>/</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/apache-tomcat-8.5.46/bin</span><br><span class="line"><span class="comment">##启动tomcat</span></span><br><span class="line"> ./startup.sh</span><br><span class="line"><span class="comment">##浏览器访问</span></span><br><span class="line">IP：8080</span><br><span class="line">/conf/server.xml 端口改为80 </span><br><span class="line">hosts改为 : 192.168.47.128 www.jmp.com</span><br><span class="line">服务启动后可以直接访问www.jmp.com</span><br></pre></td></tr></table></figure>
 
@@ -1310,7 +1296,7 @@ ZZ : 保存后退出
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux"><span class="toc-number">1.</span> <span class="toc-text">Linux</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#linux简介"><span class="toc-number">1.1.</span> <span class="toc-text">linux简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux与Windows比较"><span class="toc-number">1.2.</span> <span class="toc-text">linux与Windows比较</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-Ubuntu-Server"><span class="toc-number">1.3.</span> <span class="toc-text">安装 Ubuntu Server</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-远程控制"><span class="toc-number">1.4.</span> <span class="toc-text">Linux 远程控制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#原因"><span class="toc-number">1.4.1.</span> <span class="toc-text">原因</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#XShell-服务器远程连接工具"><span class="toc-number">1.4.2.</span> <span class="toc-text">XShell 服务器远程连接工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#XHttp-服务器远程软件的交互"><span class="toc-number">1.4.3.</span> <span class="toc-text">XHttp 服务器远程软件的交互</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux的目录结构"><span class="toc-number">1.5.</span> <span class="toc-text">linux的目录结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux命令"><span class="toc-number">1.6.</span> <span class="toc-text">Linux命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#操作文件目录"><span class="toc-number">1.6.1.</span> <span class="toc-text">操作文件目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linux重启与压缩命令"><span class="toc-number">1.6.2.</span> <span class="toc-text">Linux重启与压缩命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux快捷键"><span class="toc-number">1.7.</span> <span class="toc-text">Linux快捷键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编辑器的使用"><span class="toc-number">1.8.</span> <span class="toc-text">编辑器的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#vim-运行模式"><span class="toc-number">1.8.1.</span> <span class="toc-text">vim :运行模式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#vim-命令"><span class="toc-number">1.8.1.1.</span> <span class="toc-text">vim : 命令</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#什么是-swp"><span class="toc-number">1.8.1.1.1.</span> <span class="toc-text">什么是.swp</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#swp的产生"><span class="toc-number">1.8.1.1.2.</span> <span class="toc-text">.swp的产生</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nano"><span class="toc-number">1.8.2.</span> <span class="toc-text">nano</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#命令"><span class="toc-number">1.8.2.1.</span> <span class="toc-text">命令</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看内存占用情况—htop"><span class="toc-number">1.9.</span> <span class="toc-text">查看内存占用情况—htop</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#软件的安装与卸载"><span class="toc-number">1.10.</span> <span class="toc-text">软件的安装与卸载</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#修改数据源"><span class="toc-number">1.10.1.</span> <span class="toc-text">修改数据源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装文件"><span class="toc-number">1.10.2.</span> <span class="toc-text">安装文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用的apt命令"><span class="toc-number">1.10.3.</span> <span class="toc-text">常用的apt命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linux中apt与apt-get命令的区别与解释"><span class="toc-number">1.10.4.</span> <span class="toc-text">Linux中apt与apt-get命令的区别与解释</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#切换到Root"><span class="toc-number">1.10.4.1.</span> <span class="toc-text">切换到Root</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设置允许远程登录Root-阿里云默认就是远程连接"><span class="toc-number">1.10.4.2.</span> <span class="toc-text">设置允许远程登录Root //阿里云默认就是远程连接</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#用户账户说明"><span class="toc-number">1.10.5.</span> <span class="toc-text">用户账户说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#组账户说明"><span class="toc-number">1.10.6.</span> <span class="toc-text">组账户说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#账户系统文件说明"><span class="toc-number">1.10.7.</span> <span class="toc-text">账户系统文件说明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux文件权限管理"><span class="toc-number">1.11.</span> <span class="toc-text">linux文件权限管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#shell文件-可执行的脚本文件"><span class="toc-number">1.11.1.</span> <span class="toc-text">shell文件 可执行的脚本文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更改权限操作"><span class="toc-number">1.11.2.</span> <span class="toc-text">更改权限操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#chown"><span class="toc-number">1.11.2.1.</span> <span class="toc-text">chown</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#chmod"><span class="toc-number">1.11.2.2.</span> <span class="toc-text">chmod</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#权限的数字设定法"><span class="toc-number">1.11.2.3.</span> <span class="toc-text">权限的数字设定法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linxu安装java"><span class="toc-number">1.12.</span> <span class="toc-text">linxu安装java</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#JRE"><span class="toc-number">1.12.1.</span> <span class="toc-text">JRE</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linxu安装JRE"><span class="toc-number">1.13.</span> <span class="toc-text">linxu安装JRE</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux装Tomcat"><span class="toc-number">1.14.</span> <span class="toc-text">Linux装Tomcat</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#linxu安装MySql"><span class="toc-number">1.14.1.</span> <span class="toc-text">linxu安装MySql</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置远程访问"><span class="toc-number">1.14.2.</span> <span class="toc-text">配置远程访问</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux项目部署"><span class="toc-number">1.15.</span> <span class="toc-text">linux项目部署</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux"><span class="toc-number">1.</span> <span class="toc-text">Linux</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#linux简介"><span class="toc-number">1.1.</span> <span class="toc-text">linux简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux与Windows比较"><span class="toc-number">1.2.</span> <span class="toc-text">linux与Windows比较</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-Ubuntu-Server"><span class="toc-number">1.3.</span> <span class="toc-text">安装 Ubuntu Server</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-远程控制"><span class="toc-number">1.4.</span> <span class="toc-text">Linux 远程控制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#原因"><span class="toc-number">1.4.1.</span> <span class="toc-text">原因</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#XShell-服务器远程连接工具"><span class="toc-number">1.4.2.</span> <span class="toc-text">XShell 服务器远程连接工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#XHttp-服务器远程软件的交互"><span class="toc-number">1.4.3.</span> <span class="toc-text">XHttp 服务器远程软件的交互</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux的目录结构"><span class="toc-number">1.5.</span> <span class="toc-text">linux的目录结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux命令"><span class="toc-number">1.6.</span> <span class="toc-text">Linux命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#操作文件目录"><span class="toc-number">1.6.1.</span> <span class="toc-text">操作文件目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linux重启与压缩命令"><span class="toc-number">1.6.2.</span> <span class="toc-text">Linux重启与压缩命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux快捷键"><span class="toc-number">1.7.</span> <span class="toc-text">Linux快捷键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编辑器的使用"><span class="toc-number">1.8.</span> <span class="toc-text">编辑器的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#vim-运行模式"><span class="toc-number">1.8.1.</span> <span class="toc-text">vim :运行模式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#vim-命令"><span class="toc-number">1.8.1.1.</span> <span class="toc-text">vim : 命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Linux中-swp-文件的产生与解决方法"><span class="toc-number">1.8.1.2.</span> <span class="toc-text">Linux中.swp 文件的产生与解决方法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#什么是-swp"><span class="toc-number">1.8.1.2.1.</span> <span class="toc-text">什么是.swp</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#swp的产生"><span class="toc-number">1.8.1.2.2.</span> <span class="toc-text">.swp的产生</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nano"><span class="toc-number">1.8.2.</span> <span class="toc-text">nano</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#命令"><span class="toc-number">1.8.2.1.</span> <span class="toc-text">命令</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看内存占用情况—htop"><span class="toc-number">1.9.</span> <span class="toc-text">查看内存占用情况—htop</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#软件的安装与卸载"><span class="toc-number">1.10.</span> <span class="toc-text">软件的安装与卸载</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#修改数据源"><span class="toc-number">1.10.1.</span> <span class="toc-text">修改数据源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装文件"><span class="toc-number">1.10.2.</span> <span class="toc-text">安装文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用的apt命令"><span class="toc-number">1.10.3.</span> <span class="toc-text">常用的apt命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linux中apt与apt-get命令的区别与解释"><span class="toc-number">1.10.4.</span> <span class="toc-text">Linux中apt与apt-get命令的区别与解释</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux用户和组管理"><span class="toc-number">1.11.</span> <span class="toc-text">linux用户和组管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用Root用户"><span class="toc-number">1.11.1.</span> <span class="toc-text">使用Root用户</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#设置Root账户密码"><span class="toc-number">1.11.1.1.</span> <span class="toc-text">设置Root账户密码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#切换到Root"><span class="toc-number">1.11.1.2.</span> <span class="toc-text">切换到Root</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设置允许远程登录Root-阿里云默认就是远程连接"><span class="toc-number">1.11.1.3.</span> <span class="toc-text">设置允许远程登录Root //阿里云默认就是远程连接</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#用户账户说明"><span class="toc-number">1.11.2.</span> <span class="toc-text">用户账户说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#组账户说明"><span class="toc-number">1.11.3.</span> <span class="toc-text">组账户说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#账户系统文件说明"><span class="toc-number">1.11.4.</span> <span class="toc-text">账户系统文件说明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux文件权限管理"><span class="toc-number">1.12.</span> <span class="toc-text">linux文件权限管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#shell文件-可执行的脚本文件"><span class="toc-number">1.12.1.</span> <span class="toc-text">shell文件 可执行的脚本文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更改权限操作"><span class="toc-number">1.12.2.</span> <span class="toc-text">更改权限操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#chown"><span class="toc-number">1.12.2.1.</span> <span class="toc-text">chown</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#chmod"><span class="toc-number">1.12.2.2.</span> <span class="toc-text">chmod</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#权限的数字设定法"><span class="toc-number">1.12.2.3.</span> <span class="toc-text">权限的数字设定法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linxu安装java"><span class="toc-number">1.13.</span> <span class="toc-text">linxu安装java</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#JRE"><span class="toc-number">1.13.1.</span> <span class="toc-text">JRE</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linxu安装JRE"><span class="toc-number">1.14.</span> <span class="toc-text">linxu安装JRE</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux装Tomcat"><span class="toc-number">1.15.</span> <span class="toc-text">Linux装Tomcat</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#linxu安装MySql"><span class="toc-number">1.15.1.</span> <span class="toc-text">linxu安装MySql</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置远程访问"><span class="toc-number">1.15.2.</span> <span class="toc-text">配置远程访问</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux项目部署"><span class="toc-number">1.16.</span> <span class="toc-text">linux项目部署</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -1438,10 +1424,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">微服务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">书签</a>
               </li>
              
@@ -1454,15 +1436,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">微服务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">博客</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Api doc</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color3">Api doc</a>
               </li>
              
               <li class="article-tag-list-item">
