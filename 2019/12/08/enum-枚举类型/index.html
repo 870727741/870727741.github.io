@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="https://870727741.github.io">
   <title>enum-枚举类型 | M</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="[TOC] 一、什么情况下使用枚举类？一个类的对象是有限且固定的 ，这种情况下我们使用枚举类就比较方便  常量是在程序运行中不变的量，主要体现在不能赋值。变量是其值可以改变的量，可以赋值，有整型、字符型、实型、枚举类型、构造类型等。定义变量比较简单，数据类型  空格 变量名1  逗号  变量名2·····；如：int  a,b,c,d;也可以在定义时赋初值如：int a=0;定义常量可以用宏定义，">
+  <meta name="description" content="一、什么情况下使用枚举类？一个类的对象是有限且固定的 ，这种情况下我们使用枚举类就比较方便  常量是在程序运行中不变的量，主要体现在不能赋值。变量是其值可以改变的量，可以赋值，有整型、字符型、实型、枚举类型、构造类型等。定义变量比较简单，数据类型  空格 变量名1  逗号  变量名2·····；如：int  a,b,c,d;也可以在定义时赋初值如：int a=0;定义常量可以用宏定义，也可以用co">
 <meta name="keywords" content="java,枚举">
 <meta property="og:type" content="article">
 <meta property="og:title" content="enum-枚举类型">
 <meta property="og:url" content="https://870727741.github.io/2019/12/08/enum-枚举类型/index.html">
 <meta property="og:site_name" content="M">
-<meta property="og:description" content="[TOC] 一、什么情况下使用枚举类？一个类的对象是有限且固定的 ，这种情况下我们使用枚举类就比较方便  常量是在程序运行中不变的量，主要体现在不能赋值。变量是其值可以改变的量，可以赋值，有整型、字符型、实型、枚举类型、构造类型等。定义变量比较简单，数据类型  空格 变量名1  逗号  变量名2·····；如：int  a,b,c,d;也可以在定义时赋初值如：int a=0;定义常量可以用宏定义，">
+<meta property="og:description" content="一、什么情况下使用枚举类？一个类的对象是有限且固定的 ，这种情况下我们使用枚举类就比较方便  常量是在程序运行中不变的量，主要体现在不能赋值。变量是其值可以改变的量，可以赋值，有整型、字符型、实型、枚举类型、构造类型等。定义变量比较简单，数据类型  空格 变量名1  逗号  变量名2·····；如：int  a,b,c,d;也可以在定义时赋初值如：int a=0;定义常量可以用宏定义，也可以用co">
 <meta property="og:locale" content="zh">
 <meta property="og:image" content="https://870727741.github.io/2019/12/08/enum-枚举类型/1585569278899.png">
-<meta property="og:updated_time" content="2020-11-16T03:19:00.507Z">
+<meta property="og:updated_time" content="2020-11-16T03:35:30.906Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="enum-枚举类型">
-<meta name="twitter:description" content="[TOC] 一、什么情况下使用枚举类？一个类的对象是有限且固定的 ，这种情况下我们使用枚举类就比较方便  常量是在程序运行中不变的量，主要体现在不能赋值。变量是其值可以改变的量，可以赋值，有整型、字符型、实型、枚举类型、构造类型等。定义变量比较简单，数据类型  空格 变量名1  逗号  变量名2·····；如：int  a,b,c,d;也可以在定义时赋初值如：int a=0;定义常量可以用宏定义，">
+<meta name="twitter:description" content="一、什么情况下使用枚举类？一个类的对象是有限且固定的 ，这种情况下我们使用枚举类就比较方便  常量是在程序运行中不变的量，主要体现在不能赋值。变量是其值可以改变的量，可以赋值，有整型、字符型、实型、枚举类型、构造类型等。定义变量比较简单，数据类型  空格 变量名1  逗号  变量名2·····；如：int  a,b,c,d;也可以在定义时赋初值如：int a=0;定义常量可以用宏定义，也可以用co">
 <meta name="twitter:image" content="https://870727741.github.io/2019/12/08/enum-枚举类型/1585569278899.png">
   
     <link rel="alternative" href="/atom.xml" title="M" type="application/atom+xml">
@@ -171,11 +171,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>[TOC]</p>
-<h1 id="一、什么情况下使用枚举类？"><a href="#一、什么情况下使用枚举类？" class="headerlink" title="一、什么情况下使用枚举类？"></a>一、什么情况下使用枚举类？</h1><p>一个类的对象是有限且固定的 ，这种情况下我们使用枚举类就比较方便</p>
+        <h1 id="一、什么情况下使用枚举类？"><a href="#一、什么情况下使用枚举类？" class="headerlink" title="一、什么情况下使用枚举类？"></a>一、什么情况下使用枚举类？</h1><p>一个类的对象是有限且固定的 ，这种情况下我们使用枚举类就比较方便</p>
 <blockquote>
 <p>常量是在程序运行中不变的量，主要体现在不能赋值。<br>变量是其值可以改变的量，可以赋值，有整型、字符型、实型、枚举类型、构造类型等。<br>定义变量比较简单，数据类型  空格 变量名1  逗号  变量名2·····；如：int  a,b,c,d;<br>也可以在定义时赋初值如：int a=0;<br>定义常量可以用宏定义，也可以用const,如：#include   PI   3.141592653</p>
 </blockquote>
+<a id="more"></a>
+
 <h1 id="二、为什么不用静态常量来替代枚举类呢？"><a href="#二、为什么不用静态常量来替代枚举类呢？" class="headerlink" title="二、为什么不用静态常量来替代枚举类呢？"></a>二、为什么不用静态常量来替代枚举类呢？</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> SEASON_SPRING = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> SEASON_SUMMER = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> SEASON_FALL = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> SEASON_WINTER = <span class="number">4</span>;</span><br></pre></td></tr></table></figure>
 
 <ul>
@@ -473,14 +474,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">枚举</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">微服务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">书签</a>
               </li>
              
@@ -490,6 +483,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">tips</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">枚举</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">微服务</a>
               </li>
              
               <li class="article-tag-list-item">
