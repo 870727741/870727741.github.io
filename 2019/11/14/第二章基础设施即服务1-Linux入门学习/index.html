@@ -34,7 +34,7 @@
 <meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章基础设施即服务1-Linux入门学习/1569751341902.png">
 <meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章基础设施即服务1-Linux入门学习/1572339034716.png">
 <meta property="og:image" content="https://870727741.github.io/2019/11/14/第二章基础设施即服务1-Linux入门学习/1572343943716.png">
-<meta property="og:updated_time" content="2020-05-12T02:55:37.299Z">
+<meta property="og:updated_time" content="2020-11-16T03:18:50.301Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第二章 基础设施即服务1：Linux入门学习">
 <meta name="twitter:description" content="linux linux简介 与Windows比较 安装Ubuntu Server 远程控制管理 目录结构 linux常用命令-操作文件目录 linux常用命令-系统管理命令 linux常用命令-开关机命令 linux常用命令-压缩命令 linux编辑器 linux软件包管理 linux用户和组管理 linux文件权限管理 linux安装java linux安装Tomcat linux安装MySq">
@@ -1182,8 +1182,14 @@ ZZ : 保存后退出
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ apt-get install unzip</span><br><span class="line">$ <span class="built_in">cd</span> soft/</span><br><span class="line">$ unzip 项目.zip</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>解压出来的文件移动到tomcat下的webapps</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">root@ubuntuserver:/usr/<span class="built_in">local</span>/apache-tomcat-8.5.46/webapps/ROOT<span class="comment"># rm-fr *</span></span><br><span class="line">root@ubuntuserver:/usr/<span class="built_in">local</span>/apache-tomcat-8.5.46/webapps/ROOT<span class="comment"># mv /root/soft/项目.zip</span></span><br><span class="line">root@ubuntuserver:/usr/<span class="built_in">local</span>/apache-tomcat-8.5.46/webapps/ROOT<span class="comment"># unzip 项目.zip</span></span><br><span class="line">root@ubuntuserver:/usr/<span class="built_in">local</span>/apache-tomcat-8.5.46/webapps/ROOT<span class="comment"># rm -fr 项目.zip</span></span><br><span class="line"><span class="built_in">cd</span> bin/</span><br><span class="line">./shutdown.sh </span><br><span class="line">./startup.sh </span><br><span class="line"><span class="comment">#查看日志</span></span><br><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/apache-tomcat-8.5.46/webapps/<span class="built_in">log</span></span><br><span class="line">$ tail -f catalina.out</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">root@ubuntuserver:/usr/<span class="built_in">local</span>/apache-tomcat-8.5.46/webapps/ROOT<span class="comment"># rm-fr *</span></span><br><span class="line">root@ubuntuserver:/usr/<span class="built_in">local</span>/apache-tomcat-8.5.46/webapps/ROOT<span class="comment"># mv /root/soft/项目.zip</span></span><br><span class="line">root@ubuntuserver:/usr/<span class="built_in">local</span>/apache-tomcat-8.5.46/webapps/ROOT<span class="comment"># unzip 项目.zip</span></span><br><span class="line">root@ubuntuserver:/usr/<span class="built_in">local</span>/apache-tomcat-8.5.46/webapps/ROOT<span class="comment"># rm -fr 项目.zip</span></span><br><span class="line"><span class="built_in">cd</span> bin/</span><br><span class="line">./shutdown.sh </span><br><span class="line">./startup.sh </span><br><span class="line"><span class="comment">#查看日志</span></span><br><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/apache-tomcat-8.5.46/webapps/<span class="built_in">log</span></span><br><span class="line">$ tail -f catalina.out</span><br></pre></td></tr></table></figure>
+
+</li>
 </ul>
+<p>参考资料：<a href="https://www.bilibili.com/video/av36042649/?p=2" target="_blank" rel="noopener">2018千锋Java高级教程-Java微服务架构（Spring Boot + Spring Cloud）</a></p>
+<blockquote>
+<p>声明：文档为学习总结，可能参考了网络学习资料(自己没发现)，如有侵权纠纷请直接email  <a href="mailto:kyrd@qq.com" target="_blank" rel="noopener">kyrd@qq.com</a></p>
+</blockquote>
 
       
 
@@ -1424,6 +1430,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">TODO</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">枚举</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">微服务</a>
               </li>
              
@@ -1449,10 +1467,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
              
               <li class="article-tag-list-item">
